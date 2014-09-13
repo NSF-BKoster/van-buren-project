@@ -1,0 +1,12 @@
+1.open BitmapFont Generator.
+2.Options.
+3.Font Settings.
+4.Check the file format as XML,not text.
+5.Look at the right side of the BitMapFont Generator,select those checks on.Such as Basic Latin+ Sypplement etc....
+6.Save bitmap font as... And then u will get some bitmaps.
+7.Convert the fnt file into fontDefinition files.(Warning:Be sure the fnt file's name is English or numbers,DO NOT USE Russian or anything else.)
+And copy these fontDefinition files to the neoaxis\\data\\font folder.
+Rename this fontDefinition like "Default_LBlack.fontDefinition" or something like that,but be sure u have the string "Default".
+8.And then u can add your own languange config file with a notepad.
+9.Open the configurator,check the localization as ur language.
+10.U can use this font now. 

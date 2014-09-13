@@ -1,0 +1,29 @@
+type AM_9mmFMJ
+{
+	class = AmmoItem
+	physicsModel = "Types\\Dynamic\\SmallBox\\SmallBox.physics"
+	allowEditorCreate = True
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = Types\Items\BulletItems\SubmachineGunBulletsItem\SubmachineGunBulletsItem.mesh
+			castShadows = True
+			scale = "0.5 0.5 0.5"
+		}
+	}
+	invIcon = VB\GUI\ItemIcons\AM_9mm_FMJ_INV.tga
+	maxjuice = 25
+	val = 75
+	weight = 1
+	dmgModifier = 2 1
+	dmgResistance = 25
+	actionModes
+	{
+		item
+		{
+			useText = "9mm FMJ"
+		}
+	}
+}

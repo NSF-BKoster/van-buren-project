@@ -1,0 +1,1986 @@
+Log started: 9/12/2014 11:06:13 AM
+Info: Powered by NeoAxis 3D Engine
+Info: Operating System: Microsoft Windows 6.1.7601.65536 (64-bit)
+Info: Runtime Framework: Net 4.0.30319.18444
+Info: NeoAxis 3D Engine version: 2.2
+Info: Engine SDK: Free SDK
+Info: Engine 32-bit version
+Info: Application type: MapEditor
+Info: Physics system is initialized (Driver: NVIDIA PhysX 3.2.1)
+Info: OGRE: Added resource location 'D:\ARUngureanu\GoogleDrive\NeoAxis Engine Free SDK 2.0.5\Project\Bin\Data' of type 'VirtualFileSystem' to resource group 'General' with recursive option
+Info: OGRE: Loading library RenderSystem_Direct3D9.dll
+Info: OGRE: Installing plugin: D3D9 RenderSystem
+Info: OGRE: D3D9 : Direct3D9 Rendering Subsystem created.
+Info: OGRE: D3D9: Driver Detection Starts
+Info: OGRE: D3D9: Driver: \\.\DISPLAY1; ATI Radeon HD 4250      
+Info: OGRE: D3D9: Driver: \\.\DISPLAY2; ATI Radeon HD 4250      
+Info: OGRE: D3D9: Driver Detection Ends
+Info: OGRE: Plugin successfully installed
+Info: OGRE: CPU Identifier & Features
+Info: OGRE: -------------------------
+Info: OGRE:  *   CPU ID: AuthenticAMD: AMD Phenom(tm) II X4 945 Processor
+Info: OGRE:  *      SSE: yes
+Info: OGRE:  *     SSE2: yes
+Info: OGRE:  *     SSE3: yes
+Info: OGRE:  *      MMX: yes
+Info: OGRE:  *   MMXEXT: yes
+Info: OGRE:  *    3DNOW: yes
+Info: OGRE:  * 3DNOWEXT: yes
+Info: OGRE:  *     CMOV: yes
+Info: OGRE:  *      TSC: yes
+Info: OGRE:  *      FPU: yes
+Info: OGRE:  *      PRO: yes
+Info: OGRE:  *       HT: no
+Info: OGRE: -------------------------
+Info: OGRE: D3D9 : Subsystem Initialising
+Info: OGRE: Driver name: aticfx32.dll
+Info: OGRE: Driver description: ATI Radeon HD 4250
+Info: OGRE: ***************************************
+Info: OGRE: *** D3D9 : Subsystem Initialised OK ***
+Info: OGRE: ***************************************
+Info: OGRE: D3D9RenderSystem::_createRenderWindow "MainWindow", 640x480 windowed  miscParams: colourDepth=32 externalWindowHandle=984676 vsync=true 
+Info: OGRE: D3D9 : Created D3D9 Rendering Window 'MainWindow' : 10x10, 32bpp
+Info: OGRE: Registering ResourceManager for type Texture
+Info: OGRE: Registering ResourceManager for type GpuProgram
+Info: OGRE: D3D9: Vertex texture format supported - PF_L8 PF_L16 PF_A8 PF_A4L4 PF_BYTE_LA PF_R5G6B5 PF_B5G6R5 PF_A4R4G4B4 PF_A1R5G5B5 PF_A8R8G8B8 PF_B8G8R8A8 PF_A2R10G10B10 PF_A2B10G10R10 PF_DXT1 PF_DXT2 PF_DXT3 PF_DXT4 PF_DXT5 PF_FLOAT16_RGB PF_FLOAT16_RGBA PF_FLOAT32_RGB PF_FLOAT32_RGBA PF_X8R8G8B8 PF_X8B8G8R8 PF_R8G8B8A8 PF_DEPTH24 PF_SHORT_RGBA PF_FLOAT16_R PF_FLOAT32_R PF_SHORT_GR PF_FLOAT16_GR PF_FLOAT32_GR PF_SHORT_RGB PF_PVRTC_RGB2 PF_PVRTC_RGBA2 PF_PVRTC_RGB4 PF_PVRTC_RGBA4 PF_3DC
+Info: OGRE: RenderSystem capabilities
+Info: OGRE: -------------------------
+Info: OGRE: RenderSystem Name: Direct3D9 Rendering Subsystem
+Info: OGRE: GPU Vendor: ati
+Info: OGRE: Device Name: ATI Radeon HD 4250
+Info: OGRE: Driver Version: 8.17.10.1077
+Info: OGRE:  * Fixed function pipeline: yes
+Info: OGRE:  * Hardware generation of mipmaps: yes
+Info: OGRE:  * Texture blending: yes
+Info: OGRE:  * Anisotropic texture filtering: yes
+Info: OGRE:  * Dot product texture operation: yes
+Info: OGRE:  * Cube mapping: yes
+Info: OGRE:  * Hardware stencil buffer: yes
+Info: OGRE:    - Stencil depth: 8
+Info: OGRE:    - Two sided stencil support: yes
+Info: OGRE:    - Wrap stencil values: yes
+Info: OGRE:  * Hardware vertex / index buffers: yes
+Info: OGRE:  * Vertex programs: yes
+Info: OGRE:  * Number of floating-point constants for vertex programs: 256
+Info: OGRE:  * Number of integer constants for vertex programs: 16
+Info: OGRE:  * Number of boolean constants for vertex programs: 16
+Info: OGRE:  * Fragment programs: yes
+Info: OGRE:  * Number of floating-point constants for fragment programs: 224
+Info: OGRE:  * Number of integer constants for fragment programs: 16
+Info: OGRE:  * Number of boolean constants for fragment programs: 16
+Info: OGRE:  * Geometry programs: no
+Info: OGRE:  * Number of floating-point constants for geometry programs: 0
+Info: OGRE:  * Number of integer constants for geometry programs: 0
+Info: OGRE:  * Number of boolean constants for geometry programs: 0
+Info: OGRE:  * Supported Shader Profiles: hlsl ps_1_1 ps_1_2 ps_1_3 ps_1_4 ps_2_0 ps_2_a ps_2_b ps_2_x ps_3_0 vs_1_1 vs_2_0 vs_2_a vs_2_x vs_3_0
+Info: OGRE:  * Texture Compression: yes
+Info: OGRE:    - DXT: yes
+Info: OGRE:    - VTC: no
+Info: OGRE:    - PVRTC: no
+Info: OGRE:    - 3Dc: yes
+Info: OGRE:  * Scissor Rectangle: yes
+Info: OGRE:  * Hardware Occlusion Query: yes
+Info: OGRE:  * User clip planes: yes
+Info: OGRE:  * VET_UBYTE4 vertex element type: yes
+Info: OGRE:  * Infinite far plane projection: yes
+Info: OGRE:  * Hardware render-to-texture: yes
+Info: OGRE:  * Floating point textures: yes
+Info: OGRE:  * Non-power-of-two textures: yes
+Info: OGRE:  * Volume textures: yes
+Info: OGRE:  * Multiple Render Targets: 4
+Info: OGRE:    - With different bit depths: yes
+Info: OGRE:  * Point Sprites: yes
+Info: OGRE:  * Extended point parameters: yes
+Info: OGRE:  * Max Point Size: 256
+Info: OGRE:  * Vertex texture fetch: yes
+Info: OGRE:  * Number of world matrices: 0
+Info: OGRE:  * Number of texture units: 8
+Info: OGRE:  * Stencil buffer depth: 8
+Info: OGRE:  * Number of vertex blend matrices: 0
+Info: OGRE:    - Max vertex textures: 4
+Info: OGRE:    - Vertex textures shared: no
+Info: OGRE:  * Render to Vertex Buffer: no
+Info: OGRE:  * Alpha to coverage: yes
+Info: OGRE:  * Fetch4: yes
+Info: OGRE:  * Hardware Instancing: yes
+Info: OGRE:  * Depth Buffer As Texture (INTZ): no
+Info: OGRE:  * DirectX per stage constants: yes
+Info: OGRE:  * Max texture size: 8192
+Info: OGRE: DefaultWorkQueue('Root') initialising on thread main.
+Info: OGRE: Particle Renderer Type 'billboard' registered
+Info: Renderer: GPU description: ATI Radeon HD 4250
+Info: Renderer: GPU codename: Radeon_R700
+Info: Renderer: Shader Model 3.0: yes
+Info: 2D texture render target pixel formats: ShortL ShortL R5G6B5 A4R4G4B4 A1R5G5B5 A8R8G8B8 A2R10G10B10 A2B10G10R10 Float16RGBA Float32RGBA X8R8G8B8 X8B8G8R8 Depth24 ShortRGBA Float16R Float32R ShortGR Float16GR Float32GR
+Info: OGRE: Parsing scripts for resource group General
+Info: OGRE: Parsing script Base\Shaders\AmbientOneTexture.program
+Info: OGRE: Parsing script Base\Shaders\StdQuad_vp.program
+Info: OGRE: Parsing script Base\FullScreenEffects\_ShowDepth\ShowDepth.material
+Info: OGRE: Parsing script Base\FullScreenEffects\Blur\Blur.material
+Info: OGRE: Parsing script Base\FullScreenEffects\ColorCorrection\ColorCorrection.material
+Info: OGRE: Parsing script Base\FullScreenEffects\DepthOfField\DepthOfField_AutoFocusBegin.material
+Info: OGRE: Parsing script Base\FullScreenEffects\DepthOfField\DepthOfField_AutoFocusCurrent.material
+Info: OGRE: Parsing script Base\FullScreenEffects\DepthOfField\DepthOfField_AutoFocusFinal.material
+Info: OGRE: Parsing script Base\FullScreenEffects\DepthOfField\DepthOfField_AutoFocusIteration.material
+Info: OGRE: Parsing script Base\FullScreenEffects\DepthOfField\DepthOfField_Blur.material
+Info: OGRE: Parsing script Base\FullScreenEffects\DepthOfField\DepthOfField_Downscale.material
+Info: OGRE: Parsing script Base\FullScreenEffects\DepthOfField\DepthOfField_Final.material
+Info: OGRE: Parsing script Base\FullScreenEffects\FXAA\FXAA_Final.material
+Info: OGRE: Parsing script Base\FullScreenEffects\FXAA\FXAA_Luma.material
+Info: OGRE: Parsing script Base\FullScreenEffects\Glass\Glass.material
+Info: OGRE: Parsing script Base\FullScreenEffects\Grayscale\Grayscale.material
+Info: OGRE: Parsing script Base\FullScreenEffects\HDR\hdr_Bloom.material
+Info: OGRE: Parsing script Base\FullScreenEffects\HDR\hdr_BrightPass.material
+Info: OGRE: Parsing script Base\FullScreenEffects\HDR\hdr_CalculateAdaptedLuminance.material
+Info: OGRE: Parsing script Base\FullScreenEffects\HDR\hdr_CopyLastAdaptedLuminance.material
+Info: OGRE: Parsing script Base\FullScreenEffects\HDR\hdr_FinalToneMapping.material
+Info: OGRE: Parsing script Base\FullScreenEffects\HDR\hdr_GaussianBlur5x5.material
+Info: OGRE: Parsing script Base\FullScreenEffects\HDR\hdr_SampleLuminanceFinal.material
+Info: OGRE: Parsing script Base\FullScreenEffects\HDR\hdr_SampleLuminanceInitial.material
+Info: OGRE: Parsing script Base\FullScreenEffects\HDR\hdr_SampleLuminanceIterative.material
+Info: OGRE: Parsing script Base\FullScreenEffects\HeatVision\HaatVision_LightToHeat.material
+Info: OGRE: Parsing script Base\FullScreenEffects\HeatVision\HeatVision_Blur.material
+Info: OGRE: Parsing script Base\FullScreenEffects\Invert\Invert.material
+Info: OGRE: Parsing script Base\FullScreenEffects\LDRBloom\LDRBloom_Bloom.material
+Info: OGRE: Parsing script Base\FullScreenEffects\LDRBloom\LDRBloom_BrightPass.material
+Info: OGRE: Parsing script Base\FullScreenEffects\LDRBloom\LDRBloom_Final.material
+Info: OGRE: Parsing script Base\FullScreenEffects\LDRBloom\LDRBloom_GaussianBlur5x5.material
+Info: OGRE: Parsing script Base\FullScreenEffects\LightScattering\LightScattering_Blur.material
+Info: OGRE: Parsing script Base\FullScreenEffects\LightScattering\LightScattering_Final.material
+Info: OGRE: Parsing script Base\FullScreenEffects\LightScattering\LightScattering_Scattering.material
+Info: OGRE: Parsing script Base\FullScreenEffects\MotionBlur\MotionBlur_Combine.material
+Info: OGRE: Parsing script Base\FullScreenEffects\MotionBlur\MotionBlur_Copyback.material
+Info: OGRE: Parsing script Base\FullScreenEffects\MotionBlur\MotionBlur_Display.material
+Info: OGRE: Parsing script Base\FullScreenEffects\OldTV\OldTV.material
+Info: OGRE: Parsing script Base\FullScreenEffects\RadialBlur\RadialBlur.material
+Info: OGRE: Parsing script Base\FullScreenEffects\SSAO\SSAO_Blur.material
+Info: OGRE: Parsing script Base\FullScreenEffects\SSAO\SSAO_Copy.material
+Info: OGRE: Parsing script Base\FullScreenEffects\SSAO\SSAO_DepthDownsample1x1.material
+Info: OGRE: Parsing script Base\FullScreenEffects\SSAO\SSAO_DepthDownsample2x2.material
+Info: OGRE: Parsing script Base\FullScreenEffects\SSAO\SSAO_DepthDownsample3x3.material
+Info: OGRE: Parsing script Base\FullScreenEffects\SSAO\SSAO_Final.material
+Info: OGRE: Parsing script Base\FullScreenEffects\SSAO\SSAO_Occlusion.material
+Info: OGRE: Parsing script Base\FullScreenEffects\Tiling\Tiling.material
+Info: OGRE: Parsing script Base\FullScreenEffects\Vignetting\Vignetting.material
+Info: OGRE: Parsing script Base\FullScreenEffects\_ShowDepth\ShowDepth.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\Blur\Blur.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\ColorCorrection\ColorCorrection.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\DepthOfField\DepthOfField.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\FXAA\FXAA.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\Glass\Glass.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\Grayscale\Grayscale.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\HDR\hdr.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\HeatVision\HeatVision.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\Invert\Invert.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\LDRBloom\LDRBloom.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\LightScattering\LightScattering.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\MotionBlur\MotionBlur.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\OldTV\OldTV.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\RadialBlur\RadialBlur.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\SSAO\SSAO.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\Tiling\Tiling.compositor
+Info: OGRE: Parsing script Base\FullScreenEffects\Vignetting\Vignetting.compositor
+Info: OGRE: Parsing script Effects\ExplosionParticle\ExplosionParticle.particle
+Info: OGRE: Parsing script Effects\ExplosionParticle\ExplosionParticle2.particle
+Info: OGRE: Parsing script Effects\FireParticle\BigFireParticle.particle
+Info: OGRE: Parsing script Effects\FireParticle\FireParticle.particle
+Info: OGRE: Parsing script Effects\GreenyNimbusParticle\GreenyNimbusParticle.particle
+Info: OGRE: Parsing script Effects\ItemParticle\ItemParticle.particle
+Info: OGRE: Parsing script Effects\SmokeParticle\SmallSmokeParticle.particle
+Info: OGRE: Parsing script Effects\SmokeParticle\SmallSmokeParticle2.particle
+Info: OGRE: Parsing script Effects\SmokeParticle\SmokeParticle.particle
+Info: OGRE: Parsing script Maps\BallGame\Types\Fan\FanParticle\FanParticle.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Effects\ExplosionParticle\ExplosionParticle.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Effects\ExplosionParticle\ExplosionParticle2.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Effects\FireParticle\RTSBigFireParticle.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Effects\FireParticle\RTSFireParticle.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Effects\GeneralBulletHitParticle\RTSGeneralBulletHit.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Effects\ItemParticle\RTSItemParticle.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Effects\SmokeParticle\RTSSmallSmokeParticle.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Effects\SmokeParticle\RTSSmallSmokeParticle2.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Effects\SmokeParticle\RTSSmokeParticle.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Types\Bullets\FireworkBullet\RTSFireworkBulletHit.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Types\Static\RTSGeyser\RTSGeyserParticle.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Types\Units\RTSConstructor\RTSConstructorBullet\RTSConstructorBulletHit.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Types\Units\RTSConstructor\RTSConstructorBullet\RTSConstructorBulletHit2.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Types\Units\RTSRobot\RTSRobotBullet\RTSRobotBulletHit.particle
+Info: OGRE: Parsing script Maps\RTSDemo\Types\Units\RTSRobot\RTSRobotBullet\RTSRobotBulletHit2.particle
+Info: OGRE: Parsing script Maps\VillageDemo\River\Splash\VillageSplashDown.particle
+Info: OGRE: Parsing script Maps\VillageDemo\River\Splash\VillageWaterParticle.particle
+Info: OGRE: Parsing script Maps\VillageDemo\River\Splash\VillageWaterParticle2.particle
+Info: OGRE: Parsing script Maps\VillageDemo\River\Splash\VillageWaterParticle2_1.particle
+Info: OGRE: Parsing script Maps\VillageDemo\River\Splash\VillageWaterParticle3.particle
+Info: OGRE: Parsing script Maps\VillageDemo\River\Splash\VillageWaterParticleBig.particle
+Info: OGRE: Parsing script Types\Bullets\ShotgunBullet\ShotgunBullet.particle
+Info: OGRE: Parsing script Types\Bullets\ShotgunBullet\ShotgunBulletHit.particle
+Info: OGRE: Parsing script Types\Bullets\ShotgunBullet\ShotgunBulletHit2.particle
+Info: OGRE: Parsing script Types\Bullets\SubmachineGunBullet\SubmachineGunBulletHit.particle
+Info: OGRE: Parsing script Types\Bullets\SubmachineGunBullet\SubmachineGunBulletHit2.particle
+Info: OGRE: Parsing script Types\Bullets\SubmachineGunGrenade\SubmachineGunGrenadeParticle.particle
+Info: OGRE: Parsing script Types\Dynamic\DestructibleHouse\DestructibleHouseFileParticle.particle
+Info: OGRE: Parsing script Types\Dynamic\Fan\FanParticle\DemoFanParticle.particle
+Info: OGRE: Parsing script Types\Dynamic\Firework\FireworkBullet\FireworkBulletHit.particle
+Info: OGRE: Parsing script Types\Dynamic\GasFlamePipe\GasFlamePipeParticle\GasFlamePipe.particle
+Info: OGRE: Parsing script Types\Dynamic\Pipe\PipeLeak\PipeLeakFlameParticle\PipeLeakFlame.particle
+Info: OGRE: Parsing script Types\Dynamic\Pipe\PipeLeak\PipeLeakSteamParticle\PipeLeakSteam.particle
+Info: OGRE: Parsing script Types\Dynamic\Teleporter\TeleportParticle\DemoTeleporterReceive.particle
+Info: OGRE: Parsing script Types\Dynamic\Teleporter\TeleportParticle\DemoTeleporterSend.particle
+Info: OGRE: Parsing script Types\Special\WaterPlane\WaterSplash\WaterSplash.particle
+Info: OGRE: Parsing script Types\Special\WaterPlane\WaterSplashWave\WaterSplashWave.particle
+Info: OGRE: Parsing script Types\Units\Robot\RobotBullet\RobotBulletHit.particle
+Info: OGRE: Parsing script Types\Units\Robot\RobotBullet\RobotBulletHit2.particle
+Info: OGRE: Parsing script Types\Units\Turret\TurretBullet\TurretBulletHit.particle
+Info: OGRE: Parsing script Types\Units\Turret\TurretBullet\TurretBulletHit2.particle
+Info: OGRE: Parsing script Types\Units\Zombie\ZombieBullet\ZombieBulletHit.particle
+Info: OGRE: Finished parsing scripts for resource group General
+Info: OGRE: Parsing scripts for resource group Internal
+Info: OGRE: Finished parsing scripts for resource group Internal
+Info: Initializing high level material: _ResourceEditorSamples\Importing3DModel\Animated\PigA_RenameTest.highMaterial
+Info: Initializing high level material: _ResourceEditorSamples\Importing3DModel\FBX_Importing\FBX_Importing_Teapot_Material #25.highMaterial
+Info: Initializing high level material: _ResourceEditorSamples\Importing3DModel\Stone\ColladaTestStoneStatic.highMaterial
+Info: Initializing high level material: _ResourceEditorSamples\ScrollingTexture\ScrollingTextureTest.highMaterial
+Info: Initializing high level material: Base\Simple Materials\Black.highMaterial
+Info: Initializing high level material: Base\Simple Materials\Blue.highMaterial
+Info: Initializing high level material: Base\Simple Materials\DarkBlue.highMaterial
+Info: Initializing high level material: Base\Simple Materials\DarkGray.highMaterial
+Info: Initializing high level material: Base\Simple Materials\DarkGreen.highMaterial
+Info: Initializing high level material: Base\Simple Materials\DarkRed.highMaterial
+Info: Initializing high level material: Base\Simple Materials\DarkYellow.highMaterial
+Info: Initializing high level material: Base\Simple Materials\Gray.highMaterial
+Info: Initializing high level material: Base\Simple Materials\Green.highMaterial
+Info: Initializing high level material: Base\Simple Materials\Red.highMaterial
+Info: Initializing high level material: Base\Simple Materials\White.highMaterial
+Info: Initializing high level material: Base\Simple Materials\Yellow.highMaterial
+Info: Initializing high level material: Base\Tools\ModelImportEditor\ModelImportEditor_SourceAdded.highMaterial
+Info: Initializing high level material: Base\Tools\ModelImportEditor\ModelImportEditor_SourceFree.highMaterial
+Info: Initializing high level material: Base\Tools\ResourceEditorGrid\ResourceEditorGrid_1.highMaterial
+Info: Initializing high level material: Base\Tools\ResourceEditorGrid\ResourceEditorGrid_2.highMaterial
+Info: Initializing high level material: Base\Tools\ToolsSelectObjectMaterials\ToolsSelectObject_Green.highMaterial
+Info: Initializing high level material: Base\Tools\ToolsSelectObjectMaterials\ToolsSelectObject_Green_FFP.highMaterial
+Info: Initializing high level material: Base\Tools\ToolsSelectObjectMaterials\ToolsSelectObject_Yellow.highMaterial
+Info: Initializing high level material: Base\Tools\ToolsSelectObjectMaterials\ToolsSelectObject_Yellow_FFP.highMaterial
+Info: Initializing high level material: Base\Types\Light\Base_LightFlare.highMaterial
+Info: Initializing high level material: Base\Types\Sun\Base_SunFlare.highMaterial
+Info: Initializing high level material: Effects\DefaultFlare\DefaultFlare.highMaterial
+Info: Initializing high level material: Effects\ExplosionParticle\ExplosionParticle.highMaterial
+Info: Initializing high level material: Effects\ExplosionParticle\ExplosionParticle2.highMaterial
+Info: Initializing high level material: Effects\FireParticle\FireParticle.highMaterial
+Info: Initializing high level material: Effects\ItemParticle\ItemParticle.highMaterial
+Info: Initializing high level material: Effects\SmokeParticle\SmokeParticle.highMaterial
+Info: Initializing high level material: Maps\BallGame\Types\Ball\BallGame_Ball.highMaterial
+Info: Initializing high level material: Maps\BallGame\Types\Fan\BallDemo_Fan.highMaterial
+Info: Initializing high level material: Maps\BallGame\Types\Fan\FanParticle\BallDemo_FanParticle.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Alum.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Asp.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Blue.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Board.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Chair.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Concrete.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Concrete2.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Fence.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Finish.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Flag.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Glass.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Grass.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Gravel.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Green_Light.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Ice.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Line.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Line2.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Line3.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Logo_Engine.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Logo_Engine1.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Logo_Engine2.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Logo_Engine3.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Metal.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Red_Light.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Siding.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Siding1.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Start.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Tile.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Tree.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Tree_Bilbord.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Tree2.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Model\Tribune\CD_Tribune.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Model\Tribune\CD_Tribune2.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Types\Grass_Decorative\CD_Grass_Dec.highMaterial
+Info: Initializing high level material: Maps\CatapultGame\Types\SimpleBox\CatapultGame_SimpleBox.highMaterial
+Info: Initializing high level material: Maps\JigsawPuzzleGame\JigsawPuzzleImage.highMaterial
+Info: Initializing high level material: Maps\JigsawPuzzleGame\JigsawPuzzleImageBackground.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\DefaultFlare\RTSDefaultFlare.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\ExplosionParticle\RTSExplosionParticle.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\ExplosionParticle\RTSExplosionParticle2.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\FireParticle\RTSFireParticle.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\GeneralBulletHitParticle\RTSGeneralBulletHitParticle.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\ItemParticle\RTSItemParticle.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\SmokeParticle\RTSSmokeParticle.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Models\Beam\RTSBeam.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Models\ConcreteBlock\RTSConcreteBlock.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Models\RockBig\RTSRockBig.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Bullets\FireworkBullet\RTSFireworkBulletRibbonTrail.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Special\RTSBuildMaterial\RTSBuildMaterial.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Static\RTSPipe\RTSPipe.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSConstructor\RTSConstructorBullet\RTSConstructorBulletHit.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSConstructor\RTSConstructorBullet\RTSConstructorBulletHit2.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSFactory\RTSFactory.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSFactory\RTSFactory2.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSFactory\RTSFactoryGlass.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSHeadquaters\RTSHeadquaters.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSHeadquaters\RTSHeadquaters2.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSMine\RTSMine.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSMine\RTSMine2.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSRobot\RTSRobot.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSRobot\RTSRobotBullet\RTSRobotBulletHit.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSRobot\RTSRobotBullet\RTSRobotBulletHit2.highMaterial
+Info: Initializing high level material: Maps\TankDemo\Resources\Meshes\FakeTrees\TankDemoFakeTrees.highMaterial
+Info: Initializing high level material: Maps\TankDemo\Resources\Meshes\RockBig\TankDemoRockBig.highMaterial
+Info: Initializing high level material: Maps\TankDemo\Resources\Meshes\Stone\TankDemoStone.highMaterial
+Info: Initializing high level material: Maps\TankDemo\Resources\Meshes\Trees\TankDemoTree_Bark.highMaterial
+Info: Initializing high level material: Maps\TankDemo\Resources\Meshes\Trees\TankDemoTree_Leafs.highMaterial
+Info: Initializing high level material: Maps\TPSArcadeDemo\Resources\Models\TPSDemoRock.highMaterial
+Info: Initializing high level material: Maps\TPSArcadeDemo\Resources\Models\TPSDemoRockStone.highMaterial
+Info: Initializing high level material: Maps\TurretDemo\Resources\Models\Rock\TurretDemoRock.highMaterial
+Info: Initializing high level material: Maps\TurretDemo\Resources\Models\Rock\TurretDemoRockStone.highMaterial
+Info: Initializing high level material: Maps\TurretDemo\Resources\Models\Rock\TurretDemoRockStone2.highMaterial
+Info: Initializing high level material: Maps\TurretDemo\Resources\Models\SandBags\TurretDemoSandBags.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm000_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm000_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm000_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm000_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm000_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm000_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm001_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm002_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_MFVTextureD.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_StrawTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm004_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm005_Fence.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm006_Fence.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm007_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm007_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm007_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm007_MFVThatchedB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm007_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm008_StrawBale.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm009_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm010_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm010_StrawNonTranspare.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm011_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm011_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm012_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm013_StrawTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm014_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm015_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm016_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm016_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm016_MFVThatchedA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm017_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm017_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm017_Rope.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm018_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm018_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm018_MFVThatchedB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm018_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm018_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm018_Rope.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm019_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm020_TreeLog.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm021_TreeLog.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm022_TreeLogB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm023_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm023_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm023_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm024_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm024_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVTextureD.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVWallB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_Coal.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVThatchedA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVTextureD.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVWallB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm028_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm029_Fence.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm029_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm030_Rope.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm031_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVTextureD.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVWallB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm035_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVTextureD.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVThatchedB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVWallB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_Rope.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm037_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm037_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm038_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm039_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm039_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm039_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm041_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm042_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm044_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm045_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm045_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm046_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm047_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm048_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm049_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm050_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm051_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm051_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm053_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm055_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm058_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm061_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm062_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm063_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm064_Rope.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm065_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm066_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm067_TreeLogB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm068_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm069_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\FarmBridge_Base.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\FarmBridge_Floor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\River\Splash\VillageWaterParticle.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\River\Splash\VillageWaterParticle2.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\River\VillageRiver.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\River\VillageWaterfalls.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_12SG_Smoothing.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_13SG.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_14SG.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_15SG.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_18SG_Smoothing.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_18SG_Smoothing2.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_19SG.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_19SG_Smoothing.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_5SG_Smoothing.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_6SG_Smoothing.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_8SG_Smoothing.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Types\VillageSign\VillageSign.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Vegetation\Shrubs\VillageShrub.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Ceiling.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExt1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExt2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExtDown1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExtDown2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExtMiddle1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExtMiddle2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExtUp1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExtUp2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerInt1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerInt2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerIntDown1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerIntDown2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerIntMiddle1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerIntMiddle2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerIntUp1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerIntUp2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Floor.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Gates.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_GridFloor1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_GridFloor2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_GridFloor3.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Pass1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Pass2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_PassDown1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_PassDown2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Wall1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Wall2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_WallDown1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_WallDown2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_WallMiddle1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_WallMiddle2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_WallUp1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_WallUp2.highMaterial
+Info: Initializing high level material: Models\Pipes\Demo_PipeDirect.highMaterial
+Info: Initializing high level material: Models\Pipes\Demo_PipePlasma.highMaterial
+Info: Initializing high level material: Models\Pipes\Demo_PipeRack.highMaterial
+Info: Initializing high level material: Models\Pipes\Demo_PipeValve.highMaterial
+Info: Initializing high level material: props\floorgrid.highMaterial
+Info: Initializing high level material: props\monument_mat.highMaterial
+Info: Initializing high level material: props\oldwall.highMaterial
+Info: Initializing high level material: props\oldwall2.highMaterial
+Info: Initializing high level material: props\ornatewalldef_surf_mat.highMaterial
+Info: Initializing high level material: props\refugebin.highMaterial
+Info: Initializing high level material: props\rubbish1.highMaterial
+Info: Initializing high level material: props\traintrack.highMaterial
+Info: Initializing high level material: props\wastebin.highMaterial
+Info: Initializing high level material: Types\Bullets\ShotgunBullet\ShotgunBulletHitParticle.highMaterial
+Info: Initializing high level material: Types\Bullets\ShotgunBullet\ShotgunBulletHitParticle2.highMaterial
+Info: Initializing high level material: Types\Bullets\ShotgunBullet\ShotgunBulletRibbonTrail.highMaterial
+Info: Initializing high level material: Types\Bullets\SubmachineGunBullet\SubmachineGunBulletHit.highMaterial
+Info: Initializing high level material: Types\Bullets\SubmachineGunBullet\SubmachineGunBulletHit2.highMaterial
+Info: Initializing high level material: Types\Bullets\SubmachineGunGrenade\SubmachineGunSmokeParticle.highMaterial
+Info: Initializing high level material: Types\Decals\DefaultBulletDecal\DefaultBulletDecal.highMaterial
+Info: Initializing high level material: Types\Decals\DefaultExplosionDecal\DefaultExplosionDecal.highMaterial
+Info: Initializing high level material: Types\Decals\ZombieBulletDecal\ZombieBulletDecal.highMaterial
+Info: Initializing high level material: Types\DecorativeObjects\DecorativeStones\DecorativeStones.highMaterial
+Info: Initializing high level material: Types\DecorativeObjects\Ear\Ear.highMaterial
+Info: Initializing high level material: Types\DecorativeObjects\FlowerWhite\FlowerWhite.highMaterial
+Info: Initializing high level material: Types\DecorativeObjects\FlowerYellow\FlowerYellow.highMaterial
+Info: Initializing high level material: Types\DecorativeObjects\GrassBrown\GrassBrown.highMaterial
+Info: Initializing high level material: Types\DecorativeObjects\GrassGreen\GrassGreen.highMaterial
+Info: Initializing high level material: Types\Dynamic\Ball\Ball.highMaterial
+Info: Initializing high level material: Types\Dynamic\Billboard\Demo_Billboard.highMaterial
+Info: Initializing high level material: Types\Dynamic\Billboard\Demo_BillboardBackground.highMaterial
+Info: Initializing high level material: Types\Dynamic\BooleanSwitch\BooleanSwitch.highMaterial
+Info: Initializing high level material: Types\Dynamic\BooleanSwitch\BooleanSwitchOff.highMaterial
+Info: Initializing high level material: Types\Dynamic\BooleanSwitch\BooleanSwitchOn.highMaterial
+Info: Initializing high level material: Types\Dynamic\Box\Box.highMaterial
+Info: Initializing high level material: Types\Dynamic\CubemapReflectedBall\CubemapReflectedBall.highMaterial
+Info: Initializing high level material: Types\Dynamic\DestructibleHouse\DestructibleHouse.highMaterial
+Info: Initializing high level material: Types\Dynamic\DestructibleHouse\DestructibleHouseWinDoor.highMaterial
+Info: Initializing high level material: Types\Dynamic\Door\Corridor_DoorLeft.highMaterial
+Info: Initializing high level material: Types\Dynamic\Door\Corridor_DoorPanel.highMaterial
+Info: Initializing high level material: Types\Dynamic\DynamicSinusoidSurface\DynamicSinusoidSurface.highMaterial
+Info: Initializing high level material: Types\Dynamic\ExampleMagicBall (1)\ExampleMagicBallBlinkMaterial.highMaterial
+Info: Initializing high level material: Types\Dynamic\ExplosionBarrel\ExplosionBarrel.highMaterial
+Info: Initializing high level material: Types\Dynamic\Fan\DemoFan.highMaterial
+Info: Initializing high level material: Types\Dynamic\Fan\FanParticle\DemoFanParticle.highMaterial
+Info: Initializing high level material: Types\Dynamic\Firework\FireworkBullet\FireworkBulletRibbonTrail.highMaterial
+Info: Initializing high level material: Types\Dynamic\FlareTest\FlareTest.highMaterial
+Info: Initializing high level material: Types\Dynamic\GasFlamePipe\GasFlamePipeParticle\GasFlamePipeParticle.highMaterial
+Info: Initializing high level material: Types\Dynamic\HangingBall\HangingBall.highMaterial
+Info: Initializing high level material: Types\Dynamic\HangingCable\HangingCable.highMaterial
+Info: Initializing high level material: Types\Dynamic\HangingLamp\HangingLampBase.highMaterial
+Info: Initializing high level material: Types\Dynamic\HangingLamp\HangingLampLamps.highMaterial
+Info: Initializing high level material: Types\Dynamic\Pipe\PipeLeak\PipeLeakFlameParticle\PipeLeakFlameParticle.highMaterial
+Info: Initializing high level material: Types\Dynamic\Pipe\PipeLeak\PipeLeakSteamParticle\PipeLeakSteamParticle.highMaterial
+Info: Initializing high level material: Types\Dynamic\Teleporter\DemoTeleporter.highMaterial
+Info: Initializing high level material: Types\Dynamic\Teleporter\DemoTeleporterGlow.highMaterial
+Info: Initializing high level material: Types\Dynamic\Teleporter\TeleportParticle\DemoTeleporterParticle.highMaterial
+Info: Initializing high level material: Types\Dynamic\Terminal\Terminal.highMaterial
+Info: Initializing high level material: Types\Dynamic\Terminal\TerminalBackground.highMaterial
+Info: Initializing high level material: Types\Dynamic\Terminal\TerminalClientNotSupportedInfo.highMaterial
+Info: Initializing high level material: Types\Dynamic\WindMill\WindMill.highMaterial
+Info: Initializing high level material: Types\Dynamic\WindMill\WindMillFan.highMaterial
+Info: Initializing high level material: Types\Dynamic\WoodBox\WoodBox.highMaterial
+Info: Initializing high level material: Types\Items\AccessCard\AccessCard.highMaterial
+Info: Initializing high level material: Types\Items\BulletItems\ShotgunBulletsItem\ShotgunBulletsItem.highMaterial
+Info: Initializing high level material: Types\Items\BulletItems\SubmachineGunBulletsItem\SubmachineGunBulletsItem.highMaterial
+Info: Initializing high level material: Types\Items\Dynamite\Dynamite.highMaterial
+Info: Initializing high level material: Types\Items\HealthItems\SmallHealthItem\SmallHealthItem.highMaterial
+Info: Initializing high level material: Types\Sky\BlueDaySky\BlueDaySky.highMaterial
+Info: Initializing high level material: Types\Special\WaterPlane\WaterSplash\WaterSplash.highMaterial
+Info: Initializing high level material: Types\Special\WaterPlane\WaterSplashWave\WaterSplashWave.highMaterial
+Info: Initializing high level material: Types\StaticObjects\EngineLogoPlacard\EngineLogoPlacard.highMaterial
+Info: Initializing high level material: Types\StaticObjects\Eyes\Eyes.highMaterial
+Info: Initializing high level material: Types\StaticObjects\MineBoard\MineBoard.highMaterial
+Info: Initializing high level material: Types\StaticObjects\OgreHead\OgreHead.highMaterial
+Info: Initializing high level material: Types\StaticObjects\OgreHead\OgreHeadAnimated.highMaterial
+Info: Initializing high level material: Types\StaticObjects\OgreHead\OgreHeadDynamicDiffuseScale.highMaterial
+Info: Initializing high level material: Types\StaticObjects\OgreHead\OgreHeadEyes.highMaterial
+Info: Initializing high level material: Types\StaticObjects\OgreHead\OgreHeadFangs.highMaterial
+Info: Initializing high level material: Types\StaticObjects\Palette\Palette.highMaterial
+Info: Initializing high level material: Types\StaticObjects\ParkingBarrier\ParkingBarrier.highMaterial
+Info: Initializing high level material: Types\StaticObjects\RabbitHead\RabbitHead.highMaterial
+Info: Initializing high level material: Types\StaticObjects\StaticBox\StaticBox.highMaterial
+Info: Initializing high level material: Types\StaticObjects\Stone\Stone.highMaterial
+Info: Initializing high level material: Types\StaticObjects\StopSign\StopSign.highMaterial
+Info: Initializing high level material: Types\StaticObjects\SwitchBox\SwitchBox.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_1.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_2.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_3.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_4.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_5.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_5_back.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_6.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_7.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_Glass.highMaterial
+Info: Initializing high level material: Types\Units\Bug\Bug.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneBase\CraneBase_ConcreteCleanColor.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneBase\CraneBase_MetalPaintedColor.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneBase\CraneBase_MetalPatern01Color.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneBase\CraneBase_MetalPatern02Color.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneGibbet\CraneGibbet_MetalPattern01Color.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneMagnet\CraneMagnet_MetalPatern02Color.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneTower\CraneTower_ConcreteBlockColor.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneTower\CraneTower_MetalPaintedColor.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneTower\CraneTower_MetalPatern_01Color.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneTower\CraneTower_MetalPatern02Color.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneTower\CraneTower_ObjectColor.highMaterial
+Info: Initializing high level material: Types\Units\Girl\FirstPersonArms\GirlFirstPersonArms_02 - Default2.highMaterial
+Info: Initializing high level material: Types\Units\Girl\FirstPersonArms\GirlFirstPersonArms_04 - Default.highMaterial
+Info: Initializing high level material: Types\Units\Girl\FirstPersonArms\GirlFirstPersonArms_07 - Default.highMaterial
+Info: Initializing high level material: Types\Units\Girl\Girl.highMaterial
+Info: Initializing high level material: Types\Units\Helicopter\Helicopter.highMaterial
+Info: Initializing high level material: Types\Units\Rabbit\Rabbit.highMaterial
+Info: Initializing high level material: Types\Units\Robot\Robot.highMaterial
+Info: Initializing high level material: Types\Units\Robot\Robot2.highMaterial
+Info: Initializing high level material: Types\Units\Robot\RobotBullet\RobotBulletHit.highMaterial
+Info: Initializing high level material: Types\Units\Robot\RobotBullet\RobotBulletHit2.highMaterial
+Info: Initializing high level material: Types\Units\TigerTank\TigerTank_Base.highMaterial
+Info: Initializing high level material: Types\Units\TigerTank\TigerTank_LeftTrack.highMaterial
+Info: Initializing high level material: Types\Units\TigerTank\TigerTank_RightTrack.highMaterial
+Info: Initializing high level material: Types\Units\Turret\Turret.highMaterial
+Info: Initializing high level material: Types\Units\Turret\TurretBullet\TurretBulletHit.highMaterial
+Info: Initializing high level material: Types\Units\Turret\TurretBullet\TurretBulletHit2.highMaterial
+Info: Initializing high level material: Types\Units\Zombie\Zombie.highMaterial
+Info: Initializing high level material: Types\Units\Zombie\ZombieBullet\ZombieBullet.highMaterial
+Info: Initializing high level material: Types\Units\Zombie\ZombieBullet\ZombieBulletHitParticle.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree01A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree01A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree01A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree01A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree02A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree02A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree02A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree02A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree03A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree03A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree03A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree03A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree04A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree04A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree04A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree04A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree05A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree05A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree05A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree05A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree06A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree06A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree06A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree06A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree07A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree07A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree07A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree07A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree08A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree08A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree08A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree08A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Weapons\Hammer\Hammer.highMaterial
+Info: Initializing high level material: Types\Weapons\Shotgun\Shotgun.highMaterial
+Info: Initializing high level material: Types\Weapons\Shotgun\Shotgun_FPSCamera.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\ScarRifle_FPSCamera\ScarRifle_1_FPSCamera.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\ScarRifle_FPSCamera\ScarRifle_2_FPSCamera.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\ScarRifle_FPSCamera\ScarRifle_3_FPSCamera.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\ScarRifle_TPSCamera\ScarRifle_1.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\ScarRifle_TPSCamera\ScarRifle_2.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\ScarRifle_TPSCamera\ScarRifle_3.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\SubmachineGunFire.highMaterial
+Info: Initializing high level material: urban_buildings\building13.highMaterial
+Info: Initializing high level material: urban_buildings\building17.highMaterial
+Info: Initializing high level material: urban_buildings\building18.highMaterial
+Info: Initializing high level material: urban_buildings\building19.highMaterial
+Info: Initializing high level material: urban_buildings\building2.highMaterial
+Info: Initializing high level material: urban_buildings\material23.highMaterial
+Info: Initializing high level material: urban_buildings\material24.highMaterial
+Info: Initializing high level material: urban_buildings\material25.highMaterial
+Info: Initializing high level material: urban_buildings\material26.highMaterial
+Info: Initializing high level material: urban_buildings\material29.highMaterial
+Info: Initializing high level material: urban_buildings\material31.highMaterial
+Info: Initializing high level material: urban_buildings\material33.highMaterial
+Info: Initializing high level material: urban_buildings\material34.highMaterial
+Info: Initializing high level material: urban_buildings\material81.highMaterial
+Info: Initializing high level material: VB\Models\oildrum.highMaterial
+Info: Initializing high level material: VB\Types\InventoryItems\HealthItems\FirstAidKit\FirstAidKit.highMaterial
+Info: Sound system is initialized (Driver: OpenAL 1.1 ALSOFT 1.13, Device: DirectSound Default)
+Info: OGRE: Mesh: Loading Maps\RTSDemo\Types\Units\RTSRobot\Robot.mesh.
+Info: OGRE: Skeleton: Loading Maps\RTSDemo\Types\Units\RTSRobot\Robot.skeleton
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Types\Units\RTSRobot\Robot.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Types\Units\Robot\Robot2.dds' with 2147483647 mip map levels
+Info: OGRE: Mesh: Loading Maps\RTSDemo\Models\RockBig\RockBig.mesh.
+Info: OGRE: Mesh: Loading Maps\RTSDemo\Models\Beam\Beam.mesh.
+Info: OGRE: Mesh: Loading Maps\RTSDemo\Models\ConcreteBlock\ConcreteBlock.mesh.
+Info: OGRE: Texture: Base\Types\SkyDome\DefaultSkyDomeHorizon.png: Loading 1 faces(PF_A8R8G8B8,16x256x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,16x256x1.
+Info: OGRE: Texture: Base\Types\SkyDome\DefaultSkyDome.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+Info: OGRE: Texture: Base\Types\SkyDome\DefaultSkyDome2.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
+Info: OGRE: Texture: Base\Types\Sun\SunFlare.png: Loading 1 faces(PF_L8,256x256x1) with 8 generated mipmaps from Image. Internal format is PF_L8,256x256x1.
+Info: OGRE: Texture: Base\Types\Sun\SunDefault.png: Loading 1 faces(PF_R8G8B8,128x128x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x128x1.
+Info: OGRE: Mesh: Loading urban_buildings\building2.mesh.
+Info: OGRE: Mesh: Loading urban_buildings\building3.mesh.
+Info: OGRE: Mesh: Loading Types\Units\Girl\Girl.mesh.
+Info: OGRE: Skeleton: Loading Types\Units\Girl\Girl.skeleton
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Types\Units\Girl\Girl_Diffuse.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Types\Units\Girl\Girl_Specular.dds' with 2147483647 mip map levels
+Info: OGRE: Mesh: Loading Types\Items\BulletItems\SubmachineGunBulletsItem\SubmachineGunBulletsItem.mesh.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Types\Items\BulletItems\SubmachineGunBulletsItem\SubmachineGunBulletsItem.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Types\Items\BulletItems\SubmachineGunBulletsItem\SubmachineGunBulletsItem_Normals.dds' with 2147483647 mip map levels
+Info: OGRE: Mesh: Loading Types\Dynamic\WoodBox\WoodBox.mesh.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Types/Dynamic/WoodBox/WoodBox.dds' with 2147483647 mip map levels
+Info: OGRE: Mesh: Loading Types\Units\Robot\Robot.mesh.
+Info: OGRE: Skeleton: Loading Types\Units\Robot\Robot.skeleton
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Types\Units\Robot\Robot.dds' with 2147483647 mip map levels
+Info: OGRE: Mesh: Loading urban_buildings\building9.mesh.
+Info: OGRE: Mesh: Loading urban_buildings\building10.mesh.
+Info: OGRE: Mesh: Loading urban_buildings\building17.mesh.
+Info: OGRE: Mesh: Loading urban_buildings\building18.mesh.
+Info: OGRE: Mesh: Loading urban_buildings\building19.mesh.
+Info: OGRE: Mesh: Loading props\oldwall.mesh.
+Info: OGRE: Mesh: Loading props\oldwall2.mesh.
+Info: OGRE: Mesh: Loading props\wastebin.mesh.
+Info: OGRE: Mesh: Loading props\refugebin.mesh.
+Info: OGRE: Mesh: Loading props\rubbish1.mesh.
+Info: OGRE: Texture: Maps\RTSDemo\Effects\ExplosionParticle\Fire.png: Loading 1 faces(PF_R8G8B8,64x64x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,64x64x1.
+Info: OGRE: Texture: Maps\RTSDemo\Effects\SmokeParticle\SmokeParticle.tga: Loading 1 faces(PF_A8R8G8B8,128x128x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,128x128x1.
+Info: OGRE: Texture: Maps\RTSDemo\Effects\DefaultFlare\DefaultFlare.jpg: Loading 1 faces(PF_R8G8B8,128x128x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x128x1.
+Info: OGRE: Texture: Maps\RTSDemo\Effects\GeneralBulletHitParticle\GeneralBulletHit.tga: Loading 1 faces(PF_R8G8B8,64x64x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,64x64x1.
+Info: OGRE: Texture: VB\Textures\nm1.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\GroundNormals.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: VB\Textures\nm3.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\RockWallNormals.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: VB\Maps\Terrain\AsphaltDamaged0061_5_S.jpg: Loading 1 faces(PF_R8G8B8,700x700x1) with 9 generated mipmaps from Image. Internal format is PF_X8R8G8B8,700x700x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\GroundDiffuse.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'VB\Maps\Terrain\Concrete_Tiles.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Models\RockBig\RockBigDiffuse.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Models\RockBig\RockBigSpecular.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Models\Beam\Beam.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Models\Beam\Beam_SPEC.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Models\ConcreteBlock\ConcreteBlock.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Models\ConcreteBlock\ConcreteBlock_SPEC.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'urban_buildings\building2.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'urban_buildings\building3.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: urban_buildings\urban_building3_nm.tga: Loading 1 faces(PF_A8R8G8B8,2048x2048x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,2048x2048x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Types\Items\BulletItems\SubmachineGunBulletsItem\SubmachineGunBulletsItem_Specular.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: Effects\SmokeParticle\SmokeParticle.tga: Loading 1 faces(PF_A8R8G8B8,128x128x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,128x128x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'urban_buildings\building9.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'urban_buildings\building10.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'urban_buildings\building17.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'urban_buildings\building18.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'urban_buildings\building19.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'props\oldwall.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: props\oldwall_nm.tga: Loading 1 faces(PF_A8R8G8B8,2048x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,2048x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'props\oldwall2.dds' with 2147483647 mip map levels
+Info: OGRE: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'props\wastebin.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: props\wastebin_nm.tga: Loading 1 faces(PF_A8R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,1024x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'props\refugebin.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: props\refugebin_nm.tga: Loading 1 faces(PF_A8R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,1024x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'props\rubbish1.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'props\rubbish1_nm.dds' with 2147483647 mip map levels
+Info: OGRE: !!! Direct3D Device Lost!
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: D3D9TextureManager released:
+Info: OGRE: 18 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager released:
+Info: OGRE: 0 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: D3D9TextureManager released:
+Info: OGRE: 18 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager released:
+Info: OGRE: 0 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: Reset device ok w:1470 h:952
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: D3D9TextureManager recreated:
+Info: OGRE: 18 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager recreated:
+Info: OGRE: 0 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: !!! Direct3D Device successfully restored.
+Info: Initializing high level material: _ResourceEditorSamples\Importing3DModel\Animated\PigA_RenameTest.highMaterial
+Info: Initializing high level material: _ResourceEditorSamples\Importing3DModel\FBX_Importing\FBX_Importing_Teapot_Material #25.highMaterial
+Info: Initializing high level material: _ResourceEditorSamples\Importing3DModel\Stone\ColladaTestStoneStatic.highMaterial
+Info: Initializing high level material: _ResourceEditorSamples\ScrollingTexture\ScrollingTextureTest.highMaterial
+Info: Initializing high level material: Base\Simple Materials\Black.highMaterial
+Info: Initializing high level material: Base\Simple Materials\Blue.highMaterial
+Info: Initializing high level material: Base\Simple Materials\DarkBlue.highMaterial
+Info: Initializing high level material: Base\Simple Materials\DarkGray.highMaterial
+Info: Initializing high level material: Base\Simple Materials\DarkGreen.highMaterial
+Info: Initializing high level material: Base\Simple Materials\DarkRed.highMaterial
+Info: Initializing high level material: Base\Simple Materials\DarkYellow.highMaterial
+Info: Initializing high level material: Base\Simple Materials\Gray.highMaterial
+Info: Initializing high level material: Base\Simple Materials\Green.highMaterial
+Info: Initializing high level material: Base\Simple Materials\Red.highMaterial
+Info: Initializing high level material: Base\Simple Materials\White.highMaterial
+Info: Initializing high level material: Base\Simple Materials\Yellow.highMaterial
+Info: Initializing high level material: Base\Tools\ModelImportEditor\ModelImportEditor_SourceAdded.highMaterial
+Info: Initializing high level material: Base\Tools\ModelImportEditor\ModelImportEditor_SourceFree.highMaterial
+Info: Initializing high level material: Base\Tools\ResourceEditorGrid\ResourceEditorGrid_1.highMaterial
+Info: Initializing high level material: Base\Tools\ResourceEditorGrid\ResourceEditorGrid_2.highMaterial
+Info: Initializing high level material: Base\Tools\ToolsSelectObjectMaterials\ToolsSelectObject_Green.highMaterial
+Info: Initializing high level material: Base\Tools\ToolsSelectObjectMaterials\ToolsSelectObject_Green_FFP.highMaterial
+Info: Initializing high level material: Base\Tools\ToolsSelectObjectMaterials\ToolsSelectObject_Yellow.highMaterial
+Info: Initializing high level material: Base\Tools\ToolsSelectObjectMaterials\ToolsSelectObject_Yellow_FFP.highMaterial
+Info: Initializing high level material: Base\Types\Light\Base_LightFlare.highMaterial
+Info: Initializing high level material: Base\Types\Sun\Base_SunFlare.highMaterial
+Info: Initializing high level material: Effects\DefaultFlare\DefaultFlare.highMaterial
+Info: Initializing high level material: Effects\ExplosionParticle\ExplosionParticle.highMaterial
+Info: Initializing high level material: Effects\ExplosionParticle\ExplosionParticle2.highMaterial
+Info: Initializing high level material: Effects\FireParticle\FireParticle.highMaterial
+Info: Initializing high level material: Effects\ItemParticle\ItemParticle.highMaterial
+Info: Initializing high level material: Effects\SmokeParticle\SmokeParticle.highMaterial
+Info: Initializing high level material: Maps\BallGame\Types\Ball\BallGame_Ball.highMaterial
+Info: Initializing high level material: Maps\BallGame\Types\Fan\BallDemo_Fan.highMaterial
+Info: Initializing high level material: Maps\BallGame\Types\Fan\FanParticle\BallDemo_FanParticle.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Alum.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Asp.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Blue.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Board.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Chair.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Concrete.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Concrete2.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Fence.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Finish.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Flag.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Glass.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Grass.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Gravel.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Green_Light.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Ice.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Line.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Line2.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Line3.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Logo_Engine.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Logo_Engine1.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Logo_Engine2.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Logo_Engine3.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Metal.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Red_Light.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Siding.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Siding1.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Start.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Tile.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Tree.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Tree_Bilbord.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Mat\CD_Tree2.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Model\Tribune\CD_Tribune.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Model\Tribune\CD_Tribune2.highMaterial
+Info: Initializing high level material: Maps\CarDemo\Types\Grass_Decorative\CD_Grass_Dec.highMaterial
+Info: Initializing high level material: Maps\CatapultGame\Types\SimpleBox\CatapultGame_SimpleBox.highMaterial
+Info: Initializing high level material: Maps\JigsawPuzzleGame\JigsawPuzzleImage.highMaterial
+Info: Initializing high level material: Maps\JigsawPuzzleGame\JigsawPuzzleImageBackground.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\DefaultFlare\RTSDefaultFlare.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\ExplosionParticle\RTSExplosionParticle.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\ExplosionParticle\RTSExplosionParticle2.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\FireParticle\RTSFireParticle.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\GeneralBulletHitParticle\RTSGeneralBulletHitParticle.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\ItemParticle\RTSItemParticle.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Effects\SmokeParticle\RTSSmokeParticle.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Models\Beam\RTSBeam.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Models\ConcreteBlock\RTSConcreteBlock.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Models\RockBig\RTSRockBig.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Bullets\FireworkBullet\RTSFireworkBulletRibbonTrail.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Special\RTSBuildMaterial\RTSBuildMaterial.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Static\RTSPipe\RTSPipe.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSConstructor\RTSConstructorBullet\RTSConstructorBulletHit.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSConstructor\RTSConstructorBullet\RTSConstructorBulletHit2.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSFactory\RTSFactory.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSFactory\RTSFactory2.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSFactory\RTSFactoryGlass.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSHeadquaters\RTSHeadquaters.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSHeadquaters\RTSHeadquaters2.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSMine\RTSMine.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSMine\RTSMine2.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSRobot\RTSRobot.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSRobot\RTSRobotBullet\RTSRobotBulletHit.highMaterial
+Info: Initializing high level material: Maps\RTSDemo\Types\Units\RTSRobot\RTSRobotBullet\RTSRobotBulletHit2.highMaterial
+Info: Initializing high level material: Maps\TankDemo\Resources\Meshes\FakeTrees\TankDemoFakeTrees.highMaterial
+Info: Initializing high level material: Maps\TankDemo\Resources\Meshes\RockBig\TankDemoRockBig.highMaterial
+Info: Initializing high level material: Maps\TankDemo\Resources\Meshes\Stone\TankDemoStone.highMaterial
+Info: Initializing high level material: Maps\TankDemo\Resources\Meshes\Trees\TankDemoTree_Bark.highMaterial
+Info: Initializing high level material: Maps\TankDemo\Resources\Meshes\Trees\TankDemoTree_Leafs.highMaterial
+Info: Initializing high level material: Maps\TPSArcadeDemo\Resources\Models\TPSDemoRock.highMaterial
+Info: Initializing high level material: Maps\TPSArcadeDemo\Resources\Models\TPSDemoRockStone.highMaterial
+Info: Initializing high level material: Maps\TurretDemo\Resources\Models\Rock\TurretDemoRock.highMaterial
+Info: Initializing high level material: Maps\TurretDemo\Resources\Models\Rock\TurretDemoRockStone.highMaterial
+Info: Initializing high level material: Maps\TurretDemo\Resources\Models\Rock\TurretDemoRockStone2.highMaterial
+Info: Initializing high level material: Maps\TurretDemo\Resources\Models\SandBags\TurretDemoSandBags.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm000_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm000_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm000_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm000_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm000_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm000_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm001_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm002_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_MFVTextureD.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm003_StrawTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm004_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm005_Fence.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm006_Fence.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm007_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm007_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm007_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm007_MFVThatchedB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm007_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm008_StrawBale.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm009_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm010_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm010_StrawNonTranspare.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm011_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm011_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm012_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm013_StrawTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm014_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm015_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm016_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm016_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm016_MFVThatchedA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm017_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm017_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm017_Rope.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm018_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm018_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm018_MFVThatchedB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm018_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm018_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm018_Rope.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm019_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm020_TreeLog.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm021_TreeLog.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm022_TreeLogB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm023_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm023_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm023_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm024_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm024_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVTextureD.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm025_MFVWallB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_Coal.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVThatchedA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm026_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVTextureD.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm027_MFVWallB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm028_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm029_Fence.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm029_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm030_Rope.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm031_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm032_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVTextureD.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm033_MFVWallB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm035_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVFloor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVTextureD.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVTextureE.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVThatchedB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVThatchedBTransparent.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_MFVWallB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm036_Rope.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm037_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm037_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm038_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm039_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm039_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm039_MFVWallA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm041_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm042_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm044_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm045_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm045_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm046_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm047_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm048_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm049_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm050_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm051_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm051_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm053_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm055_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm058_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm061_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm062_MFVTextureC.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm063_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm064_Rope.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm065_MFVTextureA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm066_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm067_TreeLogB.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm068_MFVPropsA.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\Farm069_MFVTextureF.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\FarmBridge_Base.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\FarmModels\Materials\FarmBridge_Floor.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\River\Splash\VillageWaterParticle.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\River\Splash\VillageWaterParticle2.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\River\VillageRiver.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\River\VillageWaterfalls.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_12SG_Smoothing.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_13SG.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_14SG.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_15SG.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_18SG_Smoothing.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_18SG_Smoothing2.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_19SG.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_19SG_Smoothing.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_5SG_Smoothing.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_6SG_Smoothing.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Rock\FarmRock_8SG_Smoothing.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Types\VillageSign\VillageSign.highMaterial
+Info: Initializing high level material: Maps\VillageDemo\Vegetation\Shrubs\VillageShrub.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Ceiling.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExt1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExt2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExtDown1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExtDown2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExtMiddle1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExtMiddle2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExtUp1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerExtUp2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerInt1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerInt2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerIntDown1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerIntDown2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerIntMiddle1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerIntMiddle2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerIntUp1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_CornerIntUp2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Floor.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Gates.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_GridFloor1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_GridFloor2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_GridFloor3.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Pass1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Pass2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_PassDown1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_PassDown2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Wall1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_Wall2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_WallDown1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_WallDown2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_WallMiddle1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_WallMiddle2.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_WallUp1.highMaterial
+Info: Initializing high level material: Models\DemoCorridors\Corridor_WallUp2.highMaterial
+Info: Initializing high level material: Models\Pipes\Demo_PipeDirect.highMaterial
+Info: Initializing high level material: Models\Pipes\Demo_PipePlasma.highMaterial
+Info: Initializing high level material: Models\Pipes\Demo_PipeRack.highMaterial
+Info: Initializing high level material: Models\Pipes\Demo_PipeValve.highMaterial
+Info: Initializing high level material: props\floorgrid.highMaterial
+Info: Initializing high level material: props\monument_mat.highMaterial
+Info: Initializing high level material: props\oldwall.highMaterial
+Info: Initializing high level material: props\oldwall2.highMaterial
+Info: Initializing high level material: props\ornatewalldef_surf_mat.highMaterial
+Info: Initializing high level material: props\refugebin.highMaterial
+Info: Initializing high level material: props\rubbish1.highMaterial
+Info: Initializing high level material: props\traintrack.highMaterial
+Info: Initializing high level material: props\wastebin.highMaterial
+Info: Initializing high level material: Types\Bullets\ShotgunBullet\ShotgunBulletHitParticle.highMaterial
+Info: Initializing high level material: Types\Bullets\ShotgunBullet\ShotgunBulletHitParticle2.highMaterial
+Info: Initializing high level material: Types\Bullets\ShotgunBullet\ShotgunBulletRibbonTrail.highMaterial
+Info: Initializing high level material: Types\Bullets\SubmachineGunBullet\SubmachineGunBulletHit.highMaterial
+Info: Initializing high level material: Types\Bullets\SubmachineGunBullet\SubmachineGunBulletHit2.highMaterial
+Info: Initializing high level material: Types\Bullets\SubmachineGunGrenade\SubmachineGunSmokeParticle.highMaterial
+Info: Initializing high level material: Types\Decals\DefaultBulletDecal\DefaultBulletDecal.highMaterial
+Info: Initializing high level material: Types\Decals\DefaultExplosionDecal\DefaultExplosionDecal.highMaterial
+Info: Initializing high level material: Types\Decals\ZombieBulletDecal\ZombieBulletDecal.highMaterial
+Info: Initializing high level material: Types\DecorativeObjects\DecorativeStones\DecorativeStones.highMaterial
+Info: Initializing high level material: Types\DecorativeObjects\Ear\Ear.highMaterial
+Info: Initializing high level material: Types\DecorativeObjects\FlowerWhite\FlowerWhite.highMaterial
+Info: Initializing high level material: Types\DecorativeObjects\FlowerYellow\FlowerYellow.highMaterial
+Info: Initializing high level material: Types\DecorativeObjects\GrassBrown\GrassBrown.highMaterial
+Info: Initializing high level material: Types\DecorativeObjects\GrassGreen\GrassGreen.highMaterial
+Info: Initializing high level material: Types\Dynamic\Ball\Ball.highMaterial
+Info: Initializing high level material: Types\Dynamic\Billboard\Demo_Billboard.highMaterial
+Info: Initializing high level material: Types\Dynamic\Billboard\Demo_BillboardBackground.highMaterial
+Info: Initializing high level material: Types\Dynamic\BooleanSwitch\BooleanSwitch.highMaterial
+Info: Initializing high level material: Types\Dynamic\BooleanSwitch\BooleanSwitchOff.highMaterial
+Info: Initializing high level material: Types\Dynamic\BooleanSwitch\BooleanSwitchOn.highMaterial
+Info: Initializing high level material: Types\Dynamic\Box\Box.highMaterial
+Info: Initializing high level material: Types\Dynamic\CubemapReflectedBall\CubemapReflectedBall.highMaterial
+Info: Initializing high level material: Types\Dynamic\DestructibleHouse\DestructibleHouse.highMaterial
+Info: Initializing high level material: Types\Dynamic\DestructibleHouse\DestructibleHouseWinDoor.highMaterial
+Info: Initializing high level material: Types\Dynamic\Door\Corridor_DoorLeft.highMaterial
+Info: Initializing high level material: Types\Dynamic\Door\Corridor_DoorPanel.highMaterial
+Info: Initializing high level material: Types\Dynamic\DynamicSinusoidSurface\DynamicSinusoidSurface.highMaterial
+Info: Initializing high level material: Types\Dynamic\ExampleMagicBall (1)\ExampleMagicBallBlinkMaterial.highMaterial
+Info: Initializing high level material: Types\Dynamic\ExplosionBarrel\ExplosionBarrel.highMaterial
+Info: Initializing high level material: Types\Dynamic\Fan\DemoFan.highMaterial
+Info: Initializing high level material: Types\Dynamic\Fan\FanParticle\DemoFanParticle.highMaterial
+Info: Initializing high level material: Types\Dynamic\Firework\FireworkBullet\FireworkBulletRibbonTrail.highMaterial
+Info: Initializing high level material: Types\Dynamic\FlareTest\FlareTest.highMaterial
+Info: Initializing high level material: Types\Dynamic\GasFlamePipe\GasFlamePipeParticle\GasFlamePipeParticle.highMaterial
+Info: Initializing high level material: Types\Dynamic\HangingBall\HangingBall.highMaterial
+Info: Initializing high level material: Types\Dynamic\HangingCable\HangingCable.highMaterial
+Info: Initializing high level material: Types\Dynamic\HangingLamp\HangingLampBase.highMaterial
+Info: Initializing high level material: Types\Dynamic\HangingLamp\HangingLampLamps.highMaterial
+Info: Initializing high level material: Types\Dynamic\Pipe\PipeLeak\PipeLeakFlameParticle\PipeLeakFlameParticle.highMaterial
+Info: Initializing high level material: Types\Dynamic\Pipe\PipeLeak\PipeLeakSteamParticle\PipeLeakSteamParticle.highMaterial
+Info: Initializing high level material: Types\Dynamic\Teleporter\DemoTeleporter.highMaterial
+Info: Initializing high level material: Types\Dynamic\Teleporter\DemoTeleporterGlow.highMaterial
+Info: Initializing high level material: Types\Dynamic\Teleporter\TeleportParticle\DemoTeleporterParticle.highMaterial
+Info: Initializing high level material: Types\Dynamic\Terminal\Terminal.highMaterial
+Info: Initializing high level material: Types\Dynamic\Terminal\TerminalBackground.highMaterial
+Info: Initializing high level material: Types\Dynamic\Terminal\TerminalClientNotSupportedInfo.highMaterial
+Info: Initializing high level material: Types\Dynamic\WindMill\WindMill.highMaterial
+Info: Initializing high level material: Types\Dynamic\WindMill\WindMillFan.highMaterial
+Info: Initializing high level material: Types\Dynamic\WoodBox\WoodBox.highMaterial
+Info: Initializing high level material: Types\Items\AccessCard\AccessCard.highMaterial
+Info: Initializing high level material: Types\Items\BulletItems\ShotgunBulletsItem\ShotgunBulletsItem.highMaterial
+Info: Initializing high level material: Types\Items\BulletItems\SubmachineGunBulletsItem\SubmachineGunBulletsItem.highMaterial
+Info: Initializing high level material: Types\Items\Dynamite\Dynamite.highMaterial
+Info: Initializing high level material: Types\Items\HealthItems\SmallHealthItem\SmallHealthItem.highMaterial
+Info: Initializing high level material: Types\Sky\BlueDaySky\BlueDaySky.highMaterial
+Info: Initializing high level material: Types\Special\WaterPlane\WaterSplash\WaterSplash.highMaterial
+Info: Initializing high level material: Types\Special\WaterPlane\WaterSplashWave\WaterSplashWave.highMaterial
+Info: Initializing high level material: Types\StaticObjects\EngineLogoPlacard\EngineLogoPlacard.highMaterial
+Info: Initializing high level material: Types\StaticObjects\Eyes\Eyes.highMaterial
+Info: Initializing high level material: Types\StaticObjects\MineBoard\MineBoard.highMaterial
+Info: Initializing high level material: Types\StaticObjects\OgreHead\OgreHead.highMaterial
+Info: Initializing high level material: Types\StaticObjects\OgreHead\OgreHeadAnimated.highMaterial
+Info: Initializing high level material: Types\StaticObjects\OgreHead\OgreHeadDynamicDiffuseScale.highMaterial
+Info: Initializing high level material: Types\StaticObjects\OgreHead\OgreHeadEyes.highMaterial
+Info: Initializing high level material: Types\StaticObjects\OgreHead\OgreHeadFangs.highMaterial
+Info: Initializing high level material: Types\StaticObjects\Palette\Palette.highMaterial
+Info: Initializing high level material: Types\StaticObjects\ParkingBarrier\ParkingBarrier.highMaterial
+Info: Initializing high level material: Types\StaticObjects\RabbitHead\RabbitHead.highMaterial
+Info: Initializing high level material: Types\StaticObjects\StaticBox\StaticBox.highMaterial
+Info: Initializing high level material: Types\StaticObjects\Stone\Stone.highMaterial
+Info: Initializing high level material: Types\StaticObjects\StopSign\StopSign.highMaterial
+Info: Initializing high level material: Types\StaticObjects\SwitchBox\SwitchBox.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_1.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_2.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_3.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_4.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_5.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_5_back.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_6.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_7.highMaterial
+Info: Initializing high level material: Types\Units\BMWi8\BMWi8_Glass.highMaterial
+Info: Initializing high level material: Types\Units\Bug\Bug.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneBase\CraneBase_ConcreteCleanColor.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneBase\CraneBase_MetalPaintedColor.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneBase\CraneBase_MetalPatern01Color.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneBase\CraneBase_MetalPatern02Color.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneGibbet\CraneGibbet_MetalPattern01Color.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneMagnet\CraneMagnet_MetalPatern02Color.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneTower\CraneTower_ConcreteBlockColor.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneTower\CraneTower_MetalPaintedColor.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneTower\CraneTower_MetalPatern_01Color.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneTower\CraneTower_MetalPatern02Color.highMaterial
+Info: Initializing high level material: Types\Units\Crane\CraneTower\CraneTower_ObjectColor.highMaterial
+Info: Initializing high level material: Types\Units\Girl\FirstPersonArms\GirlFirstPersonArms_02 - Default2.highMaterial
+Info: Initializing high level material: Types\Units\Girl\FirstPersonArms\GirlFirstPersonArms_04 - Default.highMaterial
+Info: Initializing high level material: Types\Units\Girl\FirstPersonArms\GirlFirstPersonArms_07 - Default.highMaterial
+Info: Initializing high level material: Types\Units\Girl\Girl.highMaterial
+Info: Initializing high level material: Types\Units\Helicopter\Helicopter.highMaterial
+Info: Initializing high level material: Types\Units\Rabbit\Rabbit.highMaterial
+Info: Initializing high level material: Types\Units\Robot\Robot.highMaterial
+Info: Initializing high level material: Types\Units\Robot\Robot2.highMaterial
+Info: Initializing high level material: Types\Units\Robot\RobotBullet\RobotBulletHit.highMaterial
+Info: Initializing high level material: Types\Units\Robot\RobotBullet\RobotBulletHit2.highMaterial
+Info: Initializing high level material: Types\Units\TigerTank\TigerTank_Base.highMaterial
+Info: Initializing high level material: Types\Units\TigerTank\TigerTank_LeftTrack.highMaterial
+Info: Initializing high level material: Types\Units\TigerTank\TigerTank_RightTrack.highMaterial
+Info: Initializing high level material: Types\Units\Turret\Turret.highMaterial
+Info: Initializing high level material: Types\Units\Turret\TurretBullet\TurretBulletHit.highMaterial
+Info: Initializing high level material: Types\Units\Turret\TurretBullet\TurretBulletHit2.highMaterial
+Info: Initializing high level material: Types\Units\Zombie\Zombie.highMaterial
+Info: Initializing high level material: Types\Units\Zombie\ZombieBullet\ZombieBullet.highMaterial
+Info: Initializing high level material: Types\Units\Zombie\ZombieBullet\ZombieBulletHitParticle.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree01A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree01A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree01A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree01A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree02A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree02A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree02A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree02A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree03A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree03A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree03A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree03A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree04A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree04A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree04A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree04A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree05A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree05A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree05A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree05A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree06A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree06A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree06A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree06A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree07A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree07A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree07A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree07A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree08A_Bark.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree08A_Bark_LOD.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree08A_Branch.highMaterial
+Info: Initializing high level material: Types\Vegetation\Trees\Materials\Tree08A_Branch_LOD.highMaterial
+Info: Initializing high level material: Types\Weapons\Hammer\Hammer.highMaterial
+Info: Initializing high level material: Types\Weapons\Shotgun\Shotgun.highMaterial
+Info: Initializing high level material: Types\Weapons\Shotgun\Shotgun_FPSCamera.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\ScarRifle_FPSCamera\ScarRifle_1_FPSCamera.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\ScarRifle_FPSCamera\ScarRifle_2_FPSCamera.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\ScarRifle_FPSCamera\ScarRifle_3_FPSCamera.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\ScarRifle_TPSCamera\ScarRifle_1.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\ScarRifle_TPSCamera\ScarRifle_2.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\ScarRifle_TPSCamera\ScarRifle_3.highMaterial
+Info: Initializing high level material: Types\Weapons\SubmachineGun\SubmachineGunFire.highMaterial
+Info: Initializing high level material: urban_buildings\building13.highMaterial
+Info: Initializing high level material: urban_buildings\building17.highMaterial
+Info: Initializing high level material: urban_buildings\building18.highMaterial
+Info: Initializing high level material: urban_buildings\building19.highMaterial
+Info: Initializing high level material: urban_buildings\building2.highMaterial
+Info: Initializing high level material: urban_buildings\material23.highMaterial
+Info: Initializing high level material: urban_buildings\material24.highMaterial
+Info: Initializing high level material: urban_buildings\material25.highMaterial
+Info: Initializing high level material: urban_buildings\material26.highMaterial
+Info: Initializing high level material: urban_buildings\material29.highMaterial
+Info: Initializing high level material: urban_buildings\material31.highMaterial
+Info: Initializing high level material: urban_buildings\material33.highMaterial
+Info: Initializing high level material: urban_buildings\material34.highMaterial
+Info: Initializing high level material: urban_buildings\material81.highMaterial
+Info: Initializing high level material: VB\Models\oildrum.highMaterial
+Info: Initializing high level material: VB\Types\InventoryItems\HealthItems\FirstAidKit\FirstAidKit.highMaterial
+Info: OGRE: Texture: VB\Textures\nm1.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\GroundNormals.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: VB\Textures\nm3.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\RockWallNormals.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: VB\Maps\Terrain\AsphaltDamaged0061_5_S.jpg: Loading 1 faces(PF_R8G8B8,700x700x1) with 9 generated mipmaps from Image. Internal format is PF_X8R8G8B8,700x700x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\GroundDiffuse.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'VB\Maps\Terrain\Concrete_Tiles.dds' with 2147483647 mip map levels
+Info: OGRE: RenderTarget "MainWindow": createAdditionalMRTs
+Info: OGRE: Texture: spot_shadow_fade.png: Loading 1 faces(PF_R8G8B8,128x128x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x128x1.
+Info: OGRE: RenderTarget "MainWindow": destroyAdditionalMRTs
+Info: OGRE: !!! Direct3D Device Lost!
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Releasing D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Released D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: D3D9TextureManager released:
+Info: OGRE: 19 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager released:
+Info: OGRE: 3 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Releasing D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Released D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: D3D9TextureManager released:
+Info: OGRE: 19 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager released:
+Info: OGRE: 3 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: Reset device ok w:706 h:587
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Recreating D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Recreated D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: D3D9TextureManager recreated:
+Info: OGRE: 19 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager recreated:
+Info: OGRE: 3 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: !!! Direct3D Device successfully restored.
+Info: OGRE: Texture: VB\Textures\nm1.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\GroundNormals.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: VB\Textures\nm3.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\RockWallNormals.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: VB\Maps\Terrain\AsphaltDamaged0061_5_S.jpg: Loading 1 faces(PF_R8G8B8,700x700x1) with 9 generated mipmaps from Image. Internal format is PF_X8R8G8B8,700x700x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\GroundDiffuse.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'VB\Maps\Terrain\Concrete_Tiles.dds' with 2147483647 mip map levels
+Info: OGRE: RenderTarget "MainWindow": createAdditionalMRTs
+Info: OGRE: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
+Info: OGRE: Error loading texture props\oldwall2_nm.tga. Texture layer will be blank. Loading the texture failed with the following exception: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
+Info: OGRE: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
+Info: OGRE: Error loading texture props\oldwall2_nm.tga. Texture layer will be blank. Loading the texture failed with the following exception: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
+Info: OGRE: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
+Info: OGRE: Error loading texture props\oldwall2_nm.tga. Texture layer will be blank. Loading the texture failed with the following exception: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
+Info: OGRE: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
+Info: OGRE: Error loading texture props\oldwall2_nm.tga. Texture layer will be blank. Loading the texture failed with the following exception: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
+Info: OGRE: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
+Info: OGRE: Error loading texture props\oldwall2_nm.tga. Texture layer will be blank. Loading the texture failed with the following exception: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
+Info: OGRE: RenderTarget "MainWindow": destroyAdditionalMRTs
+Info: OGRE: !!! Direct3D Device Lost!
+Info: OGRE: Releasing D3D9 default pool texture: c41/rt1/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c41/rt1/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c30/rt_luminance1/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c30/rt_luminance1/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c34/rt_brightPass/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c34/rt_brightPass/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c38/rt_adaptedLuminance/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c38/rt_adaptedLuminance/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Releasing D3D9 default pool texture: c29/rt_luminance0/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c29/rt_luminance0/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c31/rt_luminance2/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c31/rt_luminance2/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c33/rt_luminance4/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c33/rt_luminance4/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c35/rt_bloomBlur/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c35/rt_bloomBlur/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c37/rt_bloomVertical/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c37/rt_bloomVertical/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c39/rt_lastAdaptedLuminance/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c39/rt_lastAdaptedLuminance/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Releasing D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Released D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Releasing D3D9 default pool texture: c28/rt_full/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c28/rt_full/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c32/rt_luminance3/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c32/rt_luminance3/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c36/rt_bloomHorizontal/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c36/rt_bloomHorizontal/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c40/rt0/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c40/rt0/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: D3D9TextureManager released:
+Info: OGRE: 33 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager released:
+Info: OGRE: 9 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: Releasing D3D9 default pool texture: c41/rt1/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c41/rt1/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c30/rt_luminance1/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c30/rt_luminance1/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c34/rt_brightPass/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c34/rt_brightPass/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c38/rt_adaptedLuminance/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c38/rt_adaptedLuminance/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Releasing D3D9 default pool texture: c29/rt_luminance0/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c29/rt_luminance0/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c31/rt_luminance2/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c31/rt_luminance2/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c33/rt_luminance4/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c33/rt_luminance4/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c35/rt_bloomBlur/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c35/rt_bloomBlur/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c37/rt_bloomVertical/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c37/rt_bloomVertical/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c39/rt_lastAdaptedLuminance/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c39/rt_lastAdaptedLuminance/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Releasing D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Released D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Releasing D3D9 default pool texture: c28/rt_full/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c28/rt_full/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c32/rt_luminance3/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c32/rt_luminance3/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c36/rt_bloomHorizontal/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c36/rt_bloomHorizontal/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c40/rt0/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c40/rt0/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: D3D9TextureManager released:
+Info: OGRE: 33 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager released:
+Info: OGRE: 9 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: Reset device ok w:816 h:587
+Info: OGRE: Recreating D3D9 default pool texture: c41/rt1/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c41/rt1/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c30/rt_luminance1/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c30/rt_luminance1/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c34/rt_brightPass/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c34/rt_brightPass/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c38/rt_adaptedLuminance/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c38/rt_adaptedLuminance/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Recreating D3D9 default pool texture: c29/rt_luminance0/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c29/rt_luminance0/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c31/rt_luminance2/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c31/rt_luminance2/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c33/rt_luminance4/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c33/rt_luminance4/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c35/rt_bloomBlur/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c35/rt_bloomBlur/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c37/rt_bloomVertical/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c37/rt_bloomVertical/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c39/rt_lastAdaptedLuminance/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c39/rt_lastAdaptedLuminance/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Recreating D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Recreated D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Recreating D3D9 default pool texture: c28/rt_full/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c28/rt_full/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c32/rt_luminance3/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c32/rt_luminance3/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c36/rt_bloomHorizontal/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c36/rt_bloomHorizontal/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c40/rt0/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c40/rt0/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: D3D9TextureManager recreated:
+Info: OGRE: 33 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager recreated:
+Info: OGRE: 9 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: !!! Direct3D Device successfully restored.
+Info: OGRE: Texture: VB\Textures\nm1.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\GroundNormals.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: VB\Textures\nm3.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\RockWallNormals.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: VB\Maps\Terrain\AsphaltDamaged0061_5_S.jpg: Loading 1 faces(PF_R8G8B8,700x700x1) with 9 generated mipmaps from Image. Internal format is PF_X8R8G8B8,700x700x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\GroundDiffuse.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'VB\Maps\Terrain\Concrete_Tiles.dds' with 2147483647 mip map levels
+Info: OGRE: RenderTarget "MainWindow": createAdditionalMRTs
+Info: OGRE: RenderTarget "MainWindow": destroyAdditionalMRTs
+Info: OGRE: !!! Direct3D Device Lost!
+Info: OGRE: Releasing D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Released D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Releasing D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Released D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: D3D9TextureManager released:
+Info: OGRE: 20 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager released:
+Info: OGRE: 9 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: Releasing D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Released D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Releasing D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Released D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Releasing D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: Released D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: D3D9TextureManager released:
+Info: OGRE: 20 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager released:
+Info: OGRE: 8 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: Reset device ok w:857 h:587
+Info: OGRE: Recreating D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Recreated D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks2
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHole0x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks5
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks3
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks1
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight1x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x10
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal0x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks8
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks6
+Info: OGRE: Recreating D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Recreated D3D9 default pool texture: ShadowDirectionalLight0
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks4
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks0
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainHeight0x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainNormal1x00
+Info: OGRE: Recreating D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: Recreated D3D9 default pool texture: _GeneratedHeightmapTerrainMasks7
+Info: OGRE: D3D9TextureManager recreated:
+Info: OGRE: 20 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager recreated:
+Info: OGRE: 8 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: !!! Direct3D Device successfully restored.
+Info: OGRE: Texture: VB\Textures\nm1.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\GroundNormals.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: VB\Textures\nm3.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\RockWallNormals.dds' with 2147483647 mip map levels
+Info: OGRE: Texture: VB\Maps\Terrain\AsphaltDamaged0061_5_S.jpg: Loading 1 faces(PF_R8G8B8,700x700x1) with 9 generated mipmaps from Image. Internal format is PF_X8R8G8B8,700x700x1.
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Maps\RTSDemo\Textures\Terrain\GroundDiffuse.dds' with 2147483647 mip map levels
+Info: OGRE: D3D9 : Loading 2D Texture, image name : 'VB\Maps\Terrain\Concrete_Tiles.dds' with 2147483647 mip map levels
+Info: OGRE: RenderTarget "MainWindow": createAdditionalMRTs
+Info: OGRE: Texture: Base\Shaders\White.jpg: Loading 1 faces(PF_R8G8B8,32x32x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,32x32x1.
+Info: OGRE: RenderTarget "MainWindow": destroyAdditionalMRTs
+Info: NativeMemoryManager: Leaks statistics begin
+Info: Leak - type: Renderer, size: 9712 x 1 = 9712 (file: NULL)
+Info: Leak - type: Renderer, size: 4100 x 1 = 4100 (file: NULL)
+Info: Leak - type: Renderer, size: 2264 x 1 = 2264 (file: NULL)
+Info: Leak - type: Renderer, size: 784 x 1 = 784 (file: NULL)
+Info: Leak - type: Renderer, size: 544 x 1 = 544 (file: NULL)
+Info: Leak - type: Renderer, size: 448 x 1 = 448 (file: NULL)
+Info: Leak - type: Renderer, size: 308 x 1 = 308 (file: NULL)
+Info: Leak - type: Renderer, size: 292 x 1 = 292 (file: NULL)
+Info: Leak - type: Renderer, size: 252 x 1 = 252 (file: NULL)
+Info: Leak - type: Renderer, size: 228 x 1 = 228 (file: NULL)
+Info: Leak - type: Renderer, size: 184 x 1 = 184 (file: NULL)
+Info: Leak - type: Renderer, size: 168 x 2 = 336 (file: NULL)
+Info: Leak - type: Renderer, size: 152 x 1 = 152 (file: NULL)
+Info: Leak - type: Renderer, size: 132 x 2 = 264 (file: NULL)
+Info: Leak - type: Renderer, size: 120 x 56 = 6720 (file: NULL)
+Info: Leak - type: Renderer, size: 112 x 1 = 112 (file: NULL)
+Info: Leak - type: Renderer, size: 88 x 1 = 88 (file: OgreD3D9HardwareBufferManager.h:79)
+Info: Leak - type: Renderer, size: 88 x 1 = 88 (file: NULL)
+Info: Leak - type: Renderer, size: 76 x 1 = 76 (file: NULL)
+Info: Leak - type: Renderer, size: 72 x 1 = 72 (file: NULL)
+Info: Leak - type: Renderer, size: 64 x 1 = 64 (file: NULL)
+Info: Leak - type: Renderer, size: 60 x 1 = 60 (file: NULL)
+Info: Leak - type: Renderer, size: 56 x 5 = 280 (file: NULL)
+Info: Leak - type: Renderer, size: 52 x 4 = 208 (file: NULL)
+Info: Leak - type: Renderer, size: 48 x 5 = 240 (file: NULL)
+Info: Leak - type: Renderer, size: 44 x 16 = 704 (file: NULL)
+Info: Leak - type: Renderer, size: 36 x 8 = 288 (file: NULL)
+Info: Leak - type: Renderer, size: 24 x 1340 = 32160 (file: NULL)
+Info: Leak - type: Renderer, size: 20 x 9 = 180 (file: NULL)
+Info: Leak - type: Renderer, size: 16 x 19 = 304 (file: NULL)
+Info: Leak - type: Renderer, size: 12 x 56 = 672 (file: NULL)
+Info: Leak - type: Renderer, size: 8 x 2 = 16 (file: NULL)
+Info: Leak - type: Renderer, size: 4 x 108 = 432 (file: NULL)
+Info: Leak - type: Physics, size: 2079 x 5 = 10395 (file: ExtSharedQueueEntryPool.h:86)
+Info: Leak - type: Physics, size: 132 x 1 = 132 (file: ExtDefaultCpuDispatcher.cpp:81)
+Info: Leak - type: Physics, size: 52 x 1 = 52 (file: ExtDefaultCpuDispatcher.cpp:46)
+Info: Leak - type: Physics, size: 44 x 4 = 176 (file: PsWindowsThread.cpp:92)
+Info: Leak - type: Physics, size: 28 x 10 = 280 (file: PsSList.h:92)
+Info: Leak - type: Physics, size: 24 x 1 = 24 (file: PsWindowsSync.cpp:48)
+Info: Total size: 73691
+Info: NativeMemoryManager: Leaks statistics end
+Program END

@@ -1,0 +1,11 @@
+highLevelMaterial traintrack
+{
+	template = ShaderBaseMaterial
+	diffuseColor = 0.956863 1 0.996078
+	specularColor = 1 1 1
+	specularShininess = 10
+	diffuse1Map
+	{
+		texture = ".\\traintrack.dds"
+	}
+}

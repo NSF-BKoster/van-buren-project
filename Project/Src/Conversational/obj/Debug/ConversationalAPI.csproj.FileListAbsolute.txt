@@ -1,0 +1,31 @@
+C:\Documents and Settings\razvan\Desktop\Conversational-Src\Conversational\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\razvan\Desktop\Conversational-Src\Conversational\obj\Debug\ConversationalAPI.Properties.Resources.resources
+C:\Documents and Settings\razvan\Desktop\Conversational-Src\Conversational\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\razvan\Desktop\Conversational-Src\Conversational\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\razvan\Desktop\Conversational-Src\Conversational\bin\Debug\Conversational.dll
+C:\Documents and Settings\razvan\Desktop\Conversational-Src\Conversational\bin\Debug\Conversational.pdb
+C:\Documents and Settings\razvan\Desktop\Conversational-Src\Conversational\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\razvan\Desktop\Conversational-Src\Conversational\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\razvan\Desktop\Conversational-Src\Conversational\obj\Debug\Conversational.dll
+C:\Documents and Settings\razvan\Desktop\Conversational-Src\Conversational\obj\Debug\Conversational.pdb
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\bin\Debug\Conversational.dll
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\bin\Debug\Conversational.pdb
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\bin\Debug\System.Data.SQLite.dll
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\obj\Debug\ResolveAssemblyReference.cache
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\obj\Debug\ConversationalAPI.Properties.Resources.resources
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\obj\Debug\GenerateResource-ResGen.read.1.tlog
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\obj\Debug\GenerateResource-ResGen.write.1.tlog
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\obj\Debug\Conversational.dll
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\obj\Debug\Conversational.pdb
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\Conversational.dll
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\Conversational.pdb
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\System.Data.SQLite.dll
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\Conversational.dll
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\Conversational.pdb
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\obj\Debug\ConversationalAPI.Properties.Resources.resources
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\obj\Debug\ConversationalAPI.csproj.GenerateResource.Cache
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\obj\Debug\Conversational.dll
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\obj\Debug\Conversational.pdb
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Bin\Conversational.dll
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Bin\Conversational.pdb
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\obj\Debug\ConversationalAPI.csprojResolveAssemblyReference.cache

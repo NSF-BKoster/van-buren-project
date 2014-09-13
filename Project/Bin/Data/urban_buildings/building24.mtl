@@ -1,0 +1,15 @@
+# Wavefront MTL file
+# Creator: Ultimate Unwrap3D Pro v3.18
+# Time: Fri Oct 09 13:38:10 2009
+# num_materials: 1
+
+newmtl building24
+Ka 0.000000 0.000000 0.000000
+Kd 0.988235 1.000000 0.976471
+Ks 1.000000 1.000000 1.000000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd building24.dds
+
+# num_materials: 1

@@ -1,0 +1,16 @@
+sourceFile = "urban_buildings\\building19.fbx"
+objects
+{
+	mesh
+	{
+		name = building19
+		sources
+		{
+			item
+			{
+				name = U3DMesh
+				overrideMaterial = building19
+			}
+		}
+	}
+}

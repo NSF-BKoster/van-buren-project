@@ -1,0 +1,17 @@
+highLevelMaterial rubbish1
+{
+	template = ShaderBaseMaterial
+	diffuseColor = 0.992157 0.992157 0.992157
+	emissionColor = 1 1 1
+	emissionPower = 0
+	specularColor = 0.15 0.15 0.15
+	specularShininess = 10
+	diffuse1Map
+	{
+		texture = ".\\rubbish1.dds"
+	}
+	normalMap
+	{
+		texture = ".\\rubbish1_nm.dds"
+	}
+}

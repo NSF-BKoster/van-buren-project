@@ -1,0 +1,20 @@
+type GeigerCounter
+{
+	class = GeigerCounter
+	allowEditorCreate = True
+	networkType = Synchronized
+	weight = 4
+	itmvalue = 650
+	invIcon = VB\GUI\ItemIcons\IT_Geiger_INV.tga
+	
+	physicsModel = "Types\\Dynamic\\SmallBox\\SmallBox.physics"
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = Types\Items\BulletItems\SubmachineGunBulletsItem\SubmachineGunBulletsItem.mesh
+			castShadows = True
+			scale = "0.5 0.5 0.5"
+		}
+	}
+}

@@ -1,0 +1,91 @@
+type UN_PrimaryAttack
+{
+	class = BaseMeleeWeaponItem
+	allowEditorCreate = false
+	networkType = Synchronized
+
+	actionModes
+	{
+		item
+		{
+			actionPoints = 3
+			useText = PUNCH
+			command = attack
+			damage = 1 3
+			playSound = VB\Sounds\Weapons\AttackPunch.ogg
+			betweenFireTime = 0.7
+		}
+		item
+		{
+			actionPoints = 3
+			useText = STRONG PUNCH
+			damage = 0 3
+			command = attack
+			playSound = VB\Sounds\Weapons\AttackPunch.ogg
+			
+			requirements
+			{
+				item
+				{
+					value = unarmed$55
+				}
+				item
+				{
+					value = agility$6
+				}
+			}
+		}
+		item
+		{
+			actionPoints = 3
+			useText = HAMMER PUNCH
+			command = Attack
+			playSound = VB\Sounds\Weapons\AttackPunch.ogg
+			requirements
+			{
+				item
+				{
+					value = unarmed$75
+				}
+				item
+				{
+					value = agility$6
+				}
+				item
+				{
+					value = strength$5
+				}
+				item
+				{
+					value = level$6
+				}
+			}
+		}
+		item
+		{
+			actionPoints = 3
+			useText = HAYMAKER
+			command = Attack
+			playSound = VB\Sounds\Weapons\AttackPunch.ogg
+			requirements
+			{
+				item
+				{
+					value = unarmed$100
+				}
+				item
+				{
+					value = agility$7
+				}
+				item
+				{
+					value = strength$5
+				}
+				item
+				{
+					value = level$9
+				}
+			}
+		}
+	}
+}

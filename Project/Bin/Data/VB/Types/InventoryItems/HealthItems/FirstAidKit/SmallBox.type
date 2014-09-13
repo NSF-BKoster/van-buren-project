@@ -1,0 +1,28 @@
+type FirstAidKit
+{
+	class = VBHealthItem
+	physicsModel = "Types\\Dynamic\\SmallBox\\SmallBox.physics"
+	allowEditorCreate = True
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = Types\VBEntities\InventoryItems\HealthItems\FirstAidKit\FirstAidKit.mesh
+			castShadows = True
+			scale = "0.5 0.5 0.5"
+		}
+	}
+	actionModes
+	{
+		item
+		{
+			actionPoints = 3
+			useText = USE ON
+		}
+	}
+	invIcon = VB\GUI\ItemIcons\IT_FirstAidKit_INV.tga
+	maxjuice = 3
+	weight = 2
+	val = 300
+}

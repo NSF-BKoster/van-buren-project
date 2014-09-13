@@ -1,0 +1,769 @@
+type = GameMap
+uin = 2
+classPrompt = GameMap
+gameType = VanBuren
+gameMusic = "VB\\Sounds\\Music\\Decay.ogg"
+windDirection = 0
+windSpeed = 1
+resetYCoordinateForDynamicBodies = False
+destroyObjectsBelowHeight = -500
+ambientLight = 0.2627451 0.2313726 0.2862745
+editorCameraPosition = -2.996365 48.63493 7.454845
+editorCameraDirection = 4.284442 -0.5635518
+shadowColor = 0.7176471 0.8235295 1 0.6
+shadowFarDistance = 90
+shadowPSSMSplitFactors = 0.1 0.4
+logicSystemManager = 3
+staticBatchingRenderingEnabled = False
+staticBatchingPhysicsEnabledInMapEditor = False
+staticBatchingPhysicsEnabledInSimulation = False
+staticBatchingGridCellSize = 30 30 30
+staticBatchingFilterByMaxTriangleCount = 512
+name = GameMap_0
+shadowTechnique = ShadowmapMedium
+sceneGraphSettings
+{
+	amountOfObjectsOutsideOctreeBoundsToRebuld = 30
+	octreeBoundsRebuildExpand = 50 50 50
+	minNodeSize = 10 10 10
+	objectCountThresholdToCreateChildNodes = 10
+	maxNodeCount = 300000
+}
+dataForEditor
+{
+}
+rootEditorLayer
+{
+	name = Root Layer
+	layer
+	{
+		name = StaticGeometry
+	}
+}
+entity
+{
+	type = LogicSystemManager
+	uin = 3
+	referencesToCompileDLL = "System.dll\r\nSystem.Drawing.dll\r\n\r\nEngineApp.dll\r\nUISystem.dll\r\nFileSystem.dll\r\nLog.dll\r\nMathEx.dll\r\nRenderer.dll\r\nPhysicsSystem.dll\r\nSoundSystem.dll\r\nEntitySystem.dll\r\nMapSystem.dll\r\nUtils.dll\r\nHeightmapTerrain.dll\r\nDecorativeObjectManager.dll\r\n\r\nProjectCommon.dll\r\nProjectEntities.dll"
+	usingNamespacesToCodeGeneration = "using System;\r\nusing System.Collections.Generic;\r\nusing System.Text;\r\n\r\nusing Engine;\r\nusing Engine.FileSystem;\r\nusing Engine.MathEx;\r\nusing Engine.Utils;\r\nusing Engine.Renderer;\r\nusing Engine.PhysicsSystem;\r\nusing Engine.SoundSystem;\r\nusing Engine.UISystem;\r\nusing Engine.EntitySystem;\r\nusing Engine.MapSystem;\r\n\r\nusing ProjectCommon;\r\nusing ProjectEntities;"
+	mapClassManager = 4
+	entity
+	{
+		type = LogicClassManager
+		uin = 4
+	}
+}
+entity
+{
+	type = GridBasedNavigationSystem
+	uin = 5
+	classPrompt = GridBasedNavigationSystem
+	gridBounds = -80 -160 200 80
+	gridCellSize = 2
+	agentHeight = 2
+	agentMaxSlope = 30
+	heightByTerrainOnly = True
+	alwaysDrawGrid = False
+	drawGridDistance = 100
+}
+entity
+{
+	type = RTSRobot
+	uin = 6
+	classPrompt = RTSCharacter
+	intellectShouldDeleteAfterDetach = False
+	initialFaction = BadFaction
+	disabled = False
+	healthFactorAtBeginning = 1
+	position = 12.94107 -109.7588 0.1324985
+	name = RTSRobot_12
+	items
+	{
+	}
+}
+entity
+{
+	type = HeightmapTerrain
+	uin = 7
+	classPrompt = HeightmapTerrain
+	enabled = True
+	position = 0 0 -30
+	horizontalSize = 1000
+	verticalSize = 100
+	dataDirectory = HeightmapTerrain
+	masksSize = 1024
+	detailMapsDistance = 50
+	renderQueueGroup = WorldGeometry1
+	collision = True
+	collisionMaterialName = Default
+	collisionHeightfieldThickness = 2
+	castDynamicShadows = False
+	receiveStaticShadows = True
+	simpleRendering = False
+	tileSize = 32
+	visible = True
+	allowVertexTextureFetchOptimization = True
+	ambientOcclusion
+	{
+		enabled = True
+		size = 1024
+		rayLength = 5
+		iterationCount = 100
+		blur = True
+		power = 2
+	}
+	lodSettings
+	{
+		enabled = True
+		maxCount = 99
+		lodLevelDistances = 100 + level * 200
+		morphAreaPercent = 0.3
+		showLevels = False
+	}
+	layers
+	{
+		item
+		{
+			name = base
+			baseMap = "VB\\Textures\\nm1.jpg"
+			baseScale = 10
+			detailScale = 2
+			baseNormalMap = "Maps\\RTSDemo\\Textures\\Terrain\\GroundNormals.dds"
+		}
+		item
+		{
+			name = second
+			baseMap = "VB\\Textures\\nm3.jpg"
+			baseScale = 30
+			detailScale = 2
+			baseNormalMap = "Maps\\RTSDemo\\Textures\\Terrain\\RockWallNormals.dds"
+		}
+	}
+}
+entity
+{
+	type = StaticMesh
+	uin = 8
+	classPrompt = StaticMesh
+	position = 29.54031 -146.0792 -5.021061
+	rotation = -0.1093817 -0.2345698 -0.408218 0.8754263
+	scale = 2.584615 2.584615 3.36
+	name = StaticMesh_RockBig_1
+	meshName = "Maps\\RTSDemo\\Models\\RockBig\\RockBig.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 9
+	classPrompt = StaticMesh
+	position = -0.1468124 -123.4874 -9.235411
+	rotation = -0.1645146 -0.08685614 0.5591918 -0.8078963
+	scale = 3.367953 3.367953 4.378338
+	name = StaticMesh_RockBig_5
+	meshName = "Maps\\RTSDemo\\Models\\RockBig\\RockBig.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 10
+	classPrompt = StaticMesh
+	position = 44.34427 -46.30016 -10.84613
+	rotation = 0 0 0.7071068 0.7071068
+	name = StaticMesh_Beam_0
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 11
+	classPrompt = StaticMesh
+	position = 44.34427 -60.72413 -10.84613
+	rotation = 0 0 0.7071068 0.7071068
+	name = StaticMesh_Beam_1
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 12
+	classPrompt = StaticMesh
+	position = 44.34427 -31.8821 -10.84613
+	rotation = 0 0 0.7071068 0.7071068
+	name = StaticMesh_Beam_2
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 13
+	classPrompt = StaticMesh
+	position = 130.007 -70.64834 -8.499201
+	rotation = 0 0 0.7071068 0.7071068
+	name = StaticMesh_Beam_3
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 14
+	classPrompt = StaticMesh
+	position = 130.007 -56.22437 -8.499201
+	rotation = 0 0 0.7071068 0.7071068
+	name = StaticMesh_Beam_4
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 15
+	classPrompt = StaticMesh
+	position = 130.007 -41.74527 -8.499201
+	rotation = 0 0 0.7071068 0.7071068
+	name = StaticMesh_Beam_5
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 16
+	classPrompt = StaticMesh
+	position = 130.007 -27.16588 -8.499201
+	rotation = 0 0 0.7071068 0.7071068
+	name = StaticMesh_Beam_6
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 17
+	classPrompt = StaticMesh
+	position = 127.5697 -56.22437 -28.07998
+	rotation = 0.03084356 0.7064338 -0.03084356 0.7064338
+	name = StaticMesh_Beam_7
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 18
+	classPrompt = StaticMesh
+	position = 127.5697 -56.22437 -16.86846
+	rotation = 0.03084356 0.7064338 -0.03084356 0.7064338
+	name = StaticMesh_Beam_8
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 19
+	classPrompt = StaticMesh
+	position = 132.5442 -56.22437 -16.86846
+	rotation = 0.03084356 0.7064338 -0.03084356 0.7064338
+	name = StaticMesh_Beam_9
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 20
+	classPrompt = StaticMesh
+	position = 132.5442 -56.22437 -28.07998
+	rotation = 0.03084356 0.7064338 -0.03084356 0.7064338
+	name = StaticMesh_Beam_10
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 21
+	classPrompt = StaticMesh
+	position = 42.10157 -57.88508 -19.29064
+	rotation = 0.03084356 0.7064338 -0.03084356 0.7064338
+	name = StaticMesh_Beam_11
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 22
+	classPrompt = StaticMesh
+	position = 47.07612 -57.88508 -19.29064
+	rotation = -9.313226E-09 0.7071069 9.313226E-09 0.7071069
+	name = StaticMesh_Beam_12
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 23
+	classPrompt = StaticMesh
+	position = 42.10157 -42.45077 -19.29064
+	rotation = 0.03084356 0.7064338 -0.03084356 0.7064338
+	name = StaticMesh_Beam_13
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 24
+	classPrompt = StaticMesh
+	position = 47.07612 -42.45077 -19.29064
+	rotation = -9.313226E-09 0.7071069 9.313226E-09 0.7071069
+	name = StaticMesh_Beam_14
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 25
+	classPrompt = StaticMesh
+	position = 119.3461 -68.60798 -9.04344
+	rotation = 0 0 1 0
+	name = StaticMesh_Beam_23
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 26
+	classPrompt = StaticMesh
+	position = 139.338 -56.411 -13.40038
+	rotation = 0 0 1 0
+	name = StaticMesh_Beam_25
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 27
+	classPrompt = StaticMesh
+	position = 153.757 -56.411 -13.40038
+	rotation = 0 0 1 0
+	name = StaticMesh_Beam_26
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 28
+	classPrompt = StaticMesh
+	position = 119.5326 -47.53133 -11.13137
+	rotation = 0 0 1 0
+	name = StaticMesh_Beam_36
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 29
+	classPrompt = StaticMesh
+	position = 111.2973 -47.53133 -24.99425
+	rotation = 0.3826835 0 0.9238796 0
+	name = StaticMesh_Beam_37
+	meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 30
+	classPrompt = StaticMesh
+	position = 84.62247 -145.3234 -3.26614
+	rotation = 0 0 -0.9961947 -0.08715567
+	scale = 3.78 3.78 3.78
+	name = StaticMesh_ConcreteBlock_0
+	meshName = "Maps\\RTSDemo\\Models\\ConcreteBlock\\ConcreteBlock.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 31
+	classPrompt = StaticMesh
+	position = 55.59394 -140.205 -3.26614
+	rotation = 0 0 -0.9961947 -0.08715567
+	scale = 3.78 3.78 3.78
+	name = StaticMesh_ConcreteBlock_1
+	meshName = "Maps\\RTSDemo\\Models\\ConcreteBlock\\ConcreteBlock.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = StaticMesh
+	uin = 32
+	classPrompt = StaticMesh
+	position = 130.1493 -64.25353 -31.43382
+	rotation = 0 0 -1 6.705523E-08
+	scale = 3.78 3.78 3.78
+	name = StaticMesh_ConcreteBlock_2
+	meshName = "Maps\\RTSDemo\\Models\\ConcreteBlock\\ConcreteBlock.mesh"
+	castDynamicShadows = True
+}
+entity
+{
+	type = Fog
+	uin = 33
+	classPrompt = Fog
+	enabled = True
+	mode = Exp2
+	color = 0.3411765 0.3137255 0.7490196
+	expDensity = 0.005
+}
+entity
+{
+	type = SkyDome
+	uin = 34
+	classPrompt = SkyDome
+	enabled = True
+	horizonMap = "Base\\Types\\SkyDome\\DefaultSkyDomeHorizon.png"
+	color = 0.1686275 0.09411766 0.6
+	power = 1
+	diffuse1Map
+	{
+		texture = "Base\\Types\\SkyDome\\DefaultSkyDome.jpg"
+		tiling = 5
+		scrollSpeed = 0.005 0
+	}
+	diffuse2Map
+	{
+		blending = Add
+		texture = "Base\\Types\\SkyDome\\DefaultSkyDome2.jpg"
+		tiling = 4
+		scrollSpeed = 0.018 0
+	}
+	diffuse3Map
+	{
+		blending = Add
+		tiling = 10
+		scrollSpeed = 0 0
+	}
+	diffuse4Map
+	{
+		blending = Add
+		tiling = 10
+		scrollSpeed = 0 0
+	}
+}
+entity
+{
+	type = Sun
+	uin = 35
+	classPrompt = Sun
+	billboardTexture = "Base\\Types\\Sun\\SunDefault.png"
+	billboardColor = 1 1 1
+	billboardPower = 1
+	billboardSize = 1
+	billboardRenderQueueGroup = Main
+	billboardOverridePosition = 0 0 0
+	enabled = True
+	lightType = Directional
+	diffuseColor = 1 1 1
+	diffusePower = 1
+	specularColor = 1 1 1
+	specularPower = 1
+	attenuationNear = 0
+	attenuationFar = 10
+	attenuationPower = 2
+	ffpAttenuationConstant = 1
+	ffpAttenuationLinear = 0
+	ffpAttenuationQuadric = 0
+	spotlightInnerAngle = 30
+	spotlightOuterAngle = 40
+	spotlightFalloff = 1
+	castShadows = True
+	allowStaticLighting = False
+	allowDynamicLighting = True
+	customShaderParameter = 0 0 0 0
+	position = 88.03561 96.01649 46.40089
+	rotation = -0.2743657 -0.2223418 0.6965998 -0.6245289
+	name = Sun_0
+}
+entity
+{
+	type = StaticMesh
+	uin = 36
+	classPrompt = StaticMesh
+	position = 62.01026 110.9189 -2.803063
+	autoVerticalAlignment = ByBoundsWithRotation
+	name = StaticMesh_building2_0
+	meshName = "urban_buildings\\building2.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 37
+	classPrompt = StaticMesh
+	position = 38.62165 44.60459 -2.902649
+	rotation = 0 0 0.7767603 0.6297963
+	autoVerticalAlignment = ByBoundsWithRotation
+	name = StaticMesh_building3_0
+	meshName = "urban_buildings\\building3.mesh"
+}
+entity
+{
+	type = VBGirl
+	uin = 38
+	classPrompt = VBCharacter
+	apts = 0
+	primaryActive = False
+	activeItems = 0 0 0
+	initialFaction = PlayerFaction
+	intellectShouldDeleteAfterDetach = False
+	disabled = False
+	healthFactorAtBeginning = 1
+	position = -10.71808 45.07679 -1.633638
+	autoVerticalAlignment = ByBounds
+	name = VBGirl_0
+	items
+	{
+	}
+}
+entity
+{
+	type = WP_9mmAutoloader
+	uin = 39
+	classPrompt = VBWeaponItem
+	juice = 0
+	readyTimeRemaining = 0
+	healthFactorAtBeginning = 1
+	position = 92.24572 70.59669 0.09957513
+}
+entity
+{
+	type = WoodLocker
+	uin = 40
+	classPrompt = InventoryObject
+	disabled = False
+	healthFactorAtBeginning = 1
+	position = -41.68534 61.43785 -1.959549
+	rotation = -0.0378276 0.1713613 -0.5521466 0.8150697
+	autoVerticalAlignment = ByBoundsWithRotation
+	name = WoodLocker_0
+	items
+	{
+		item
+		{
+			itemType = WP_9mmAutoloader
+			actionMode = 0
+			juice = -1
+		}
+		item
+		{
+			itemType = IT_8ball
+			actionMode = 0
+			juice = -1
+		}
+		item
+		{
+			itemType = GeigerCounter
+			actionMode = 0
+			juice = -1
+		}
+	}
+}
+entity
+{
+	type = RobotCompanion
+	uin = 41
+	classPrompt = VBCharacter
+	apts = 0
+	primaryActive = False
+	activeItems = 0 0 0
+	intellectShouldDeleteAfterDetach = False
+	disabled = False
+	healthFactorAtBeginning = 1
+	position = -10.86459 47.90958 -0.916927
+	autoVerticalAlignment = ByBounds
+	name = TestCompanion
+	items
+	{
+	}
+}
+entity
+{
+	type = StaticMesh
+	uin = 42
+	classPrompt = StaticMesh
+	position = 23.36201 10.77954 -2.902649
+	rotation = 0 0 0.9462132 0.323544
+	autoVerticalAlignment = ByBoundsWithRotation
+	name = StaticMesh_building9_0
+	meshName = "urban_buildings\\building9.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 43
+	classPrompt = StaticMesh
+	position = 115.2711 0.6027515 -2.803079
+	rotation = 0 0 -0.7223318 0.6915467
+	autoVerticalAlignment = ByBoundsWithRotation
+	name = StaticMesh_building10_0
+	meshName = "urban_buildings\\building10.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 44
+	classPrompt = StaticMesh
+	position = -36.96777 57.56159 -2.899551
+	rotation = 0 0 -0.9988763 0.04739328
+	autoVerticalAlignment = ByBoundsWithRotation
+	name = StaticMesh_building17_0
+	meshName = "urban_buildings\\building17.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 45
+	classPrompt = StaticMesh
+	position = 14.53092 76.83829 4.93417
+	rotation = 0 0 -2.853666E-10 1
+	autoVerticalAlignment = ByBoundsWithRotation
+	name = StaticMesh_building18_0
+	meshName = "urban_buildings\\building18.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 46
+	classPrompt = StaticMesh
+	position = 101.1454 54.30293 -2.803079
+	autoVerticalAlignment = ByBoundsWithRotation
+	name = StaticMesh_building19_0
+	meshName = "urban_buildings\\building19.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 47
+	classPrompt = StaticMesh
+	position = 9.800747 101.3386 -2.902618
+	scale = 2.238161 1 2.238161
+	autoVerticalAlignment = ByBoundsWithRotation
+	name = StaticMesh_oldwall_0
+	meshName = "props\\oldwall.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 48
+	classPrompt = StaticMesh
+	position = 29.61605 114.4341 0.9751987
+	rotation = 0 0 0.354591 0.9350215
+	scale = 2.910335 1.921029 1.921029
+	autoVerticalAlignment = ByBoundsWithRotation
+	name = StaticMesh_oldwall2_0
+	meshName = "props\\oldwall2.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 49
+	classPrompt = StaticMesh
+	position = 18.76332 21.68085 -2.894474
+	name = StaticMesh_wastebin_1
+	meshName = "props\\wastebin.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 50
+	classPrompt = StaticMesh
+	position = 97.50979 95.71117 3.807838
+	rotation = 0.08195684 -0.0225633 -0.001855938 0.9963787
+	autoVerticalAlignment = ByBoundsWithRotation
+	name = StaticMesh_refugebin_0
+	meshName = "props\\refugebin.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 51
+	classPrompt = StaticMesh
+	position = 86.70718 94.02421 1.973306
+	rotation = 0.0787727 -0.3303057 -0.02767475 0.940174
+	scale = 2.741545 2.297823 1
+	autoVerticalAlignment = ByBoundsWithRotation
+	name = StaticMesh_rubbish1_0
+	meshName = "props\\rubbish1.mesh"
+}
+entity
+{
+	type = Raider
+	uin = 52
+	classPrompt = VBCharacter
+	apts = 0
+	primaryActive = False
+	activeItems = 0 0 0
+	initialFaction = RaiderFaction
+	intellectShouldDeleteAfterDetach = False
+	disabled = False
+	healthFactorAtBeginning = 1
+	position = 91.45676 -7.700742 -1.630996
+	name = Raider_0
+	items
+	{
+	}
+}
+entity
+{
+	type = AM_9mmFMJ
+	uin = 53
+	classPrompt = AmmoItem
+	juice = 25
+	readyTimeRemaining = 0
+	healthFactorAtBeginning = 1
+	position = -25.1393 48.38622 -2.797163
+}
+entity
+{
+	type = AM_9mmFMJ
+	uin = 54
+	classPrompt = AmmoItem
+	juice = 25
+	readyTimeRemaining = 0
+	healthFactorAtBeginning = 1
+	position = -27.87769 48.36868 -2.800291
+}
+entity
+{
+	type = AM_9mmFMJ
+	uin = 55
+	classPrompt = AmmoItem
+	juice = 25
+	readyTimeRemaining = 0
+	healthFactorAtBeginning = 1
+	position = -24.20172 45.17887 -2.800258
+}
+entity
+{
+	type = AM_9mmFMJ
+	uin = 56
+	classPrompt = AmmoItem
+	juice = 25
+	readyTimeRemaining = 0
+	healthFactorAtBeginning = 1
+	position = -22.03413 47.26494 -2.796118
+}

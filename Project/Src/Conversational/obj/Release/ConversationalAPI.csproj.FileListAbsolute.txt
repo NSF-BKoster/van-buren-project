@@ -1,0 +1,19 @@
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Bin\Conversational.dll
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Bin\Conversational.pdb
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational\obj\Release\ResolveAssemblyReference.cache
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational\obj\Release\ConversationalAPI.Properties.Resources.resources
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational\obj\Release\GenerateResource-ResGen.read.1.tlog
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational\obj\Release\GenerateResource-ResGen.write.1.tlog
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational\obj\Release\Conversational.dll
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational\obj\Release\Conversational.pdb
+H:\stuff not for  sharing\NA_OLD\Bin\Conversational.dll
+H:\stuff not for  sharing\NA_OLD\Bin\Conversational.pdb
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\obj\Release\ResolveAssemblyReference.cache
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\obj\Release\ConversationalAPI.Properties.Resources.resources
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\obj\Release\GenerateResource-ResGen.read.1.tlog
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\obj\Release\GenerateResource-ResGen.write.1.tlog
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\obj\Release\Conversational.dll
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\obj\Release\Conversational.pdb
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\Conversational.dll
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\Conversational.pdb
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\System.Data.SQLite.dll

@@ -1,0 +1,15 @@
+sourceFile = "props\\traintrack.fbx"
+objects
+{
+	mesh
+	{
+		name = traintrack
+		sources
+		{
+			item
+			{
+				name = U3DMesh
+			}
+		}
+	}
+}

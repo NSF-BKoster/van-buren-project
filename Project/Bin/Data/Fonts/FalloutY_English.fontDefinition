@@ -1,0 +1,21 @@
+fontDefinition
+{
+	type = TrueType
+	trueTypeFontName = "Fonts\\r_fallouty.ttf"
+	inGame3DGuiHeightInPixels = 24
+	textureSize = 512
+	textureIndentBetweenCharacters = 8
+	charactersRanges
+	{
+		item
+		{
+			begin = 0
+			end = 0
+		}
+		item
+		{
+			begin = 32
+			end = 127
+		}
+	}
+}

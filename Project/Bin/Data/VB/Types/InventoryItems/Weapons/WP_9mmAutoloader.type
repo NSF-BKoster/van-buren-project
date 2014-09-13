@@ -1,0 +1,52 @@
+type WP_9mmAutoloader
+{
+	class = VBWeaponItem
+	physicsModel = "Types\\Dynamic\\SmallBox\\SmallBox.physics"
+	allowEditorCreate = True
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = Types\Items\BulletItems\SubmachineGunBulletsItem\SubmachineGunBulletsItem.mesh
+			castShadows = True
+			scale = "0.5 0.5 0.5"
+		}
+	}
+	clipEmpty = VB\Sounds\Weapons\ClipEmpty_Pistol.ogg
+	maxjuice = 9
+	val = 1500
+	weight = 3
+	reloadTime = 1
+	invIcon = VB\GUI\ItemIcons\WP_9mmAutoloader_INV.tga
+	actIcon = VB\GUI\ItemIcons\WP_9mmAutoloader_ACT.tga
+	usableAmmoList = AM_9mmFMJ
+	
+	actionModes
+	{
+		item
+		{
+			actionPoints = 4
+			useText = SINGLE
+			command = attack
+			damage = 5 12
+			useDistanceRange = 0 40
+			playSound = VB\Sounds\Weapons\fire.ogg
+			betweenFireTime = 0.3
+		}
+		item
+		{
+			actionPoints = 6
+			useText = BURST
+			useDistanceRange = 0 35
+			command = cmbstatus
+		}
+		item
+		{
+			actionPoints = 2
+			useText = RELOAD
+			command = reload
+			playSound = VB\Sounds\Weapons\reload.ogg
+		}
+	}
+}

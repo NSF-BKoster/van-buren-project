@@ -1,0 +1,13 @@
+highLevelMaterial material23
+{
+	template = ShaderBaseMaterial
+	diffuseColor = 0.976471 1 0.996078
+	emissionColor = 1 1 1
+	emissionPower = 0
+	specularColor = 1 1 1
+	specularShininess = 10
+	diffuse1Map
+	{
+		texture = ".\\building9.dds"
+	}
+}

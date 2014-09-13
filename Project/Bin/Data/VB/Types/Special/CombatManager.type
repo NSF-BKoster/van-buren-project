@@ -1,0 +1,6 @@
+type CombatManager
+{
+	class = CombatManager
+	creatableInMapEditor = False
+	networkType = Synchronized
+}

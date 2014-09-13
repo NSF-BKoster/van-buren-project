@@ -1,0 +1,150 @@
+type IT_8ball
+{
+	class = StringListItem
+	physicsModel = "Types\\Dynamic\\SmallBox\\SmallBox.physics"
+	allowEditorCreate = True
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = Types\Items\BulletItems\SubmachineGunBulletsItem\SubmachineGunBulletsItem.mesh
+			castShadows = True
+			scale = "0.5 0.5 0.5"
+		}
+	}
+	weight = 1
+	itmvalue = 3000
+	invIcon = VB\GUI\ItemIcons\IT_8ball_INV.tga
+	stringList
+	{
+		item
+		{
+			value = What kind of an asshole question is that?
+		}
+		item
+		{
+			value = Outlook good.
+		}
+		item
+		{
+			value = Outlook not so good.
+		}
+		item
+		{
+			value = My reply is no.
+		}
+		item
+		{
+			value = Don't count on it.
+		}
+		item
+		{
+			value = You may rely on it.
+		}
+		item
+		{
+			value = Ask again later.
+		}
+		item
+		{
+			value = Most likely.
+		}
+		item
+		{
+			value = Cannot predict now.
+		}
+		item
+		{
+			value = Yes. 
+		}
+		item
+		{
+			value = Yes, definitely.
+		}
+		item
+		{
+			value = Better not to tell you now.
+		}
+		item
+		{
+			value = It is certain.
+		}
+		item
+		{
+			value = Very doubtful.
+		}
+		item
+		{
+			value = It is decidedly so.
+		}
+		item
+		{
+			value = Concentrate and ask again.
+		}
+		item
+		{
+			value = Signs point to yes.
+		}
+		item
+		{
+			value = My sources say no.
+		}
+		item
+		{
+			value = Without a doubt.
+		}
+		item
+		{
+			value = Reply hazy, try again.
+		}
+		item
+		{
+			value = As I see it, yes.
+		}
+		item
+		{
+			value = Stop shaking me so hard. It hurts.
+		}
+		item
+		{
+			value = You have a strong right arm.
+		}
+		item
+		{
+			value = Please wipe your hands before shaking me again.
+		}
+		item
+		{
+			value = Temporarily out of service.
+		}
+		item
+		{
+			value = Closed by order of the RPG Board.
+		}
+		item
+		{
+			value = Keep shaking me, and there'll be trouble.
+		}
+		item
+		{
+			value = I'm getting sick.
+		}
+		item
+		{
+			value = I'm getting nauseous.
+		}
+		item
+		{
+			value = Your hands are warm.
+		}
+	}
+	actionModes
+	{
+		item
+		{
+			actionPoints = 2
+			useText = SHAKE
+		}
+	}
+}

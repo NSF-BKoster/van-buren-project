@@ -1,0 +1,16 @@
+sourceFile = "props\\oldwall.fbx"
+objects
+{
+	mesh
+	{
+		name = oldwall
+		sources
+		{
+			item
+			{
+				name = U3DMesh
+				overrideMaterial = oldwall
+			}
+		}
+	}
+}

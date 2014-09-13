@@ -1,0 +1,16 @@
+sourceFile = "props\\floorgrid.fbx"
+objects
+{
+	mesh
+	{
+		name = floorgrid
+		sources
+		{
+			item
+			{
+				name = U3DMesh
+				overrideMaterial = floorgrid
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+type WP_PlasticExplosive
+{
+	class = ExplosiveItem
+	physicsModel = "Types\\Dynamic\\SmallBox\\SmallBox.physics"
+	allowEditorCreate = True
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = Types\Items\BulletItems\SubmachineGunBulletsItem\SubmachineGunBulletsItem.mesh
+			castShadows = True
+			scale = "0.5 0.5 0.5"
+		}
+	}
+	
+	val = 1250
+	weight = 3
+	maxjuice = 1
+	invIcon = VB\GUI\ItemIcons\WP_Dynamite_INV.tga
+	actionModes
+	{
+		item
+		{
+			actionPoints = 2
+			useText = FREQUENCY 1
+		}
+		item
+		{
+			actionPoints = 2
+			useText = FREQUENCY 2
+		}
+	}
+	dieObjects
+	{
+		mapObject
+		{
+			type = ExplosionBarrelExplosion
+		}
+		particle
+		{
+			particleName = ExplosionParticle
+		}
+		sound
+		{
+			soundName = Sounds/Explode.ogg
+			priority = 0.8
+		}
+		mapObject
+		{
+			type = DefaultExplosionDecalCreator
+		}
+	}
+}

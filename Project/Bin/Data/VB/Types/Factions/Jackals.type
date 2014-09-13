@@ -1,0 +1,5 @@
+type JackalFaction
+{
+	class = VBFaction
+	creatableInMapEditor = False
+}

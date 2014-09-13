@@ -1,0 +1,6 @@
+type RaiderFaction
+{
+	class = VBFaction
+	creatableInMapEditor = False
+	naturalEnemies = PlayerFaction
+}

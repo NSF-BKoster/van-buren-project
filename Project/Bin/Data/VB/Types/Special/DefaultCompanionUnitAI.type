@@ -1,0 +1,5 @@
+type DefaultCompanionUnitAI
+{
+	class = CompanionUnitAI
+	followRange = 5
+}
