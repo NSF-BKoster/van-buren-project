@@ -1,0 +1,17 @@
+sourceFile = "props\\oldwall2.fbx"
+objects
+{
+	mesh
+	{
+		name = oldwall2
+		pivotPosition = 0 40.27568 0
+		sources
+		{
+			item
+			{
+				name = U3DMesh
+				overrideMaterial = oldwall2
+			}
+		}
+	}
+}

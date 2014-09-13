@@ -1,0 +1,53 @@
+type WP_Detonator
+{
+	class = ExplosiveDetonator
+	physicsModel = "Types\\Dynamic\\SmallBox\\SmallBox.physics"
+	allowEditorCreate = True
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = Types\Items\BulletItems\SubmachineGunBulletsItem\SubmachineGunBulletsItem.mesh
+			castShadows = True
+			scale = "0.5 0.5 0.5"
+		}
+	}
+	
+	val = 2000
+	weight = 3
+	invIcon = VB\GUI\ItemIcons\WP_HandFlamer_INV.tga
+	actionModes
+	{
+		item
+		{
+			actionPoints = 2
+			useText = FREQUENCY 1
+		}
+		item
+		{
+			actionPoints = 2
+			useText = FREQUENCY 2
+		}
+	}
+	dieObjects
+	{
+		mapObject
+		{
+			type = ExplosionBarrelExplosion
+		}
+		particle
+		{
+			particleName = ExplosionParticle
+		}
+		sound
+		{
+			soundName = Sounds/Explode.ogg
+			priority = 0.8
+		}
+		mapObject
+		{
+			type = DefaultExplosionDecalCreator
+		}
+	}
+}

@@ -1,0 +1,12 @@
+highLevelMaterial FirstAidKit
+{
+	template = ShaderBaseMaterial
+	diffuse1Map
+	{
+		texture = Types\VBEntities\InventoryItems\HealthItems\FirstAidKit\FirstAidKit.dds
+	}
+	normalMap
+	{
+		texture = Types\VBEntities\InventoryItems\HealthItems\FirstAidKit\FirstAidKit_Normals.dds
+	}
+}

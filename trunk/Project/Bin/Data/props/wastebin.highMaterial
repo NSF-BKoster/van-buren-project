@@ -1,0 +1,15 @@
+highLevelMaterial def_surf_mat
+{
+	template = ShaderBaseMaterial
+	diffuseColor = 0.992157 0.992157 0.992157
+	specularColor = 0.15 0.15 0.15
+	specularShininess = 10
+	diffuse1Map
+	{
+		texture = ".\\wastebin.dds"
+	}
+	normalMap
+	{
+		texture = ".\\wastebin_nm.tga"
+	}
+}

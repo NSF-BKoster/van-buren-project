@@ -1,0 +1,16 @@
+type LuaTrigger
+{
+	class = LuaObject
+	allowEditorCreate = True
+	allowEmptyName = True
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = Types\Base\InvisiblePoint.mesh
+			useOwnerScale = False
+			onlyForEditor = True
+		}
+	}
+}

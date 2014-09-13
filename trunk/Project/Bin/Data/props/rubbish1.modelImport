@@ -1,0 +1,16 @@
+sourceFile = "props\\rubbish1.fbx"
+objects
+{
+	mesh
+	{
+		name = rubbish1
+		sources
+		{
+			item
+			{
+				name = U3DMesh
+				overrideMaterial = rubbish1
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+type UN_SecondaryAttack
+{
+	class = BaseMeleeWeaponItem
+	allowEditorCreate = false
+	networkType = Synchronized
+
+	actionModes
+	{
+		item
+		{
+			actionPoints = 4
+			useText = KICK
+			damage = 1 3
+			command = Attack
+			playSound = VB\Sounds\Weapons\AttackSwing_1.ogg
+		}
+		item
+		{
+			actionPoints = 4
+			useText = STRONG KICK
+			damage = 0 9
+			command = Attack
+			playSound = VB\Sounds\Weapons\AttackSwing_1.ogg
+		}
+	}
+}

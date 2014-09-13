@@ -1,0 +1,31 @@
+# Wavefront MTL file
+# Creator: Ultimate Unwrap3D Pro v3.18
+# Time: Fri Oct 09 13:32:51 2009
+# num_materials: 3
+
+newmtl def_surf_mat
+Ka 0.000000 0.000000 0.000000
+Kd 0.992157 0.992157 0.992157
+Ks 0.150000 0.150000 0.150000
+d 1.000000
+illum 2
+Ns 1.000000
+
+newmtl Material__1
+Ka 0.000000 0.000000 0.000000
+Kd 0.200000 0.200000 0.200000
+Ks 0.200000 0.200000 0.200000
+d 1.000000
+illum 2
+Ns 1.000000
+
+newmtl material31
+Ka 0.000000 0.000000 0.000000
+Kd 0.968628 0.968628 0.996078
+Ks 1.000000 1.000000 1.000000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd building5.dds
+
+# num_materials: 3

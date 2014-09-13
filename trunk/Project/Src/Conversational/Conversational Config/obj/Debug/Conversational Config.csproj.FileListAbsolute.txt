@@ -1,0 +1,39 @@
+H:\stuff not for  sharing\NA_OLD\Src\Conversational Config\bin\Debug\Conversational Config.exe.config
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\obj\Debug\ResolveAssemblyReference.cache
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\obj\Debug\Conversational_Config.AddNewConversationWindow.resources
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\obj\Debug\Conversational_Config.ConversationalConfigForm.resources
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\obj\Debug\Conversational_Config.EditConversationWindow.resources
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\obj\Debug\Conversational_Config.criWindow.resources
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\obj\Debug\Conversational_Config.Properties.Resources.resources
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\bin\Debug\Conversational Config.exe
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\bin\Debug\Conversational Config.pdb
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\bin\Debug\Conversational.dll
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\bin\Debug\System.Data.SQLite.dll
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\bin\Debug\Conversational.pdb
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\obj\Debug\Conversational Config.exe
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\obj\Debug\Conversational Config.pdb
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\bin\Debug\Conversational Config.exe.config
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\obj\Debug\GenerateResource-ResGen.read.1.tlog
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\obj\Debug\GenerateResource-ResGen.read.6.tlog
+H:\stuff not for  sharing\NA_OLD\Src\Conversational\Conversational Config\obj\Debug\GenerateResource-ResGen.write.1.tlog
+H:\stuff not for  sharing\van-buren-project\Src\Conversational\Conversational Config\bin\Debug\Conversational Config.exe.config
+H:\stuff not for  sharing\van-buren-project\Src\Conversational\Conversational Config\obj\Debug\Conversational Config.exe
+H:\stuff not for  sharing\van-buren-project\Src\Conversational\Conversational Config\obj\Debug\Conversational Config.pdb
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\bin\Debug\Conversational Config.exe.config
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\obj\Debug\Conversational Config.exe
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\obj\Debug\Conversational Config.pdb
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\bin\Debug\Conversational Config.exe
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\bin\Debug\Conversational Config.pdb
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\bin\Debug\Conversational.dll
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\bin\Debug\System.Data.SQLite.dll
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\bin\Debug\Conversational.pdb
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\obj\Debug\Conversational Config.csprojResolveAssemblyReference.cache
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\obj\Debug\Conversational_Config.AddNewConversationWindow.resources
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\obj\Debug\Conversational_Config.ConversationalConfigForm.resources
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\obj\Debug\Conversational_Config.EditConversationWindow.resources
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\obj\Debug\Conversational_Config.criWindow.resources
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\obj\Debug\Conversational_Config.Properties.Resources.resources
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\Conversational Config\obj\Debug\Conversational Config.csproj.GenerateResource.Cache
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Bin\Conversational Config.exe.config
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Bin\Conversational Config.exe
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Bin\Conversational Config.pdb

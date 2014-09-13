@@ -1,0 +1,49 @@
+type CharBaseStrong
+{
+	class = RTSCharacter
+	initialAI = DefaultRTSUnitAI
+	
+	initialFaction = NeutralFaction
+	apmax = 6
+
+	optimalAttackDistanceRange = 0 10
+	idleAnimationName = idleAgressive
+	walkAnimationName = walkAgressive
+	walkAnimationVelocityMultiplier = 0.6
+	height = 3
+	radius = 0.6
+	mass = 3
+	walkMaxVelocity = 1
+	walkForce = 16000
+	flyControlMaxVelocity = 3
+	flyControlForce = 700
+	viewRadius = 10
+	fpsCameraOffset = 0.4 0 1.2
+	lifeMax = 30
+	targetPriority = 1
+	substance = Metal
+	allowEditorCreate = True
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = Types\Units\Robot\Robot.mesh
+			castShadows = True
+			position = 0 0 -1.75
+		}
+		mapObject
+		{
+			type = RobotGun
+			position = 0.6 -0.3 -0.15
+		}
+	}
+	dieObjects
+	{
+		mapObject
+		{
+			type = RobotDead
+			copyVelocitiesFromParent = True
+			position = 0 0 -1.4
+		}
+	}
+}

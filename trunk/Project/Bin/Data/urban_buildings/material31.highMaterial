@@ -1,0 +1,17 @@
+highLevelMaterial material31
+{
+	template = ShaderBaseMaterial
+	diffuseColor = 0.968628 0.968628 0.996078
+	emissionColor = 1 1 1
+	emissionPower = 0
+	specularColor = 1 1 1
+	specularShininess = 10
+	diffuse1Map
+	{
+		texture = ".\\building5.dds"
+	}
+	normalMap
+	{
+		texture = ".\\building5.dds"
+	}
+}

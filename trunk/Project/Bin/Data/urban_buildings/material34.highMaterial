@@ -1,0 +1,11 @@
+highLevelMaterial material34
+{
+	template = ShaderBaseMaterial
+	diffuseColor = 0.9568628 0.9843138 1
+	specularColor = 0.956863 0.984314 1
+	specularShininess = 10
+	diffuse1Map
+	{
+		texture = ".\\building11.dds"
+	}
+}

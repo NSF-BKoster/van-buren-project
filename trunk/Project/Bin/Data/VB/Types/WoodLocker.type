@@ -1,0 +1,17 @@
+type WoodLocker
+{
+	class = InventoryObject
+	maxWeight = 300
+	physicsModel = "Types\\Dynamic\\WoodBox\\WoodBox.physics"
+	allowEditorCreate = True
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = "Types\\Dynamic\\WoodBox\\WoodBox.mesh"
+			castShadows = True
+			body = main
+		}
+	}
+}

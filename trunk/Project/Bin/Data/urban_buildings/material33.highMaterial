@@ -1,0 +1,17 @@
+highLevelMaterial material33
+{
+	template = ShaderBaseMaterial
+	diffuseColor = 0.988235 0.976471 0.996078
+	emissionColor = 1 1 1
+	emissionPower = 0
+	specularColor = 1 1 1
+	specularShininess = 10
+	diffuse1Map
+	{
+		texture = ".\\building6.dds"
+	}
+	normalMap
+	{
+		texture = ".\\urban_building6_nm.tga"
+	}
+}

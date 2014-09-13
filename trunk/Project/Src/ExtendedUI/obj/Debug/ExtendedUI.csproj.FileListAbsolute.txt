@@ -1,0 +1,35 @@
+H:\stuff not for  sharing\NA_OLD\Game\Bin\ExtendedUI.dll
+H:\stuff not for  sharing\NA_OLD\Game\Src\ExtendedUI\obj\Debug\ResolveAssemblyReference.cache
+H:\stuff not for  sharing\NA_OLD\Game\Src\ExtendedUI\obj\Debug\ExtendedUI.dll
+H:\stuff not for  sharing\NA_OLD\Game\Src\ExtendedUI\obj\Debug\ExtendedUI.pdb
+H:\stuff not for  sharing\NA_OLD\Game\Bin\ExtendedUI.pdb
+H:\stuff not for  sharing\NA_OLD\Game\Backup\Bin\ExtendedUI.dll
+H:\stuff not for  sharing\NA_OLD\Game\Backup\Bin\ExtendedUI.pdb
+H:\stuff not for  sharing\NA_OLD\Game\Backup\Src\ExtendedUI\obj\Debug\ResolveAssemblyReference.cache
+H:\stuff not for  sharing\NA_OLD\Game\Backup\Src\ExtendedUI\obj\Debug\ExtendedUI.dll
+H:\stuff not for  sharing\NA_OLD\Game\Backup\Src\ExtendedUI\obj\Debug\ExtendedUI.pdb
+H:\stuff not for  sharing\NA_OLD\Bin\ExtendedUI.dll
+H:\stuff not for  sharing\NA_OLD\Bin\ExtendedUI.pdb
+H:\stuff not for  sharing\NA_OLD\Src\ExtendedUI\obj\Debug\ResolveAssemblyReference.cache
+H:\stuff not for  sharing\NA_OLD\Src\ExtendedUI\obj\Debug\ExtendedUI.dll
+H:\stuff not for  sharing\NA_OLD\Src\ExtendedUI\obj\Debug\ExtendedUI.pdb
+H:\stuff not for  sharing\van-buren-project\Bin\ExtendedUI.dll
+H:\stuff not for  sharing\van-buren-project\Bin\ExtendedUI.pdb
+H:\stuff not for  sharing\van-buren-project\Src\ExtendedUI\obj\Debug\ResolveAssemblyReference.cache
+H:\stuff not for  sharing\van-buren-project\Src\ExtendedUI\obj\Debug\ExtendedUI.dll
+H:\stuff not for  sharing\van-buren-project\Src\ExtendedUI\obj\Debug\ExtendedUI.pdb
+D:\ARUngureanu\vb\Bin\ExtendedUI.dll
+D:\ARUngureanu\vb\Bin\ExtendedUI.pdb
+D:\ARUngureanu\vb\Src\ExtendedUI\obj\Debug\ResolveAssemblyReference.cache
+D:\ARUngureanu\vb\Src\ExtendedUI\obj\Debug\ExtendedUI.dll
+D:\ARUngureanu\vb\Src\ExtendedUI\obj\Debug\ExtendedUI.pdb
+F:\stuff not for  sharing\van-buren-project\Bin\ExtendedUI.dll
+F:\stuff not for  sharing\van-buren-project\Bin\ExtendedUI.pdb
+F:\stuff not for  sharing\van-buren-project\Src\ExtendedUI\obj\Debug\ResolveAssemblyReference.cache
+F:\stuff not for  sharing\van-buren-project\Src\ExtendedUI\obj\Debug\ExtendedUI.dll
+F:\stuff not for  sharing\van-buren-project\Src\ExtendedUI\obj\Debug\ExtendedUI.pdb
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\ExtendedUI\obj\Debug\ExtendedUI.csprojResolveAssemblyReference.cache
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Bin\VBGUI.dll
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Bin\VBGUI.pdb
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\ExtendedUI\obj\Debug\VBGUI.dll
+F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\ExtendedUI\obj\Debug\VBGUI.pdb

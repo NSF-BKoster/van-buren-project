@@ -1,0 +1,13 @@
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Bin\Conversational Config.exe.config
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Bin\Conversational Config.exe
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Bin\Conversational Config.pdb
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational Config\obj\Release\ResolveAssemblyReference.cache
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational Config\obj\Release\Conversational_Config.AddNewConversationWindow.resources
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational Config\obj\Release\Conversational_Config.ConversationalConfigForm.resources
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational Config\obj\Release\Conversational_Config.EditConversationWindow.resources
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational Config\obj\Release\Conversational_Config.criWindow.resources
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational Config\obj\Release\Conversational_Config.Properties.Resources.resources
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational Config\obj\Release\GenerateResource-ResGen.read.1.tlog
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational Config\obj\Release\GenerateResource-ResGen.write.1.tlog
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational Config\obj\Release\Conversational Config.exe
+C:\NeoAxis\NeoAxis Engine Non-Commercial SDK 0.91\Game\Src\Conversational Config\obj\Release\Conversational Config.pdb

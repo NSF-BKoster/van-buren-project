@@ -1,0 +1,15 @@
+sourceFile = "urban_buildings\\building13.fbx"
+objects
+{
+	mesh
+	{
+		name = building13
+		sources
+		{
+			item
+			{
+				name = U3DMesh
+			}
+		}
+	}
+}

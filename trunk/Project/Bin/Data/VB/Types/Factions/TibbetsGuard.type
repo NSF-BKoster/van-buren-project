@@ -1,0 +1,6 @@
+type TibbetsGuardFaction
+{
+	class = VBFaction
+	creatableInMapEditor = False
+	naturalEnemies = PlayerFaction
+}

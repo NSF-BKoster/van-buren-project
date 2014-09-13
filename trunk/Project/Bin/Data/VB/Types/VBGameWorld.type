@@ -1,0 +1,5 @@
+type VBGameWorld
+{
+	class = VBGameWorld
+	networkType = Synchronized
+}

@@ -1,0 +1,15 @@
+highLevelMaterial material29
+{
+	template = ShaderBaseMaterial
+	emissionPower = 0
+	specularColor = 1 1 1
+	specularShininess = 10
+	diffuse1Map
+	{
+		texture = ".\\building3.dds"
+	}
+	normalMap
+	{
+		texture = ".\\urban_building3_nm.tga"
+	}
+}

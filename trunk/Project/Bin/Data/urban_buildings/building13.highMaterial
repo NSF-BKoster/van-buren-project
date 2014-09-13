@@ -1,0 +1,11 @@
+highLevelMaterial building13
+{
+	template = ShaderBaseMaterial
+	diffuseColor = 0.9921569 0.9921569 0.9921569
+	specularColor = 0.992157 0.992157 0.992157
+	specularShininess = 10
+	diffuse1Map
+	{
+		texture = ".\\building13.dds"
+	}
+}

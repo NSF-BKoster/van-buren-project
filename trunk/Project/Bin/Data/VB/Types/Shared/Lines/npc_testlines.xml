@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XmlBubbleConv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <bcIdle>
+    <string>What game is this?</string>
+    <string>Hello, i am a placeholder!</string>
+    <string>Weeee</string>
+    <string>Hi, i am bubble chatting</string>
+    <string>*stares at you*</string>
+    <string>Hey, mister</string>
+    <string>Oh, would you look at the time</string>
+    <string>Just laugh and make them disappeeeear!</string>
+    <string>I'm not special enough to have a dialog. *sniff*</string>
+    <string>Ponies!!</string>
+  </bcIdle>
+  <bcAttacked>
+    <string>Ouch!</string>
+	<string>You can't hurt me, silly</string>
+	<string>I never had my one child</string>
+	<string>Oof</string>
+  </bcAttacked>
+</XmlBubbleConv>

@@ -1,0 +1,16 @@
+sourceFile = "props\\refugebin.fbx"
+objects
+{
+	mesh
+	{
+		name = refugebin
+		sources
+		{
+			item
+			{
+				name = U3DMesh
+				overrideMaterial = refugebin
+			}
+		}
+	}
+}

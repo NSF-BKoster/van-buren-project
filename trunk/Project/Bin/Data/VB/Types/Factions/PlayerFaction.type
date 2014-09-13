@@ -1,0 +1,5 @@
+type PlayerFaction
+{
+	class = VBFaction
+	creatableInMapEditor = False
+}

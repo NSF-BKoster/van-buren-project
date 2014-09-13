@@ -1,0 +1,794 @@
+GameTime = "4/7/2252 1:23:00 PM"
+type = VBGameWorld
+uin = 1
+classPrompt = VBGameWorld
+customSerializationValues
+{
+	cameraDirection
+	{
+		type = Engine.MathEx.SphereDir
+		value = 0 0.9
+	}
+	cameraPosition
+	{
+		type = Engine.MathEx.Vec3
+		value = 29.55514 -21.36333 0
+	}
+}
+entity
+{
+	type = PlayerManager
+	uin = 2
+	classPrompt = PlayerManager
+	serverOrSingle_playerIdentifierCounter = 1
+	name = PlayerManager_0
+	serverOrSingle_players
+	{
+	}
+}
+entity
+{
+	type = DefaultRTSUnitAI
+	uin = 20
+	classPrompt = RTSUnitAI
+	subscriptionsToDeletionEvent = 14 14
+	controlledObject = 14
+	faction = PlayerFaction
+	allowTakeItems = False
+	name = DefaultRTSUnitAI_0
+	currentTask
+	{
+		type = Stop
+		position = NaN NaN NaN
+	}
+	tasks
+	{
+	}
+}
+entity
+{
+	type = DefaultCompanionUnitAI
+	uin = 22
+	classPrompt = CompanionUnitAI
+	subscriptionsToDeletionEvent = 18 18
+	controlledObject = 18
+	allowTakeItems = False
+	name = DefaultCompanionUnitAI_0
+	currentTask
+	{
+		type = Stop
+		position = NaN NaN NaN
+	}
+	tasks
+	{
+	}
+}
+entity
+{
+	type = GameMap
+	uin = 3
+	classPrompt = GameMap
+	gameType = VanBuren
+	gameMusic = "VB\\Sounds\\Music\\Decay.ogg"
+	windDirection = 0
+	windSpeed = 1
+	playerUnitType = VBGirl
+	resetYCoordinateForDynamicBodies = False
+	destroyObjectsBelowHeight = -500
+	ambientLight = 0.4588236 0.4588236 0.07058824
+	editorCameraPosition = 22.22532 -32.29934 24.95097
+	editorCameraDirection = 3.048185 -0.7364056
+	sourceMapVirtualFileName = "Maps\\NewMap\\Map.map"
+	shadowColor = 1 1 1
+	shadowPSSMSplitFactors = 0.1 0.4
+	cameraOrthoWindowHeight = 25
+	shadowDirectionalLightTextureSize = 1024
+	shadowSpotLightTextureSize = 1024
+	shadowPointLightTextureSize = 512
+	logicSystemManager = 4
+	shadowTechnique = None
+	sceneGraphSettings
+	{
+		amountOfObjectsOutsideOctreeBoundsToRebuld = 30
+		octreeBoundsRebuildExpand = 50 50 50
+		minNodeSize = 10 10 10
+		objectCountThresholdToCreateChildNodes = 10
+		maxNodeCount = 300000
+	}
+	dataForEditor
+	{
+	}
+	rootEditorLayer
+	{
+		name = Root Layer
+	}
+	entity
+	{
+		type = LogicSystemManager
+		uin = 4
+		mapClassManager = 5
+		entity
+		{
+			type = LogicClassManager
+			uin = 5
+		}
+	}
+	entity
+	{
+		type = HeightmapTerrain
+		uin = 6
+		classPrompt = HeightmapTerrain
+		enabled = True
+		position = 0 0 -50
+		horizontalSize = 1000
+		verticalSize = 100
+		dataDirectory = HeightmapTerrain
+		masksSize = 2048
+		detailMapsDistance = 50
+		renderQueueGroup = WorldGeometry1
+		collision = True
+		collisionMaterialName = Default
+		collisionHeightfieldThickness = 2
+		castDynamicShadows = False
+		receiveStaticShadows = True
+		simpleRendering = False
+		tileSize = 64
+		visible = True
+		allowVertexTextureFetchOptimization = True
+		ambientOcclusion
+		{
+			enabled = False
+			size = 1024
+			rayLength = 1
+			iterationCount = 100
+			blur = True
+			power = 1
+		}
+		lodSettings
+		{
+			enabled = True
+			maxCount = 99
+			lodLevelDistances = 100 + level * 200
+			morphAreaPercent = 0.3
+			showLevels = False
+		}
+		layers
+		{
+			item
+			{
+				name = base
+				baseMap = "Base\\Types\\HeightmapTerrain\\DefaultLayer1Base.jpg"
+				baseScale = 10
+				detailMap = "Base\\Types\\HeightmapTerrain\\DefaultLayer1Detail.jpg"
+				detailScale = 2
+			}
+			item
+			{
+				name = second
+				baseMap = "Base\\Types\\HeightmapTerrain\\DefaultLayer1Base.jpg"
+				baseScale = 10
+				detailMap = "Base\\Types\\HeightmapTerrain\\DefaultLayer1Detail.jpg"
+				detailScale = 2
+			}
+		}
+	}
+	entity
+	{
+		type = Sun
+		uin = 7
+		classPrompt = Sun
+		billboardTexture = "Base\\Types\\Sun\\SunDefault.png"
+		billboardColor = 1 1 1
+		billboardPower = 1
+		billboardSize = 1
+		billboardRenderQueueGroup = Main
+		billboardOverridePosition = 0 0 0
+		enabled = True
+		lightType = Directional
+		diffuseColor = 1 1 1
+		diffusePower = 1
+		specularColor = 1 1 1
+		specularPower = 1
+		attenuationNear = 0
+		attenuationFar = 10
+		attenuationPower = 2
+		ffpAttenuationConstant = 1
+		ffpAttenuationLinear = 0
+		ffpAttenuationQuadric = 0
+		spotlightInnerAngle = 30
+		spotlightOuterAngle = 40
+		spotlightFalloff = 1
+		castShadows = True
+		allowStaticLighting = False
+		allowDynamicLighting = True
+		customShaderParameter = 0 0 0 0
+		position = 0 0 7
+		rotation = -0.2743657 -0.2223418 0.6965998 -0.6245289
+		name = Sun_0
+	}
+	entity
+	{
+		type = MapCompositorManager
+		uin = 8
+		classPrompt = MapCompositorManager
+		items
+		{
+		}
+	}
+	entity
+	{
+		type = SpawnPoint
+		uin = 9
+		classPrompt = SpawnPoint
+		defaultPoint = False
+		position = 0 0 0
+		name = SpawnPoint_0
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 10
+		classPrompt = StaticMesh
+		position = -0.8092482 -24.2513 -0.7662936
+		rotation = -0.7071068 0 0 -0.7071068
+		scale = 0.0513458 0.02733817 0.04796897
+		name = StaticMesh_building1_0
+		meshName = "urban_buildings\\building1.mesh"
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 11
+		classPrompt = StaticMesh
+		position = -6.711427 -6.681786 0.3540666
+		scale = 0.03 0.03 0.03
+		autoVerticalAlignment = ByBounds
+		name = StaticMesh_wastebin_0
+		meshName = "props\\wastebin.mesh"
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 12
+		classPrompt = StaticMesh
+		position = -28.25752 -23.28601 0.04459152
+		rotation = 0.5 0.5 0.5 0.5
+		scale = 0.05 0.05 0.05
+		autoVerticalAlignment = ByBounds
+		name = StaticMesh_building2_0
+		meshName = "urban_buildings\\building2.mesh"
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 13
+		classPrompt = StaticMesh
+		position = -26.09897 -41.73087 0.005268992
+		rotation = 0.5000864 0.4999136 0.4999136 0.5000864
+		scale = 0.05 0.05 0.05
+		autoVerticalAlignment = ByBounds
+		name = StaticMesh_building3_0
+		meshName = "urban_buildings\\building3.mesh"
+	}
+	entity
+	{
+		type = VBGirl
+		uin = 14
+		classPrompt = VBCharacter
+		subscriptionsToDeletionEvent = 20 20
+		apts = 0
+		primaryActive = False
+		activeItems = 0 0 0
+		initialFaction = PlayerFaction
+		pathFoundedToPosition = NaN NaN
+		path = 
+		intellect = 20
+		intellectShouldDeleteAfterDetach = True
+		disabled = False
+		health = 300
+		position = -0.8269776 -21.36333 1.267307
+		name = VBGirl_0
+		items
+		{
+		}
+		animationTree
+		{
+			blocks
+			{
+				block Parameter
+				{
+					uin = 1001
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 201
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 5
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 401
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 20
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 21
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 22
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 23
+					value = 0
+				}
+				block Output
+				{
+					uin = 1
+				}
+				block Transition
+				{
+					uin = 1000
+				}
+				block Trigger
+				{
+					uin = 101
+				}
+				block Animation
+				{
+					uin = 100
+				}
+				block Transition
+				{
+					uin = 200
+				}
+				block Animation
+				{
+					uin = 202
+				}
+				block Transition
+				{
+					uin = 2
+				}
+				block Direction8Sides
+				{
+					uin = 10
+				}
+				block Animation
+				{
+					uin = 12
+				}
+				block Animation
+				{
+					uin = 13
+				}
+				block Animation
+				{
+					uin = 14
+				}
+				block Animation
+				{
+					uin = 15
+				}
+				block Animation
+				{
+					uin = 16
+				}
+				block Animation
+				{
+					uin = 17
+				}
+				block Animation
+				{
+					uin = 18
+				}
+				block Animation
+				{
+					uin = 19
+				}
+				block Transition
+				{
+					uin = 400
+				}
+				block Direction8Sides
+				{
+					uin = 310
+				}
+				block Animation
+				{
+					uin = 312
+				}
+				block Animation
+				{
+					uin = 313
+				}
+				block Animation
+				{
+					uin = 314
+				}
+				block Animation
+				{
+					uin = 315
+				}
+				block Animation
+				{
+					uin = 316
+				}
+				block Animation
+				{
+					uin = 317
+				}
+				block Animation
+				{
+					uin = 318
+				}
+				block Animation
+				{
+					uin = 319
+				}
+				block Animation
+				{
+					uin = 3
+				}
+				block Sum
+				{
+					uin = 2000
+				}
+				block Transition
+				{
+					uin = 2300
+				}
+				block Transition
+				{
+					uin = 2301
+				}
+				block LookAt
+				{
+					uin = 2002
+					transitionHorizontalAngle = 0
+					transitionVerticalAngle = 0
+				}
+				block Animation
+				{
+					uin = 2004
+				}
+				block Animation
+				{
+					uin = 2005
+				}
+				block Animation
+				{
+					uin = 2006
+				}
+				block LookAt
+				{
+					uin = 2102
+					transitionHorizontalAngle = 0
+					transitionVerticalAngle = 0
+				}
+				block Animation
+				{
+					uin = 2104
+				}
+				block Animation
+				{
+					uin = 2105
+				}
+				block Animation
+				{
+					uin = 2106
+				}
+				block Animation
+				{
+					uin = 2107
+				}
+				block Animation
+				{
+					uin = 2108
+				}
+				block Animation
+				{
+					uin = 2109
+				}
+				block Animation
+				{
+					uin = 2110
+				}
+				block Animation
+				{
+					uin = 2111
+				}
+				block Animation
+				{
+					uin = 2112
+				}
+				block LookAt
+				{
+					uin = 2202
+					transitionHorizontalAngle = 0
+					transitionVerticalAngle = 0
+				}
+				block Animation
+				{
+					uin = 2204
+				}
+				block Animation
+				{
+					uin = 2205
+				}
+				block Animation
+				{
+					uin = 2206
+				}
+				block Animation
+				{
+					uin = 2207
+				}
+				block Animation
+				{
+					uin = 2208
+				}
+				block Animation
+				{
+					uin = 2209
+				}
+				block Animation
+				{
+					uin = 2210
+				}
+				block Animation
+				{
+					uin = 2211
+				}
+				block Animation
+				{
+					uin = 2212
+				}
+				block Trigger
+				{
+					uin = 3101
+				}
+				block Animation
+				{
+					uin = 3100
+				}
+				block Transition
+				{
+					uin = 3200
+				}
+				block Animation
+				{
+					uin = 3202
+				}
+				block Transition
+				{
+					uin = 3002
+				}
+				block Direction8Sides
+				{
+					uin = 3010
+				}
+				block Animation
+				{
+					uin = 3012
+				}
+				block Animation
+				{
+					uin = 3013
+				}
+				block Animation
+				{
+					uin = 3014
+				}
+				block Animation
+				{
+					uin = 3015
+				}
+				block Animation
+				{
+					uin = 3016
+				}
+				block Animation
+				{
+					uin = 3017
+				}
+				block Animation
+				{
+					uin = 3018
+				}
+				block Animation
+				{
+					uin = 3019
+				}
+				block Transition
+				{
+					uin = 3400
+				}
+				block Direction8Sides
+				{
+					uin = 3310
+				}
+				block Animation
+				{
+					uin = 3312
+				}
+				block Animation
+				{
+					uin = 3313
+				}
+				block Animation
+				{
+					uin = 3314
+				}
+				block Animation
+				{
+					uin = 3315
+				}
+				block Animation
+				{
+					uin = 3316
+				}
+				block Animation
+				{
+					uin = 3317
+				}
+				block Animation
+				{
+					uin = 3318
+				}
+				block Animation
+				{
+					uin = 3319
+				}
+				block Animation
+				{
+					uin = 3003
+				}
+			}
+			animationStates
+			{
+				animationState
+				{
+					name = idle
+					enable = True
+					weight = 1
+					timePosition = 2.837238
+				}
+			}
+		}
+	}
+	entity
+	{
+		type = GridBasedNavigationSystem
+		uin = 15
+		classPrompt = GridBasedNavigationSystem
+		gridBounds = -100 -100 100 100
+		gridCellSize = 1
+		agentHeight = 2
+		agentMaxSlope = 30
+		heightByTerrainOnly = False
+		alwaysDrawGrid = False
+		drawGridDistance = 100
+	}
+	entity
+	{
+		type = WP_9mmAutoloader
+		uin = 16
+		classPrompt = VBWeaponItem
+		juice = 0
+		readyTimeRemaining = 0
+		health = 0
+		position = 4.210043 -25.41977 0.0984877
+		rotation = 7.240222E-05 9.569493E-06 -6.069766E-07 1
+		physicsModelData
+		{
+			body
+			{
+				sleeping = True
+				position = 4.210043 -25.41977 0.0984877
+				rotation = 7.240222E-05 9.569493E-06 -6.069766E-07 1
+			}
+		}
+	}
+	entity
+	{
+		type = WoodLocker
+		uin = 17
+		classPrompt = InventoryObject
+		disabled = False
+		health = 0
+		position = -4.194758 -18.12376 0.4985171
+		rotation = 2.155202E-06 3.873547E-06 9.949343E-08 1
+		name = WoodLocker_0
+		items
+		{
+			item
+			{
+				itemType = WP_9mmAutoloader
+				actionMode = 0
+				juice = -1
+			}
+			item
+			{
+				itemType = IT_8ball
+				actionMode = 0
+				juice = -1
+			}
+			item
+			{
+				itemType = GeigerCounter
+				actionMode = 0
+				juice = -1
+			}
+		}
+		physicsModelData
+		{
+			body
+			{
+				sleeping = True
+				position = -4.194758 -18.12376 0.4985171
+				rotation = 2.155202E-06 3.873547E-06 9.949343E-08 1
+			}
+		}
+	}
+	entity
+	{
+		type = RobotCompanion
+		uin = 18
+		classPrompt = VBCharacter
+		subscriptionsToDeletionEvent = 22 22
+		apts = 0
+		primaryActive = False
+		activeItems = 0 0 0
+		pathFoundedToPosition = NaN NaN
+		path = 
+		intellect = 22
+		intellectShouldDeleteAfterDetach = True
+		disabled = False
+		health = 30
+		position = -1.33014 -25.38456 1.979232
+		name = TestCompanion
+		items
+		{
+		}
+	}
+	entity
+	{
+		type = VBFactionManager
+		uin = 23
+		classPrompt = VBFactionManager
+		factions
+		{
+			item
+			{
+				factionType = PlayerFaction
+				enemies = 
+				objManager
+				{
+					Objectives
+					{
+						item
+						{
+							missionFile = mission01
+							logEntries = 0
+							objStatus = 0
+						}
+					}
+				}
+			}
+		}
+	}
+}

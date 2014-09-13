@@ -1,0 +1,300 @@
+type = GameMap
+uin = 2
+classPrompt = GameMap
+gameType = VanBuren
+gameMusic = "VB\\Sounds\\Music\\Decay.ogg"
+windDirection = 0
+windSpeed = 1
+playerUnitType = VBGirl
+resetYCoordinateForDynamicBodies = False
+destroyObjectsBelowHeight = -500
+ambientLight = 0.4588236 0.4588236 0.07058824
+editorCameraPosition = -400.9541 -439.1712 52.72753
+editorCameraDirection = 2.956727 -0.5854049
+shadowColor = 1 1 1
+shadowPSSMSplitFactors = 0.1 0.4
+cameraOrthoWindowHeight = 25
+logicSystemManager = 3
+shadowTechnique = ShadowmapMedium
+sceneGraphSettings
+{
+	amountOfObjectsOutsideOctreeBoundsToRebuld = 30
+	octreeBoundsRebuildExpand = 50 50 50
+	minNodeSize = 10 10 10
+	objectCountThresholdToCreateChildNodes = 10
+	maxNodeCount = 300000
+}
+dataForEditor
+{
+}
+rootEditorLayer
+{
+	name = Root Layer
+}
+entity
+{
+	type = LogicSystemManager
+	uin = 3
+	mapClassManager = 4
+	entity
+	{
+		type = LogicClassManager
+		uin = 4
+	}
+}
+entity
+{
+	type = HeightmapTerrain
+	uin = 5
+	classPrompt = HeightmapTerrain
+	enabled = True
+	position = 0 0 -30
+	horizontalSize = 1000
+	verticalSize = 100
+	dataDirectory = HeightmapTerrain
+	masksSize = 1024
+	detailMapsDistance = 50
+	renderQueueGroup = WorldGeometry1
+	collision = True
+	collisionMaterialName = Default
+	collisionHeightfieldThickness = 2
+	castDynamicShadows = False
+	receiveStaticShadows = True
+	simpleRendering = False
+	tileSize = 32
+	visible = True
+	allowVertexTextureFetchOptimization = True
+	ambientOcclusion
+	{
+		enabled = True
+		size = 1024
+		rayLength = 5
+		iterationCount = 100
+		blur = True
+		power = 2
+	}
+	lodSettings
+	{
+		enabled = True
+		maxCount = 99
+		lodLevelDistances = 100 + level * 200
+		morphAreaPercent = 0.3
+		showLevels = False
+	}
+	layers
+	{
+		item
+		{
+			name = base
+			baseMap = "VB\\Textures\\nm1.jpg"
+			baseScale = 31.351
+			detailScale = 2
+			baseNormalMap = "Maps\\RTSDemo\\Textures\\Terrain\\GroundNormals.dds"
+		}
+		item
+		{
+			name = second
+			baseMap = "VB\\Textures\\nm3.jpg"
+			baseScale = 38.378
+			detailScale = 2
+			baseNormalMap = "Maps\\RTSDemo\\Textures\\Terrain\\RockWallNormals.dds"
+		}
+		item
+		{
+			name = Plate
+			baseMap = "Maps\\TankDemo\\Resources\\Terrain\\Sand_Diffuse.dds"
+			baseScale = 24.324
+			detailScale = 2
+			baseNormalMap = "Maps\\RTSDemo\\Textures\\Terrain\\PlateNormals.dds"
+		}
+	}
+}
+entity
+{
+	type = Sun
+	uin = 6
+	classPrompt = Sun
+	billboardTexture = "Base\\Types\\Sun\\SunDefault.png"
+	billboardColor = 1 1 1
+	billboardPower = 1
+	billboardSize = 1
+	billboardRenderQueueGroup = Main
+	billboardOverridePosition = 0 0 0
+	enabled = True
+	lightType = Directional
+	diffuseColor = 1 1 1
+	diffusePower = 1
+	specularColor = 1 1 1
+	specularPower = 1
+	attenuationNear = 0
+	attenuationFar = 10
+	attenuationPower = 2
+	ffpAttenuationConstant = 1
+	ffpAttenuationLinear = 0
+	ffpAttenuationQuadric = 0
+	spotlightInnerAngle = 30
+	spotlightOuterAngle = 40
+	spotlightFalloff = 1
+	castShadows = True
+	allowStaticLighting = False
+	allowDynamicLighting = True
+	customShaderParameter = 0 0 0 0
+	position = -382.6308 -378.0985 7
+	rotation = -0.2743657 -0.2223418 0.6965998 -0.6245289
+	name = Sun_0
+}
+entity
+{
+	type = MapCompositorManager
+	uin = 7
+	classPrompt = MapCompositorManager
+	items
+	{
+	}
+}
+entity
+{
+	type = StaticMesh
+	uin = 8
+	classPrompt = StaticMesh
+	position = -472.7664 -413.5932 0.3606346
+	scale = 0.03 0.03 0.03
+	autoVerticalAlignment = ByBounds
+	name = StaticMesh_wastebin_0
+	meshName = "props\\wastebin.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 9
+	classPrompt = StaticMesh
+	position = -446.6003 -401.3846 0.03280295
+	rotation = -0.7071068 0 0 -0.7071068
+	scale = 0.06445163 0.06283587 0.08025313
+	autoVerticalAlignment = ByBounds
+	name = StaticMesh_building2_0
+	meshName = "urban_buildings\\building2.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 10
+	classPrompt = StaticMesh
+	position = -447.9176 -444.9932 0.06502385
+	rotation = -8.60405E-09 -0.7071068 -0.7071068 8.60405E-09
+	scale = 0.06586642 0.05 0.06586642
+	autoVerticalAlignment = ByBounds
+	name = StaticMesh_building3_0
+	meshName = "urban_buildings\\building3.mesh"
+}
+entity
+{
+	type = VBGirl
+	uin = 11
+	classPrompt = VBCharacter
+	apts = 0
+	primaryActive = False
+	activeItems = 0 0 0
+	initialFaction = PlayerFaction
+	intellectShouldDeleteAfterDetach = False
+	disabled = False
+	healthFactorAtBeginning = 1
+	position = -481.3845 -429.0382 1.267307
+	name = VBGirl_0
+	items
+	{
+	}
+}
+entity
+{
+	type = GridBasedNavigationSystem
+	uin = 12
+	classPrompt = GridBasedNavigationSystem
+	gridBounds = -100 -100 100 100
+	gridCellSize = 1
+	agentHeight = 2
+	agentMaxSlope = 30
+	heightByTerrainOnly = False
+	alwaysDrawGrid = False
+	drawGridDistance = 100
+}
+entity
+{
+	type = WP_9mmAutoloader
+	uin = 13
+	classPrompt = VBWeaponItem
+	juice = 0
+	readyTimeRemaining = 0
+	healthFactorAtBeginning = 1
+	position = -378.4207 -403.5183 0.09957513
+}
+entity
+{
+	type = WoodLocker
+	uin = 14
+	classPrompt = InventoryObject
+	disabled = False
+	healthFactorAtBeginning = 1
+	position = -454.3781 -459.4775 0.5111123
+	name = WoodLocker_0
+	items
+	{
+		item
+		{
+			itemType = WP_9mmAutoloader
+			actionMode = 0
+			juice = -1
+		}
+		item
+		{
+			itemType = IT_8ball
+			actionMode = 0
+			juice = -1
+		}
+		item
+		{
+			itemType = GeigerCounter
+			actionMode = 0
+			juice = -1
+		}
+	}
+}
+entity
+{
+	type = RobotCompanion
+	uin = 15
+	classPrompt = VBCharacter
+	apts = 0
+	primaryActive = False
+	activeItems = 0 0 0
+	intellectShouldDeleteAfterDetach = False
+	disabled = False
+	healthFactorAtBeginning = 1
+	position = -481.531 -426.2054 1.979232
+	name = TestCompanion
+	items
+	{
+	}
+}
+entity
+{
+	type = StaticMesh
+	uin = 16
+	classPrompt = StaticMesh
+	position = -414.08 -402.352 -0.8549275
+	rotation = -0.7071068 0 0 -0.7071068
+	scale = 0.1036375 0.05 0.08312953
+	name = StaticMesh_building8_0
+	meshName = "urban_buildings\\building8.mesh"
+}
+entity
+{
+	type = StaticMesh
+	uin = 17
+	classPrompt = StaticMesh
+	position = -384.2368 -406.5825 0
+	rotation = -0.7071068 0 0 -0.7071068
+	scale = 0.07946651 0.05 0.07946651
+	name = StaticMesh_building9_0
+	meshName = "urban_buildings\\building9.mesh"
+}

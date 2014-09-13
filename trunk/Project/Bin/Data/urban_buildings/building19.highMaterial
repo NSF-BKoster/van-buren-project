@@ -1,0 +1,15 @@
+highLevelMaterial building19
+{
+	template = ShaderBaseMaterial
+	diffuseColor = 0.976471 0.992157 1
+	specularColor = 1 1 1
+	specularShininess = 10
+	diffuse1Map
+	{
+		texture = ".\\building19.dds"
+	}
+	normalMap
+	{
+		texture = ".\\building2.dds"
+	}
+}

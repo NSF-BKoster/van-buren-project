@@ -1,0 +1,18 @@
+type Generator
+{
+	class = StatusObject
+	disabledMessage = "The terminal needs a keycard to be activated."
+	enableMessage = "You unlocked the terminal."
+	physicsModel = Types\Dynamic\Box\Box.physics
+	allowEditorCreate = True
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = Types\Dynamic\Box\Box.mesh
+			castDynamicShadows = True
+			body = main
+		}
+	}
+}

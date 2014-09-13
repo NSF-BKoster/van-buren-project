@@ -1,0 +1,17 @@
+sourceFile = "urban_buildings\\building18.fbx"
+objects
+{
+	mesh
+	{
+		name = U3DMesh
+		pivotPosition = 0 154.7489 0
+		sources
+		{
+			item
+			{
+				name = U3DMesh
+				overrideMaterial = building18
+			}
+		}
+	}
+}

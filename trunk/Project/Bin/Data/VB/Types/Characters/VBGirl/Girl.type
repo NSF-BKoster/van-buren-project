@@ -1,0 +1,104 @@
+type VBGirl
+{
+	class = VBCharacter
+	height = 2.8
+	radius = 0.3
+	maxVelocity = 2.5
+	initialAI = DefaultRTSUnitAI
+	viewRadius = 70
+	fpsCameraOffset = 0 0 0.52
+	maxWeight = 25
+	healthMax = 300
+	targetPriority = 1
+	substance = Flesh
+	networkType = Synchronized
+	meleeAttacks
+	{
+		item
+		{
+			value = UN_PrimaryAttack
+		}
+		item
+		{
+			value = UN_SecondaryAttack
+		}
+	}
+	defaultInventory
+	{
+		item
+		{
+			value = WP_9mmAutoloader
+		}
+		item
+		{
+			value = StimPak
+		}
+		item
+		{
+			value = AM_9mmFMJ
+		}
+	}
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = "Types\\Units\\Girl\\Girl.mesh"
+			castDynamicShadows = True
+			animationTree = "Types\\Units\\Girl\\Girl.animationTree"
+			position = 0 0 -1.15
+			rotation = 0 0 -0.7071068 -0.7071068
+			scale = 2 2 2
+			boneSlot gunHolderThirdPersonCamera
+			{
+				bone = GirlRebornRArmPalm
+				position = 0.13 0 -0.08
+				rotation = -0.9697794 -0.1276739 0.206133 0.02713788
+			}
+			boneSlot gunHolderThirdPersonCamera_Shotgun
+			{
+				bone = GirlRebornRArmPalm
+				position = 0.27 0.05 -0.09
+				rotation = -0.982963 -0.1294095 0.1294095 0.0170371
+			}
+		}
+	}
+	defaultStatistics
+	{
+		strength = 5
+		perception = 5
+		endurance = 5
+		charisma = 5
+		intelligence = 5
+		agility = 5
+		luck = 5
+		level = 1
+		experience = 0
+		charpoints = 5
+		tagskills = 3
+		traitspoints = 2
+		firearms = 25
+		melee = 40
+		unarmed = 50
+		barter = 20
+		speech = 25
+		mechanics = 15
+		medic = 20
+		outdoorsman = 20
+		science = 20
+		lockpick = 20
+		sneak = 20
+		steal = 15
+	}
+	dieObjects
+	{
+		mapObject
+		{
+			type = GirlDead
+			copyVelocitiesFromParent = True
+		}
+		sound
+		{
+			soundName = ".\\Die.ogg"
+		}
+	}
+}

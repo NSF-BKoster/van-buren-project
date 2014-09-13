@@ -1,0 +1,16 @@
+sourceFile = "props\\ornatewall.fbx"
+materialsNamePrefix = ornatewall
+objects
+{
+	mesh
+	{
+		name = ornatewall
+		sources
+		{
+			item
+			{
+				name = U3DMesh
+			}
+		}
+	}
+}

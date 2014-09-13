@@ -1,0 +1,16 @@
+sourceFile = "props\\monument.fbx"
+objects
+{
+	mesh
+	{
+		name = monument
+		sources
+		{
+			item
+			{
+				name = U3DMesh
+				overrideMaterial = monument_mat
+			}
+		}
+	}
+}

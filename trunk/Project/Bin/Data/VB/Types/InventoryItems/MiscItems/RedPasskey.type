@@ -1,0 +1,26 @@
+type RedPasskey
+{
+	class = VBItem
+	physicsModel = "Types\\Dynamic\\SmallBox\\SmallBox.physics"
+	allowEditorCreate = True
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = Types\VBEntities\InventoryItems\HealthItems\FirstAidKit\FirstAidKit.mesh
+			castShadows = True
+			scale = "0.5 0.5 0.5"
+		}
+	}
+	actionModes
+	{
+		item
+		{
+			useText = USE ON
+		}
+	}
+	
+	invIcon = VB\GUI\ItemIcons\IT_PasskeyRed.tga
+	weight = 1
+}

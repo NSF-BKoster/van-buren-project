@@ -1,0 +1,19 @@
+type Money
+{
+	class = VBItem
+	soundTake = Types\VBEntities\InventoryItems\HealthItems\Health.ogg
+	physicsModel = "Types\\Dynamic\\SmallBox\\SmallBox.physics"
+	allowEditorCreate = True
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = Types\VBEntities\InventoryItems\HealthItems\FirstAidKit\FirstAidKit.mesh
+			castShadows = True
+			scale = "0.5 0.5 0.5"
+		}
+	}
+	invIcon = VB\GUI\ItemIcons\WP_Rock_INV.tga
+	itmvalue = 1
+}

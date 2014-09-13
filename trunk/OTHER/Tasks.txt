@@ -1,0 +1,6 @@
+-SCROLLING THROUGH MULTIPLE INVENTORIES IN THE INVENTORY BARTER WINDOW
+-Fix world map: Make icons bigger, set locations and accelerate gametime when traveling
+-Fix save / load system
+-Implement special and skills
+-Fix factions and make them remember who they hate via the save / load system (save info in GameWorld)
+-Fix inventory problem when dropping and switching to other weapon

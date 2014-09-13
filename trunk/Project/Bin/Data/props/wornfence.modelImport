@@ -1,0 +1,15 @@
+sourceFile = "props\\wornfence.fbx"
+objects
+{
+	mesh
+	{
+		name = wornfence
+		sources
+		{
+			item
+			{
+				name = U3DMesh
+			}
+		}
+	}
+}
