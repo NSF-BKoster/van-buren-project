@@ -1,13 +1,15 @@
 type Raider
 {
 	class = VBCharacter
+	height = 2.8
 	radius = 0.3
 	maxWeight = 25
-	maxVelocity = 3
-	initialAI = DefaultRTSUnitAI
+	apMax = 5
+	maxVelocity = 1.5
+	initialAI = DefaultVBUnitNPCAI
 	viewRadius = 70
 	fpsCameraOffset = 0 0 0.52
-	healthMax = 300
+	healthMax = 20
 	targetPriority = 1
 	substance = Flesh
 	networkType = Synchronized

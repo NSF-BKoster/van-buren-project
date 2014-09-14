@@ -274,6 +274,9 @@ namespace ProjectEntities
 
         public bool AreEnemies(VBFactionType type, VBFactionType type2)
         {
+            if (type == null || type2 == null)
+                return false;
+
             if (GetFactionItemByType(type).Enemies.Contains(type2) || type.NaturalEnemies.Contains(type2))
                 return true;
 

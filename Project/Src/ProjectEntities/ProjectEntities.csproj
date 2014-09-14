@@ -145,6 +145,8 @@
     <Compile Include="BooleanSwitch.cs" />
     <Compile Include="Action Specific\Tank.cs" />
     <Compile Include="ExampleEntityExtendedProperties.cs" />
+    <Compile Include="VB\VBBaseNPCAI.cs" />
+    <Compile Include="VB\VBBaseAI.cs" />
     <Compile Include="VB\WeatherControler.cs" />
     <Compile Include="VB\UI Controls\ChatWindow.cs" />
     <Compile Include="VB\CombatManager.cs" />

@@ -110,10 +110,9 @@ namespace ProjectEntities
         //
         InventoryObjectType _type = null; public new InventoryObjectType Type { get { return _type; } }
 
-        [Browsable(false)]
-        public virtual int GetMaxWeight
+        public virtual int GetMaxWeight()
         {
-            get { return Type.MaxWeight; }
+            return Type.MaxWeight;
         }
 
         public void AddNewObject(string type)
@@ -138,7 +137,7 @@ namespace ProjectEntities
 
         public bool CanHoldItem(VBItemType i)
         {
-            if (InvWeight() + i.Weight <= GetMaxWeight)
+            if (InvWeight() + i.Weight <= GetMaxWeight())
                 return true;
 
             return false;
@@ -188,7 +187,7 @@ namespace ProjectEntities
 
         public virtual bool SwapItem(InventoryObjectItem i, InventoryObject giver)
         {
-            if ( InvWeight() + i.ItemType.Weight <= GetMaxWeight)
+            if ( InvWeight() + i.ItemType.Weight <= GetMaxWeight())
                 return false;
 
             Inventory.Add(i);

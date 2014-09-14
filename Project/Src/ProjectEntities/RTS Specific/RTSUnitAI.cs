@@ -688,17 +688,12 @@ namespace ProjectEntities
 			}
 		}
 
-		void ClearTaskList()
+        public virtual void ClearTaskList()
 		{
 			foreach( Task task in tasks )
 				if( task.Entity != null )
 					UnsubscribeToDeletionEvent( task.Entity );
 			tasks.Clear();
-
-            //VBCODE
-            RTSCharacter c = ControlledObject as RTSCharacter;
-            if (c != null)
-                c.IsRunning = false;
 		}
 
 		protected virtual void DoTaskInternal( Task task )

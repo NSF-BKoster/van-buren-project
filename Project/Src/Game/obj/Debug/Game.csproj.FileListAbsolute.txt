@@ -22,3 +22,11 @@ C:\Users\Razvan\Google Drive\NeoAxis Engine Free SDK 2.0.5\Project\Src\Game\obj\
 C:\Users\Razvan\Google Drive\NeoAxis Engine Free SDK 2.0.5\Project\Src\Game\obj\Debug\Game.csproj.GenerateResource.Cache
 C:\Users\Razvan\Google Drive\NeoAxis Engine Free SDK 2.0.5\Project\Src\Game\obj\Debug\Game.exe
 C:\Users\Razvan\Google Drive\NeoAxis Engine Free SDK 2.0.5\Project\Src\Game\obj\Debug\Game.pdb
+D:\vb\Project\Bin\Game.exe
+D:\vb\Project\Bin\Game.pdb
+D:\vb\Project\Bin\Game.xml
+D:\vb\Project\Src\Game\obj\Debug\Game.csprojResolveAssemblyReference.cache
+D:\vb\Project\Src\Game\obj\Debug\Game.Properties.Resources.resources
+D:\vb\Project\Src\Game\obj\Debug\Game.csproj.GenerateResource.Cache
+D:\vb\Project\Src\Game\obj\Debug\Game.exe
+D:\vb\Project\Src\Game\obj\Debug\Game.pdb

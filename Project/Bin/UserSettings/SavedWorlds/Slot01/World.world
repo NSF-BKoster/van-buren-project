@@ -1,4 +1,4 @@
-GameTime = "4/7/2252 1:23:00 PM"
+GameTime = "10/23/2253 12:00:00 AM"
 type = VBGameWorld
 uin = 1
 classPrompt = VBGameWorld
@@ -12,7 +12,7 @@ customSerializationValues
 	cameraPosition
 	{
 		type = Engine.MathEx.Vec3
-		value = 29.55514 -21.36333 0
+		value = -10.71808 45.07679 -1.633638
 	}
 }
 entity
@@ -29,11 +29,11 @@ entity
 entity
 {
 	type = DefaultRTSUnitAI
-	uin = 20
+	uin = 59
 	classPrompt = RTSUnitAI
-	subscriptionsToDeletionEvent = 14 14
-	controlledObject = 14
-	faction = PlayerFaction
+	subscriptionsToDeletionEvent = 7 7
+	controlledObject = 7
+	faction = BadFaction
 	allowTakeItems = False
 	name = DefaultRTSUnitAI_0
 	currentTask
@@ -47,13 +47,51 @@ entity
 }
 entity
 {
+	type = DefaultVBUnitAI
+	uin = 61
+	classPrompt = VBUnitAI
+	subscriptionsToDeletionEvent = 39 39
+	controlledObject = 39
+	faction = PlayerFaction
+	allowTakeItems = False
+	name = DefaultVBUnitAI_0
+	currentTask
+	{
+		type = Stop
+		position = NaN NaN NaN
+	}
+	tasks
+	{
+	}
+}
+entity
+{
 	type = DefaultCompanionUnitAI
-	uin = 22
+	uin = 63
 	classPrompt = CompanionUnitAI
-	subscriptionsToDeletionEvent = 18 18
-	controlledObject = 18
+	subscriptionsToDeletionEvent = 42 42
+	controlledObject = 42
 	allowTakeItems = False
 	name = DefaultCompanionUnitAI_0
+	currentTask
+	{
+		type = Stop
+		position = NaN NaN NaN
+	}
+	tasks
+	{
+	}
+}
+entity
+{
+	type = DefaultRTSUnitAI
+	uin = 65
+	classPrompt = RTSUnitAI
+	subscriptionsToDeletionEvent = 53 53
+	controlledObject = 53
+	faction = RaiderFaction
+	allowTakeItems = False
+	name = DefaultRTSUnitAI_1
 	currentTask
 	{
 		type = Stop
@@ -72,20 +110,25 @@ entity
 	gameMusic = "VB\\Sounds\\Music\\Decay.ogg"
 	windDirection = 0
 	windSpeed = 1
-	playerUnitType = VBGirl
 	resetYCoordinateForDynamicBodies = False
 	destroyObjectsBelowHeight = -500
-	ambientLight = 0.4588236 0.4588236 0.07058824
-	editorCameraPosition = 22.22532 -32.29934 24.95097
-	editorCameraDirection = 3.048185 -0.7364056
-	sourceMapVirtualFileName = "Maps\\NewMap\\Map.map"
-	shadowColor = 1 1 1
+	ambientLight = 0.2627451 0.2313726 0.2862745
+	editorCameraPosition = -2.996365 48.63493 7.454845
+	editorCameraDirection = 4.284442 -0.5635518
+	sourceMapVirtualFileName = "VB\\Maps\\Demo.map"
+	shadowColor = 0.7176471 0.8235295 1 0.6
+	shadowFarDistance = 90
 	shadowPSSMSplitFactors = 0.1 0.4
-	cameraOrthoWindowHeight = 25
 	shadowDirectionalLightTextureSize = 1024
 	shadowSpotLightTextureSize = 1024
 	shadowPointLightTextureSize = 512
 	logicSystemManager = 4
+	staticBatchingRenderingEnabled = False
+	staticBatchingPhysicsEnabledInMapEditor = False
+	staticBatchingPhysicsEnabledInSimulation = False
+	staticBatchingGridCellSize = 30 30 30
+	staticBatchingFilterByMaxTriangleCount = 512
+	name = GameMap_0
 	shadowTechnique = None
 	sceneGraphSettings
 	{
@@ -101,11 +144,17 @@ entity
 	rootEditorLayer
 	{
 		name = Root Layer
+		layer
+		{
+			name = StaticGeometry
+		}
 	}
 	entity
 	{
 		type = LogicSystemManager
 		uin = 4
+		referencesToCompileDLL = "System.dll\r\nSystem.Drawing.dll\r\n\r\nEngineApp.dll\r\nUISystem.dll\r\nFileSystem.dll\r\nLog.dll\r\nMathEx.dll\r\nRenderer.dll\r\nPhysicsSystem.dll\r\nSoundSystem.dll\r\nEntitySystem.dll\r\nMapSystem.dll\r\nUtils.dll\r\nHeightmapTerrain.dll\r\nDecorativeObjectManager.dll\r\n\r\nProjectCommon.dll\r\nProjectEntities.dll"
+		usingNamespacesToCodeGeneration = "using System;\r\nusing System.Collections.Generic;\r\nusing System.Text;\r\n\r\nusing Engine;\r\nusing Engine.FileSystem;\r\nusing Engine.MathEx;\r\nusing Engine.Utils;\r\nusing Engine.Renderer;\r\nusing Engine.PhysicsSystem;\r\nusing Engine.SoundSystem;\r\nusing Engine.UISystem;\r\nusing Engine.EntitySystem;\r\nusing Engine.MapSystem;\r\n\r\nusing ProjectCommon;\r\nusing ProjectEntities;"
 		mapClassManager = 5
 		entity
 		{
@@ -115,15 +164,112 @@ entity
 	}
 	entity
 	{
-		type = HeightmapTerrain
+		type = GridBasedNavigationSystem
 		uin = 6
+		classPrompt = GridBasedNavigationSystem
+		gridBounds = -80 -160 200 80
+		gridCellSize = 2
+		agentHeight = 2
+		agentMaxSlope = 30
+		heightByTerrainOnly = True
+		alwaysDrawGrid = False
+		drawGridDistance = 100
+	}
+	entity
+	{
+		type = RTSRobot
+		uin = 7
+		classPrompt = RTSCharacter
+		subscriptionsToDeletionEvent = 59 59
+		pathFoundedToPosition = NaN NaN
+		path = 
+		intellect = 59
+		intellectShouldDeleteAfterDetach = True
+		initialFaction = BadFaction
+		disabled = False
+		health = 150
+		position = 12.94107 -109.7588 0.1324985
+		name = RTSRobot_12
+		items
+		{
+		}
+		animationTree
+		{
+			blocks
+			{
+				block Output
+				{
+					uin = 1
+				}
+				block Trigger
+				{
+					uin = 100
+				}
+				block Animation
+				{
+					uin = 101
+				}
+				block Transition
+				{
+					uin = 200
+					progress0 = 1
+					progress1 = 0
+				}
+				block Parameter
+				{
+					uin = 201
+					value = 0
+				}
+				block Direction8Sides
+				{
+					uin = 310
+				}
+				block Parameter
+				{
+					uin = 311
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 316
+					value = 0
+				}
+				block Animation
+				{
+					uin = 312
+				}
+				block Animation
+				{
+					uin = 315
+				}
+				block Animation
+				{
+					uin = 400
+				}
+			}
+			animationStates
+			{
+				animationState
+				{
+					name = idleAgressive
+					enable = True
+					weight = 1
+					timePosition = 0.2894634
+				}
+			}
+		}
+	}
+	entity
+	{
+		type = HeightmapTerrain
+		uin = 8
 		classPrompt = HeightmapTerrain
 		enabled = True
-		position = 0 0 -50
+		position = 0 0 -30
 		horizontalSize = 1000
 		verticalSize = 100
 		dataDirectory = HeightmapTerrain
-		masksSize = 2048
+		masksSize = 1024
 		detailMapsDistance = 50
 		renderQueueGroup = WorldGeometry1
 		collision = True
@@ -132,17 +278,17 @@ entity
 		castDynamicShadows = False
 		receiveStaticShadows = True
 		simpleRendering = False
-		tileSize = 64
+		tileSize = 32
 		visible = True
 		allowVertexTextureFetchOptimization = True
 		ambientOcclusion
 		{
-			enabled = False
+			enabled = True
 			size = 1024
-			rayLength = 1
+			rayLength = 5
 			iterationCount = 100
 			blur = True
-			power = 1
+			power = 2
 		}
 		lodSettings
 		{
@@ -157,25 +303,350 @@ entity
 			item
 			{
 				name = base
-				baseMap = "Base\\Types\\HeightmapTerrain\\DefaultLayer1Base.jpg"
+				baseMap = "VB\\Textures\\nm1.jpg"
 				baseScale = 10
-				detailMap = "Base\\Types\\HeightmapTerrain\\DefaultLayer1Detail.jpg"
 				detailScale = 2
+				baseNormalMap = "Maps\\RTSDemo\\Textures\\Terrain\\GroundNormals.dds"
 			}
 			item
 			{
 				name = second
-				baseMap = "Base\\Types\\HeightmapTerrain\\DefaultLayer1Base.jpg"
-				baseScale = 10
-				detailMap = "Base\\Types\\HeightmapTerrain\\DefaultLayer1Detail.jpg"
+				baseMap = "VB\\Textures\\nm3.jpg"
+				baseScale = 30
 				detailScale = 2
+				baseNormalMap = "Maps\\RTSDemo\\Textures\\Terrain\\RockWallNormals.dds"
 			}
 		}
 	}
 	entity
 	{
+		type = StaticMesh
+		uin = 9
+		classPrompt = StaticMesh
+		position = 29.54031 -146.0792 -5.021061
+		rotation = -0.1093817 -0.2345698 -0.408218 0.8754263
+		scale = 2.584615 2.584615 3.36
+		name = StaticMesh_RockBig_1
+		meshName = "Maps\\RTSDemo\\Models\\RockBig\\RockBig.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 10
+		classPrompt = StaticMesh
+		position = -0.1468124 -123.4874 -9.235411
+		rotation = -0.1645146 -0.08685614 0.5591918 -0.8078963
+		scale = 3.367953 3.367953 4.378338
+		name = StaticMesh_RockBig_5
+		meshName = "Maps\\RTSDemo\\Models\\RockBig\\RockBig.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 11
+		classPrompt = StaticMesh
+		position = 44.34427 -46.30016 -10.84613
+		rotation = 0 0 0.7071068 0.7071068
+		name = StaticMesh_Beam_0
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 12
+		classPrompt = StaticMesh
+		position = 44.34427 -60.72413 -10.84613
+		rotation = 0 0 0.7071068 0.7071068
+		name = StaticMesh_Beam_1
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 13
+		classPrompt = StaticMesh
+		position = 44.34427 -31.8821 -10.84613
+		rotation = 0 0 0.7071068 0.7071068
+		name = StaticMesh_Beam_2
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 14
+		classPrompt = StaticMesh
+		position = 130.007 -70.64834 -8.499201
+		rotation = 0 0 0.7071068 0.7071068
+		name = StaticMesh_Beam_3
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 15
+		classPrompt = StaticMesh
+		position = 130.007 -56.22437 -8.499201
+		rotation = 0 0 0.7071068 0.7071068
+		name = StaticMesh_Beam_4
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 16
+		classPrompt = StaticMesh
+		position = 130.007 -41.74527 -8.499201
+		rotation = 0 0 0.7071068 0.7071068
+		name = StaticMesh_Beam_5
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 17
+		classPrompt = StaticMesh
+		position = 130.007 -27.16588 -8.499201
+		rotation = 0 0 0.7071068 0.7071068
+		name = StaticMesh_Beam_6
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 18
+		classPrompt = StaticMesh
+		position = 127.5697 -56.22437 -28.07998
+		rotation = 0.03084356 0.7064338 -0.03084356 0.7064338
+		name = StaticMesh_Beam_7
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 19
+		classPrompt = StaticMesh
+		position = 127.5697 -56.22437 -16.86846
+		rotation = 0.03084356 0.7064338 -0.03084356 0.7064338
+		name = StaticMesh_Beam_8
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 20
+		classPrompt = StaticMesh
+		position = 132.5442 -56.22437 -16.86846
+		rotation = 0.03084356 0.7064338 -0.03084356 0.7064338
+		name = StaticMesh_Beam_9
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 21
+		classPrompt = StaticMesh
+		position = 132.5442 -56.22437 -28.07998
+		rotation = 0.03084356 0.7064338 -0.03084356 0.7064338
+		name = StaticMesh_Beam_10
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 22
+		classPrompt = StaticMesh
+		position = 42.10157 -57.88508 -19.29064
+		rotation = 0.03084356 0.7064338 -0.03084356 0.7064338
+		name = StaticMesh_Beam_11
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 23
+		classPrompt = StaticMesh
+		position = 47.07612 -57.88508 -19.29064
+		rotation = -9.313226E-09 0.7071069 9.313226E-09 0.7071069
+		name = StaticMesh_Beam_12
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 24
+		classPrompt = StaticMesh
+		position = 42.10157 -42.45077 -19.29064
+		rotation = 0.03084356 0.7064338 -0.03084356 0.7064338
+		name = StaticMesh_Beam_13
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 25
+		classPrompt = StaticMesh
+		position = 47.07612 -42.45077 -19.29064
+		rotation = -9.313226E-09 0.7071069 9.313226E-09 0.7071069
+		name = StaticMesh_Beam_14
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 26
+		classPrompt = StaticMesh
+		position = 119.3461 -68.60798 -9.04344
+		rotation = 0 0 1 0
+		name = StaticMesh_Beam_23
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 27
+		classPrompt = StaticMesh
+		position = 139.338 -56.411 -13.40038
+		rotation = 0 0 1 0
+		name = StaticMesh_Beam_25
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 28
+		classPrompt = StaticMesh
+		position = 153.757 -56.411 -13.40038
+		rotation = 0 0 1 0
+		name = StaticMesh_Beam_26
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 29
+		classPrompt = StaticMesh
+		position = 119.5326 -47.53133 -11.13137
+		rotation = 0 0 1 0
+		name = StaticMesh_Beam_36
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 30
+		classPrompt = StaticMesh
+		position = 111.2973 -47.53133 -24.99425
+		rotation = 0.3826835 0 0.9238796 0
+		name = StaticMesh_Beam_37
+		meshName = "Maps\\RTSDemo\\Models\\Beam\\Beam.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 31
+		classPrompt = StaticMesh
+		position = 84.62247 -145.3234 -3.26614
+		rotation = 0 0 -0.9961947 -0.08715567
+		scale = 3.78 3.78 3.78
+		name = StaticMesh_ConcreteBlock_0
+		meshName = "Maps\\RTSDemo\\Models\\ConcreteBlock\\ConcreteBlock.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 32
+		classPrompt = StaticMesh
+		position = 55.59394 -140.205 -3.26614
+		rotation = 0 0 -0.9961947 -0.08715567
+		scale = 3.78 3.78 3.78
+		name = StaticMesh_ConcreteBlock_1
+		meshName = "Maps\\RTSDemo\\Models\\ConcreteBlock\\ConcreteBlock.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 33
+		classPrompt = StaticMesh
+		position = 130.1493 -64.25353 -31.43382
+		rotation = 0 0 -1 6.705523E-08
+		scale = 3.78 3.78 3.78
+		name = StaticMesh_ConcreteBlock_2
+		meshName = "Maps\\RTSDemo\\Models\\ConcreteBlock\\ConcreteBlock.mesh"
+		castDynamicShadows = True
+	}
+	entity
+	{
+		type = Fog
+		uin = 34
+		classPrompt = Fog
+		enabled = True
+		mode = Exp2
+		color = 0.3411765 0.3137255 0.7490196
+		expDensity = 0.005
+	}
+	entity
+	{
+		type = SkyDome
+		uin = 35
+		classPrompt = SkyDome
+		enabled = True
+		horizonMap = "Base\\Types\\SkyDome\\DefaultSkyDomeHorizon.png"
+		color = 0.1686275 0.09411766 0.6
+		power = 1
+		diffuse1Map
+		{
+			texture = "Base\\Types\\SkyDome\\DefaultSkyDome.jpg"
+			tiling = 5
+			scrollSpeed = 0.005 0
+		}
+		diffuse2Map
+		{
+			blending = Add
+			texture = "Base\\Types\\SkyDome\\DefaultSkyDome2.jpg"
+			tiling = 4
+			scrollSpeed = 0.018 0
+		}
+		diffuse3Map
+		{
+			blending = Add
+			tiling = 10
+			scrollSpeed = 0 0
+		}
+		diffuse4Map
+		{
+			blending = Add
+			tiling = 10
+			scrollSpeed = 0 0
+		}
+	}
+	entity
+	{
 		type = Sun
-		uin = 7
+		uin = 36
 		classPrompt = Sun
 		billboardTexture = "Base\\Types\\Sun\\SunDefault.png"
 		billboardColor = 1 1 1
@@ -202,91 +673,49 @@ entity
 		allowStaticLighting = False
 		allowDynamicLighting = True
 		customShaderParameter = 0 0 0 0
-		position = 0 0 7
+		position = 88.03561 96.01649 46.40089
 		rotation = -0.2743657 -0.2223418 0.6965998 -0.6245289
 		name = Sun_0
 	}
 	entity
 	{
-		type = MapCompositorManager
-		uin = 8
-		classPrompt = MapCompositorManager
-		items
-		{
-		}
-	}
-	entity
-	{
-		type = SpawnPoint
-		uin = 9
-		classPrompt = SpawnPoint
-		defaultPoint = False
-		position = 0 0 0
-		name = SpawnPoint_0
-	}
-	entity
-	{
 		type = StaticMesh
-		uin = 10
+		uin = 37
 		classPrompt = StaticMesh
-		position = -0.8092482 -24.2513 -0.7662936
-		rotation = -0.7071068 0 0 -0.7071068
-		scale = 0.0513458 0.02733817 0.04796897
-		name = StaticMesh_building1_0
-		meshName = "urban_buildings\\building1.mesh"
-	}
-	entity
-	{
-		type = StaticMesh
-		uin = 11
-		classPrompt = StaticMesh
-		position = -6.711427 -6.681786 0.3540666
-		scale = 0.03 0.03 0.03
-		autoVerticalAlignment = ByBounds
-		name = StaticMesh_wastebin_0
-		meshName = "props\\wastebin.mesh"
-	}
-	entity
-	{
-		type = StaticMesh
-		uin = 12
-		classPrompt = StaticMesh
-		position = -28.25752 -23.28601 0.04459152
-		rotation = 0.5 0.5 0.5 0.5
-		scale = 0.05 0.05 0.05
-		autoVerticalAlignment = ByBounds
+		position = 62.01026 110.9189 -2.803063
+		autoVerticalAlignment = ByBoundsWithRotation
 		name = StaticMesh_building2_0
 		meshName = "urban_buildings\\building2.mesh"
 	}
 	entity
 	{
 		type = StaticMesh
-		uin = 13
+		uin = 38
 		classPrompt = StaticMesh
-		position = -26.09897 -41.73087 0.005268992
-		rotation = 0.5000864 0.4999136 0.4999136 0.5000864
-		scale = 0.05 0.05 0.05
-		autoVerticalAlignment = ByBounds
+		position = 38.62165 44.60459 -2.902649
+		rotation = 0 0 0.7767603 0.6297963
+		autoVerticalAlignment = ByBoundsWithRotation
 		name = StaticMesh_building3_0
 		meshName = "urban_buildings\\building3.mesh"
 	}
 	entity
 	{
 		type = VBGirl
-		uin = 14
+		uin = 39
 		classPrompt = VBCharacter
-		subscriptionsToDeletionEvent = 20 20
+		subscriptionsToDeletionEvent = 61 61
 		apts = 0
 		primaryActive = False
 		activeItems = 0 0 0
 		initialFaction = PlayerFaction
 		pathFoundedToPosition = NaN NaN
 		path = 
-		intellect = 20
+		intellect = 61
 		intellectShouldDeleteAfterDetach = True
 		disabled = False
 		health = 300
-		position = -0.8269776 -21.36333 1.267307
+		position = -10.71808 45.07679 -1.633638
+		autoVerticalAlignment = ByBounds
 		name = VBGirl_0
 		items
 		{
@@ -342,6 +771,8 @@ entity
 				block Transition
 				{
 					uin = 1000
+					progress0 = 1
+					progress1 = 0
 				}
 				block Trigger
 				{
@@ -354,6 +785,8 @@ entity
 				block Transition
 				{
 					uin = 200
+					progress0 = 1
+					progress1 = 0
 				}
 				block Animation
 				{
@@ -362,6 +795,8 @@ entity
 				block Transition
 				{
 					uin = 2
+					progress0 = 1
+					progress1 = 0
 				}
 				block Direction8Sides
 				{
@@ -402,6 +837,8 @@ entity
 				block Transition
 				{
 					uin = 400
+					progress0 = 1
+					progress1 = 0
 				}
 				block Direction8Sides
 				{
@@ -450,10 +887,14 @@ entity
 				block Transition
 				{
 					uin = 2300
+					progress0 = 1
+					progress1 = 0
 				}
 				block Transition
 				{
 					uin = 2301
+					progress0 = 1
+					progress1 = 0
 				}
 				block LookAt
 				{
@@ -568,6 +1009,8 @@ entity
 				block Transition
 				{
 					uin = 3200
+					progress0 = 1
+					progress1 = 0
 				}
 				block Animation
 				{
@@ -576,6 +1019,8 @@ entity
 				block Transition
 				{
 					uin = 3002
+					progress0 = 1
+					progress1 = 0
 				}
 				block Direction8Sides
 				{
@@ -616,6 +1061,8 @@ entity
 				block Transition
 				{
 					uin = 3400
+					progress0 = 1
+					progress1 = 0
 				}
 				block Direction8Sides
 				{
@@ -665,53 +1112,41 @@ entity
 					name = idle
 					enable = True
 					weight = 1
-					timePosition = 2.837238
+					timePosition = 1.556129
 				}
 			}
 		}
 	}
 	entity
 	{
-		type = GridBasedNavigationSystem
-		uin = 15
-		classPrompt = GridBasedNavigationSystem
-		gridBounds = -100 -100 100 100
-		gridCellSize = 1
-		agentHeight = 2
-		agentMaxSlope = 30
-		heightByTerrainOnly = False
-		alwaysDrawGrid = False
-		drawGridDistance = 100
-	}
-	entity
-	{
 		type = WP_9mmAutoloader
-		uin = 16
+		uin = 40
 		classPrompt = VBWeaponItem
 		juice = 0
 		readyTimeRemaining = 0
 		health = 0
-		position = 4.210043 -25.41977 0.0984877
-		rotation = 7.240222E-05 9.569493E-06 -6.069766E-07 1
+		position = 91.95239 70.10438 -2.238607
+		rotation = 0.4745823 -0.5452654 -0.5944807 0.3522073
 		physicsModelData
 		{
 			body
 			{
 				sleeping = True
-				position = 4.210043 -25.41977 0.0984877
-				rotation = 7.240222E-05 9.569493E-06 -6.069766E-07 1
+				position = 91.95239 70.10438 -2.238607
+				rotation = 0.4745823 -0.5452654 -0.5944807 0.3522073
 			}
 		}
 	}
 	entity
 	{
 		type = WoodLocker
-		uin = 17
+		uin = 41
 		classPrompt = InventoryObject
 		disabled = False
 		health = 0
-		position = -4.194758 -18.12376 0.4985171
-		rotation = 2.155202E-06 3.873547E-06 9.949343E-08 1
+		position = -38.39099 60.92071 -2.394026
+		rotation = -0.3986672 0.5849646 0.4003955 0.5818629
+		autoVerticalAlignment = ByBoundsWithRotation
 		name = WoodLocker_0
 		items
 		{
@@ -739,27 +1174,28 @@ entity
 			body
 			{
 				sleeping = True
-				position = -4.194758 -18.12376 0.4985171
-				rotation = 2.155202E-06 3.873547E-06 9.949343E-08 1
+				position = -38.39099 60.92071 -2.394026
+				rotation = -0.3986672 0.5849646 0.4003955 0.5818629
 			}
 		}
 	}
 	entity
 	{
 		type = RobotCompanion
-		uin = 18
+		uin = 42
 		classPrompt = VBCharacter
-		subscriptionsToDeletionEvent = 22 22
+		subscriptionsToDeletionEvent = 63 63
 		apts = 0
 		primaryActive = False
 		activeItems = 0 0 0
 		pathFoundedToPosition = NaN NaN
 		path = 
-		intellect = 22
+		intellect = 63
 		intellectShouldDeleteAfterDetach = True
 		disabled = False
 		health = 30
-		position = -1.33014 -25.38456 1.979232
+		position = -10.86459 47.90958 -0.916927
+		autoVerticalAlignment = ByBounds
 		name = TestCompanion
 		items
 		{
@@ -767,11 +1203,628 @@ entity
 	}
 	entity
 	{
+		type = StaticMesh
+		uin = 43
+		classPrompt = StaticMesh
+		position = 23.36201 10.77954 -2.902649
+		rotation = 0 0 0.9462132 0.323544
+		autoVerticalAlignment = ByBoundsWithRotation
+		name = StaticMesh_building9_0
+		meshName = "urban_buildings\\building9.mesh"
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 44
+		classPrompt = StaticMesh
+		position = 115.2711 0.6027515 -2.803079
+		rotation = 0 0 -0.7223318 0.6915467
+		autoVerticalAlignment = ByBoundsWithRotation
+		name = StaticMesh_building10_0
+		meshName = "urban_buildings\\building10.mesh"
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 45
+		classPrompt = StaticMesh
+		position = -36.96777 57.56159 -2.899551
+		rotation = 0 0 -0.9988763 0.04739328
+		autoVerticalAlignment = ByBoundsWithRotation
+		name = StaticMesh_building17_0
+		meshName = "urban_buildings\\building17.mesh"
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 46
+		classPrompt = StaticMesh
+		position = 14.53092 76.83829 4.93417
+		rotation = 0 0 -2.853666E-10 1
+		autoVerticalAlignment = ByBoundsWithRotation
+		name = StaticMesh_building18_0
+		meshName = "urban_buildings\\building18.mesh"
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 47
+		classPrompt = StaticMesh
+		position = 101.1454 54.30293 -2.803079
+		autoVerticalAlignment = ByBoundsWithRotation
+		name = StaticMesh_building19_0
+		meshName = "urban_buildings\\building19.mesh"
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 48
+		classPrompt = StaticMesh
+		position = 9.800747 101.3386 -2.902618
+		scale = 2.238161 1 2.238161
+		autoVerticalAlignment = ByBoundsWithRotation
+		name = StaticMesh_oldwall_0
+		meshName = "props\\oldwall.mesh"
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 49
+		classPrompt = StaticMesh
+		position = 29.61605 114.4341 0.9751987
+		rotation = 0 0 0.354591 0.9350215
+		scale = 2.910335 1.921029 1.921029
+		autoVerticalAlignment = ByBoundsWithRotation
+		name = StaticMesh_oldwall2_0
+		meshName = "props\\oldwall2.mesh"
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 50
+		classPrompt = StaticMesh
+		position = 18.76332 21.68085 -2.894474
+		name = StaticMesh_wastebin_1
+		meshName = "props\\wastebin.mesh"
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 51
+		classPrompt = StaticMesh
+		position = 97.50979 95.71117 3.807838
+		rotation = 0.08195684 -0.0225633 -0.001855938 0.9963787
+		autoVerticalAlignment = ByBoundsWithRotation
+		name = StaticMesh_refugebin_0
+		meshName = "props\\refugebin.mesh"
+	}
+	entity
+	{
+		type = StaticMesh
+		uin = 52
+		classPrompt = StaticMesh
+		position = 86.70718 94.02421 1.973306
+		rotation = 0.0787727 -0.3303057 -0.02767475 0.940174
+		scale = 2.741545 2.297823 1
+		autoVerticalAlignment = ByBoundsWithRotation
+		name = StaticMesh_rubbish1_0
+		meshName = "props\\rubbish1.mesh"
+	}
+	entity
+	{
+		type = Raider
+		uin = 53
+		classPrompt = VBCharacter
+		subscriptionsToDeletionEvent = 65 65
+		apts = 0
+		primaryActive = False
+		activeItems = 0 0 0
+		initialFaction = RaiderFaction
+		pathFoundedToPosition = NaN NaN
+		path = 
+		intellect = 65
+		intellectShouldDeleteAfterDetach = True
+		disabled = False
+		health = 300
+		position = 91.45676 -7.700742 -1.630996
+		name = Raider_0
+		items
+		{
+		}
+		animationTree
+		{
+			blocks
+			{
+				block Parameter
+				{
+					uin = 1001
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 201
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 5
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 401
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 20
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 21
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 22
+					value = 0
+				}
+				block Parameter
+				{
+					uin = 23
+					value = 0
+				}
+				block Output
+				{
+					uin = 1
+				}
+				block Transition
+				{
+					uin = 1000
+					progress0 = 1
+					progress1 = 0
+				}
+				block Trigger
+				{
+					uin = 101
+				}
+				block Animation
+				{
+					uin = 100
+				}
+				block Transition
+				{
+					uin = 200
+					progress0 = 1
+					progress1 = 0
+				}
+				block Animation
+				{
+					uin = 202
+				}
+				block Transition
+				{
+					uin = 2
+					progress0 = 1
+					progress1 = 0
+				}
+				block Direction8Sides
+				{
+					uin = 10
+				}
+				block Animation
+				{
+					uin = 12
+				}
+				block Animation
+				{
+					uin = 13
+				}
+				block Animation
+				{
+					uin = 14
+				}
+				block Animation
+				{
+					uin = 15
+				}
+				block Animation
+				{
+					uin = 16
+				}
+				block Animation
+				{
+					uin = 17
+				}
+				block Animation
+				{
+					uin = 18
+				}
+				block Animation
+				{
+					uin = 19
+				}
+				block Transition
+				{
+					uin = 400
+					progress0 = 1
+					progress1 = 0
+				}
+				block Direction8Sides
+				{
+					uin = 310
+				}
+				block Animation
+				{
+					uin = 312
+				}
+				block Animation
+				{
+					uin = 313
+				}
+				block Animation
+				{
+					uin = 314
+				}
+				block Animation
+				{
+					uin = 315
+				}
+				block Animation
+				{
+					uin = 316
+				}
+				block Animation
+				{
+					uin = 317
+				}
+				block Animation
+				{
+					uin = 318
+				}
+				block Animation
+				{
+					uin = 319
+				}
+				block Animation
+				{
+					uin = 3
+				}
+				block Sum
+				{
+					uin = 2000
+				}
+				block Transition
+				{
+					uin = 2300
+					progress0 = 1
+					progress1 = 0
+				}
+				block Transition
+				{
+					uin = 2301
+					progress0 = 1
+					progress1 = 0
+				}
+				block LookAt
+				{
+					uin = 2002
+					transitionHorizontalAngle = 0
+					transitionVerticalAngle = 0
+				}
+				block Animation
+				{
+					uin = 2004
+				}
+				block Animation
+				{
+					uin = 2005
+				}
+				block Animation
+				{
+					uin = 2006
+				}
+				block LookAt
+				{
+					uin = 2102
+					transitionHorizontalAngle = 0
+					transitionVerticalAngle = 0
+				}
+				block Animation
+				{
+					uin = 2104
+				}
+				block Animation
+				{
+					uin = 2105
+				}
+				block Animation
+				{
+					uin = 2106
+				}
+				block Animation
+				{
+					uin = 2107
+				}
+				block Animation
+				{
+					uin = 2108
+				}
+				block Animation
+				{
+					uin = 2109
+				}
+				block Animation
+				{
+					uin = 2110
+				}
+				block Animation
+				{
+					uin = 2111
+				}
+				block Animation
+				{
+					uin = 2112
+				}
+				block LookAt
+				{
+					uin = 2202
+					transitionHorizontalAngle = 0
+					transitionVerticalAngle = 0
+				}
+				block Animation
+				{
+					uin = 2204
+				}
+				block Animation
+				{
+					uin = 2205
+				}
+				block Animation
+				{
+					uin = 2206
+				}
+				block Animation
+				{
+					uin = 2207
+				}
+				block Animation
+				{
+					uin = 2208
+				}
+				block Animation
+				{
+					uin = 2209
+				}
+				block Animation
+				{
+					uin = 2210
+				}
+				block Animation
+				{
+					uin = 2211
+				}
+				block Animation
+				{
+					uin = 2212
+				}
+				block Trigger
+				{
+					uin = 3101
+				}
+				block Animation
+				{
+					uin = 3100
+				}
+				block Transition
+				{
+					uin = 3200
+					progress0 = 1
+					progress1 = 0
+				}
+				block Animation
+				{
+					uin = 3202
+				}
+				block Transition
+				{
+					uin = 3002
+					progress0 = 1
+					progress1 = 0
+				}
+				block Direction8Sides
+				{
+					uin = 3010
+				}
+				block Animation
+				{
+					uin = 3012
+				}
+				block Animation
+				{
+					uin = 3013
+				}
+				block Animation
+				{
+					uin = 3014
+				}
+				block Animation
+				{
+					uin = 3015
+				}
+				block Animation
+				{
+					uin = 3016
+				}
+				block Animation
+				{
+					uin = 3017
+				}
+				block Animation
+				{
+					uin = 3018
+				}
+				block Animation
+				{
+					uin = 3019
+				}
+				block Transition
+				{
+					uin = 3400
+					progress0 = 1
+					progress1 = 0
+				}
+				block Direction8Sides
+				{
+					uin = 3310
+				}
+				block Animation
+				{
+					uin = 3312
+				}
+				block Animation
+				{
+					uin = 3313
+				}
+				block Animation
+				{
+					uin = 3314
+				}
+				block Animation
+				{
+					uin = 3315
+				}
+				block Animation
+				{
+					uin = 3316
+				}
+				block Animation
+				{
+					uin = 3317
+				}
+				block Animation
+				{
+					uin = 3318
+				}
+				block Animation
+				{
+					uin = 3319
+				}
+				block Animation
+				{
+					uin = 3003
+				}
+			}
+			animationStates
+			{
+				animationState
+				{
+					name = idle
+					enable = True
+					weight = 1
+					timePosition = 1.556129
+				}
+			}
+		}
+	}
+	entity
+	{
+		type = AM_9mmFMJ
+		uin = 54
+		classPrompt = AmmoItem
+		juice = 25
+		readyTimeRemaining = 0
+		health = 0
+		position = -25.13928 48.38623 -2.80263
+		rotation = -6.95374E-05 7.802422E-05 -1.238323E-06 1
+		physicsModelData
+		{
+			body
+			{
+				sleeping = True
+				position = -25.13928 48.38623 -2.80263
+				rotation = -6.95374E-05 7.802422E-05 -1.238323E-06 1
+			}
+		}
+	}
+	entity
+	{
+		type = AM_9mmFMJ
+		uin = 55
+		classPrompt = AmmoItem
+		juice = 25
+		readyTimeRemaining = 0
+		health = 0
+		position = -27.87758 48.36859 -2.802459
+		rotation = 0.0004344993 0.0005465343 -3.394919E-06 0.9999998
+		physicsModelData
+		{
+			body
+			{
+				sleeping = True
+				position = -27.87758 48.36859 -2.802459
+				rotation = 0.0004344993 0.0005465343 -3.394919E-06 0.9999998
+			}
+		}
+	}
+	entity
+	{
+		type = AM_9mmFMJ
+		uin = 56
+		classPrompt = AmmoItem
+		juice = 25
+		readyTimeRemaining = 0
+		health = 0
+		position = -24.20173 45.17885 -2.802611
+		rotation = 7.603742E-05 -4.5493E-05 -1.01202E-06 1
+		physicsModelData
+		{
+			body
+			{
+				sleeping = True
+				position = -24.20173 45.17885 -2.802611
+				rotation = 7.603742E-05 -4.5493E-05 -1.01202E-06 1
+			}
+		}
+	}
+	entity
+	{
+		type = AM_9mmFMJ
+		uin = 57
+		classPrompt = AmmoItem
+		juice = 25
+		readyTimeRemaining = 0
+		health = 0
+		position = -22.03411 47.26492 -2.80263
+		rotation = 7.56833E-05 0.0001069524 -9.894482E-07 1
+		physicsModelData
+		{
+			body
+			{
+				sleeping = True
+				position = -22.03411 47.26492 -2.80263
+				rotation = 7.56833E-05 0.0001069524 -9.894482E-07 1
+			}
+		}
+	}
+	entity
+	{
 		type = VBFactionManager
-		uin = 23
+		uin = 66
 		classPrompt = VBFactionManager
 		factions
 		{
+			item
+			{
+				enemies = 
+				objManager
+				{
+					Objectives
+					{
+					}
+				}
+			}
 			item
 			{
 				factionType = PlayerFaction
@@ -780,12 +1833,17 @@ entity
 				{
 					Objectives
 					{
-						item
-						{
-							missionFile = mission01
-							logEntries = 0
-							objStatus = 0
-						}
+					}
+				}
+			}
+			item
+			{
+				factionType = RaiderFaction
+				enemies = 
+				objManager
+				{
+					Objectives
+					{
 					}
 				}
 			}

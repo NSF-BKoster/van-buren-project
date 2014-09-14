@@ -1,0 +1,5 @@
+type DefaultVBUnitAI
+{
+	class = VBUnitAI
+	creatableInMapEditor = False
+}

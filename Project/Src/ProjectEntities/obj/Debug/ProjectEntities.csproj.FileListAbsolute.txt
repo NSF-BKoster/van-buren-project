@@ -16,3 +16,9 @@ C:\Users\Razvan\Google Drive\NeoAxis Engine Free SDK 2.0.5\Project\Bin\ProjectEn
 C:\Users\Razvan\Google Drive\NeoAxis Engine Free SDK 2.0.5\Project\Src\ProjectEntities\obj\Debug\ProjectEntities.csprojResolveAssemblyReference.cache
 C:\Users\Razvan\Google Drive\NeoAxis Engine Free SDK 2.0.5\Project\Src\ProjectEntities\obj\Debug\ProjectEntities.dll
 C:\Users\Razvan\Google Drive\NeoAxis Engine Free SDK 2.0.5\Project\Src\ProjectEntities\obj\Debug\ProjectEntities.pdb
+D:\vb\Project\Bin\ProjectEntities.dll
+D:\vb\Project\Bin\ProjectEntities.pdb
+D:\vb\Project\Bin\ProjectEntities.xml
+D:\vb\Project\Src\ProjectEntities\obj\Debug\ProjectEntities.csprojResolveAssemblyReference.cache
+D:\vb\Project\Src\ProjectEntities\obj\Debug\ProjectEntities.dll
+D:\vb\Project\Src\ProjectEntities\obj\Debug\ProjectEntities.pdb

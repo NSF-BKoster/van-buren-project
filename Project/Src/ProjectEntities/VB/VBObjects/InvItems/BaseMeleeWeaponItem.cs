@@ -32,6 +32,7 @@ namespace ProjectEntities
         public override void ItemClick()
         {
             (Owner.Intellect as RTSUnitAI).DoTask(new RTSUnitAI.Task(RTSUnitAI.Task.Types.PreUse), false);
+            CombatManager.StartCombat(Owner.Intellect as VBUnitAI);
         }
     }
 }

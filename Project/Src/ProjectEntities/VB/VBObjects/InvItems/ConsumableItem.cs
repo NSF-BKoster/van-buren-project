@@ -45,7 +45,7 @@ namespace ProjectEntities
             {
                 if (Juice > 0)
                 {
-                    Owner.IncActionPts(-GetCurActionMode().ActionPoints);
+                    Owner.Intellect.IncActionPts(-GetCurActionMode().ActionPoints);
                     Juice--;
                     return true;
                 }

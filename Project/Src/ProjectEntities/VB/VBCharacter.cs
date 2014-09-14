@@ -60,8 +60,10 @@ namespace ProjectEntities
 
     public class VBCharacter : RTSCharacter, GridBasedNavigationSystem.IOverrideObjectBehavior
 	{
+        //temporary variables
         VBItem activeHeldItem;
-        float lastIdleTick;
+        Vec3 lastPosCheck;
+
         MapObjectAttachedMapObject activeHeldItemAttachedObject;
         Dictionary<string, int> primaryStatistics;
 
@@ -98,7 +100,30 @@ namespace ProjectEntities
         [Browsable(false)]
         public virtual int GetMaxActionPoints
         {
-            get { return Type.ActionPtsMax; }
+            get 
+            {
+                if (Type.ActionPtsMax > 0)
+                    return Type.ActionPtsMax;
+
+
+                return GetCharStat("GetAP");
+            }
+        }
+
+        public override int GetMaxWeight()
+        {
+            if (Type.MaxWeight > 0)
+                return Type.MaxWeight;
+
+            return GetCharStat("GetCarryWeight");
+        }
+
+        public override float MaxHealth()
+        {
+            if (Type.HealthMax > 0)
+                return Type.HealthMax;
+
+            return GetCharStat("GetHP");
         }
 
         [Browsable(false)]
@@ -165,6 +190,14 @@ namespace ProjectEntities
 
         string skillQueue;
 
+
+        [Browsable(false)]
+        public new VBUnitAI Intellect
+        {
+            get { return (VBUnitAI)base.Intellect; }
+        
+        }
+
         [Browsable(false)]
         public string SkillQueue
         {
@@ -221,7 +254,7 @@ namespace ProjectEntities
             if (mTmp != null && mTmp.Use(ent))
             {
                 //remove action points, play sound, apply damage
-                IncActionPts(-mTmp.GetCurActionMode().ActionPoints);
+                Intellect.IncActionPts(-mTmp.GetCurActionMode().ActionPoints);
                 ent.DoDamage(this, Position, null, GetNetDamage(ent), false);
                 SoundPlay3D(mTmp.GetCurActionMode().PlaySound, .5f, true);
 
@@ -238,64 +271,20 @@ namespace ProjectEntities
 
         public bool CanOpenInventory()
         {
-            if (CombatManager.Instance != null)
+            if (Intellect.OutsideCombatOrActive())
             {
-                if (CombatManager.Instance.ActiveEntity == this)
+                if (ActionPts > 1)
                 {
-                    if (ActionPts > 1)
-                    {
-                        IncActionPts(-2);
-                    }
-                    else
-                    {
-                        Log.Info("Not enough action points");
-                        return false;
-                    }
+                    Intellect.IncActionPts(-2);
+                }
+                else
+                {
+                    Log.Info("Not enough action points");
+                    return false;
                 }
             }
 
             return true;
-        }
-
-        public void StartTurn()
-        {
-            Stop();
-            ActionPts = GetMaxActionPoints;
-        }
-
-        public void EndTurn()
-        {
-            if (CombatManager.Instance == null)
-                return;
-
-            Stop();
-
-            ActionPts = 0;
-            CombatManager.Instance.TurnEnded();
-        }
-
-        public bool InCombatAndActive()
-        {
-            return CombatManager.Instance != null && CombatManager.Instance.ActiveEntity == this;
-        }
-
-        public bool HasActionPoints(int pts)
-        {
-            if (ActionPts < pts)
-            {
-                Log.Info("Not enough action points");
-                return false;
-            }
-
-            return true;
-        }
-
-        public void IncActionPts(int val)
-        {
-            ActionPts += val;
-
-            if (ActionPts < 1 && InCombatAndActive())
-                EndTurn();
         }
 
         public InventoryObjectItem SetBestWeapon()
@@ -434,12 +423,6 @@ namespace ProjectEntities
             //TODO: SET NEW ARMOR FUNCTION - SHOULD THIS USE ATTACHMENTS OR NEW PLAYER MODEL??
         }
 
-        public virtual bool IsEnemy(VBCharacter u)
-        {
-            //FIXME: check for enemies made
-            return (VBFactionManager.Instance != null && VBFactionManager.Instance.AreEnemies(InitialFaction, u.InitialFaction));
-        }
-
         public virtual float GetNetDamage(Dynamic target)
         {
             float RD = (ActiveHeldItem as MultipleActionItem).GetDamage(); //= random damage value produced from weapons hit damage range
@@ -497,13 +480,10 @@ namespace ProjectEntities
             PrimaryOrTypeStatistics.TryGetValue(s, out val);
 
             //its not a default stat, try derived
-            if (val == -1)
+            if (val < 1)
             {
                 if (GetLuaScript != null)
-                {
-                    Log.Info("scriptlogic: " + ScriptLogic);
-                    val = Convert.ToInt32(GetLuaScript.GetFunction(s).Call().GetValue(0));
-                }
+                    val = Convert.ToInt32(GetLuaScript.GetFunction(s).Call(this).GetValue(0));
             }
 
             return val;
@@ -567,6 +547,21 @@ namespace ProjectEntities
             base.OnRenderFrame();
         }
 
+        protected override void OnTick()
+        {
+            if (Intellect.InCombatAndActive())
+            {
+                //REMOVE APS
+                if ((lastPosCheck - Position).Normalize() > 0.8)
+                {
+                    Intellect.IncActionPts(-1);
+                    lastPosCheck = Position;
+                }
+            }
+
+            base.OnTick();
+        }
+
         protected override void OnDie(MapObject prejudicial)
         {
             //TODO: GENDER BASED DEATH SOUNDS
@@ -591,12 +586,6 @@ namespace ProjectEntities
             {
                 move = true;
                 moveSpeed = (Rotation.GetInverse() * MainBodyVelocity).X;
-            }
-
-            if (!move && LastTickTime - lastIdleTick > 10)
-            {
-                Log.Info("Idle kicked in");
-                lastIdleTick = LastTickTime;
             }
 
             tree.SetParameterValue("idle", move ? 0 : 1);

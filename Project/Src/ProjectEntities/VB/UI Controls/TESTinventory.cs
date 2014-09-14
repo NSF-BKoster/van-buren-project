@@ -94,7 +94,7 @@ namespace ProjectCommon
             }
 
             if (owner != null)
-                weightLabel.Text = string.Format("Total Weight: {0} / {1}", owner.InvWeight(), owner.GetMaxWeight);
+                weightLabel.Text = string.Format("Total Weight: {0} / {1}", owner.InvWeight(), owner.GetMaxWeight());
         }
     }
 

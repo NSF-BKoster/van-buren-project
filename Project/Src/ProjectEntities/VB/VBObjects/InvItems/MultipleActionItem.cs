@@ -208,7 +208,7 @@ namespace ProjectEntities
             if (!Ready)
                 return false;
 
-            if (Owner.InCombatAndActive() && !Owner.HasActionPoints(GetCurActionMode().ActionPoints) )
+            if (Owner.Intellect.InCombatAndActive() && !Owner.Intellect.HasActionPoints(GetCurActionMode().ActionPoints))
             {
                 //Log.Info("{0} tried to fire {1} but was unable as he needs {2} action points", Owner.Name,  GetCurActionMode().UseText, GetCurActionMode().ActionPoints);
                 return false;
