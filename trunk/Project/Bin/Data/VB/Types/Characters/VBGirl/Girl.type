@@ -4,14 +4,13 @@ type VBGirl
 	height = 2.8
 	radius = 0.3
 	maxVelocity = 2.5
-	initialAI = DefaultRTSUnitAI
+	initialAI = DefaultVBUnitAI
 	viewRadius = 70
 	fpsCameraOffset = 0 0 0.52
-	maxWeight = 25
-	healthMax = 300
 	targetPriority = 1
 	substance = Flesh
 	networkType = Synchronized
+	baseScriptLogic = "Lua\\GenericUnit.lua"
 	meleeAttacks
 	{
 		item

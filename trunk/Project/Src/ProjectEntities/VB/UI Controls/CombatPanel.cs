@@ -86,25 +86,67 @@ namespace ProjectCommon
         [Category("Bar Settings")]
         [Editor(typeof(EditorSoundUITypeEditor), typeof(UITypeEditor))]
         public string DisableSound { get; set; }
+        
+        
+        [Browsable(false)]
+        VBCharacter Owner
+        {
+            get
+            {
+                MainVBHUD p = Parent as MainVBHUD;
+                if (p != null && p.selectedUnit != null)
+                    return p.selectedUnit;
+
+                return null;
+            }
+        }
 
         protected override void OnTick(float delta)
         {
             base.OnTick(delta);
 
-            MainVBHUD p = Parent as MainVBHUD;
-            if (p != null && p.selectedUnit != null)
+            VBCharacter owner = Owner;
+            if (owner != null)
             {
-                SetVisible( CombatManager.Instance != null );
-                if (ActionPointsBar != null && p.selectedUnit != null) ActionPointsBar.UpdateAPTextures( p.selectedUnit.InCombatAndActive() ? p.selectedUnit.ActionPts : 0 );
+                //dont update if i dont need
+                bool checkVisible = CombatManager.IsEnabled;
+                if (Visible != checkVisible) 
+                    SetVisible(checkVisible);
+
+                if (Visible && ActionPointsBar != null) 
+                    ActionPointsBar.UpdateAPTextures(owner.ActionPts);
             }
+        }
+
+        protected override void OnAttach()
+        {
+            if (EndCombatButton != null) EndCombatButton.Click += EndCombatButton_Click;
+            if (EndTurnButton != null) EndTurnButton.Click += EndTurnButton_Click;
+            base.OnAttach();
+        }
+
+        void EndTurnButton_Click(Button sender)
+        {
+            Owner.Intellect.EndTurn();
+        }
+
+        void EndCombatButton_Click(Button sender)
+        {
+            CombatManager combat = CombatManager.Instance;
+            if (combat != null)
+                combat.AttemptEnd();
         }
 
         void SetVisible(bool visible)
         {
             if (visible)
+            {
                 if (!string.IsNullOrEmpty(EnableSound)) GetControlManager().PlaySound(EnableSound);
+            }
             else
+            {
                 if (!string.IsNullOrEmpty(DisableSound)) GetControlManager().PlaySound(DisableSound);
+            }
 
             Visible = visible;
         }

@@ -29,3 +29,10 @@ F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\obj\Debug\Conversati
 F:\NeoAxis Engine Free SDK 2.0.5\Project\Bin\Conversational.dll
 F:\NeoAxis Engine Free SDK 2.0.5\Project\Bin\Conversational.pdb
 F:\NeoAxis Engine Free SDK 2.0.5\Project\Src\Conversational\obj\Debug\ConversationalAPI.csprojResolveAssemblyReference.cache
+D:\vb\Project\Bin\Conversational.dll
+D:\vb\Project\Bin\Conversational.pdb
+D:\vb\Project\Src\Conversational\obj\Debug\ConversationalAPI.csprojResolveAssemblyReference.cache
+D:\vb\Project\Src\Conversational\obj\Debug\ConversationalAPI.Properties.Resources.resources
+D:\vb\Project\Src\Conversational\obj\Debug\ConversationalAPI.csproj.GenerateResource.Cache
+D:\vb\Project\Src\Conversational\obj\Debug\Conversational.dll
+D:\vb\Project\Src\Conversational\obj\Debug\Conversational.pdb

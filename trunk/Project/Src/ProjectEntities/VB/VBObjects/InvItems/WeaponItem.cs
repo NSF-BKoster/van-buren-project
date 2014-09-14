@@ -60,6 +60,7 @@ namespace ProjectEntities
                     break;
                 case "attack":
                     (Owner.Intellect as RTSUnitAI).DoTask(new RTSUnitAI.Task(RTSUnitAI.Task.Types.PreUse), false);
+                    CombatManager.StartCombat(Owner.Intellect as VBUnitAI);
                     break;
 
                 default:
@@ -101,7 +102,7 @@ namespace ProjectEntities
 
         public virtual void TryReload()
         {
-            if (Owner.InCombatAndActive() && !Owner.HasActionPoints(GetCurActionMode().ActionPoints) )
+            if (Owner.Intellect.InCombatAndActive() && !Owner.Intellect.HasActionPoints(GetCurActionMode().ActionPoints) )
                 return;
 
             if (Juice < Type.MaxJuice)
@@ -130,7 +131,7 @@ namespace ProjectEntities
                         AmmoTypeLoaded = amType;
                         SoundPlay3D(GetCurActionMode().PlaySound, .5f, true);
                         IncActMode();
-                        Owner.IncActionPts(-GetCurActionMode().ActionPoints);
+                        Owner.Intellect.IncActionPts(-GetCurActionMode().ActionPoints);
                         break;
                     }
                 }

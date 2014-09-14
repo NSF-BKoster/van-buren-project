@@ -21,6 +21,14 @@ namespace ProjectEntities
 {
     public class LuaObjectType : MapObjectType
     {
+        [FieldSerialize]
+        string baseScriptLogic;
+
+        public string BaseScriptLogic
+        {
+            get { return baseScriptLogic; }
+            set { baseScriptLogic = value; }
+        }
     }
 
 	public class LuaObject : MapObject
@@ -30,9 +38,15 @@ namespace ProjectEntities
         [FieldSerialize]
         string scriptLogic;
 
-        public virtual string ScriptLogic
+        public string ScriptLogic
         {
-            get { return scriptLogic; }
+            get 
+            {
+                if (string.IsNullOrEmpty(scriptLogic))
+                    return Type.BaseScriptLogic;
+
+                return scriptLogic; 
+            }
             set { scriptLogic = value; }
         }
 
@@ -103,12 +117,12 @@ namespace ProjectEntities
 
         protected override void OnPostCreate(bool loaded)
         {
-            if (!string.IsNullOrEmpty(scriptLogic))
+            if (!string.IsNullOrEmpty(ScriptLogic))
             {
                 luaScript = new Lua();
                 RegisterLuaFunctions();
 
-                luaScript.DoFile(scriptLogic);
+                luaScript.DoFile(ScriptLogic);
 
                 LuaFunction luaF = luaScript.GetFunction("OnInit");
                 if (luaF != null)

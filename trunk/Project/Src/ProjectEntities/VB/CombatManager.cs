@@ -25,23 +25,28 @@ namespace ProjectEntities
             get { return instance; }
         }
 
-        [FieldSerialize]
-        VBCharacter starter;
+        public static bool IsEnabled
+        {
+            get { return instance != null; }
+        }
 
         [FieldSerialize]
-        VBCharacter activeEnt;
+        VBUnitAI starter;
 
-        public VBCharacter ActiveEntity
+        [FieldSerialize]
+        VBUnitAI activeEnt;
+
+        public VBUnitAI ActiveEntity
         {
             get { return activeEnt; }
         }
 
         [FieldSerialize]
-        LinkedList<VBCharacter> combatants = new LinkedList<VBCharacter>();
+        LinkedList<VBUnitAI> combatants = new LinkedList<VBUnitAI>();
 
         CombatManagerType _type = null; public new CombatManagerType Type { get { return _type; } }
 
-        public LinkedList<VBCharacter> GetCombatants()
+        public LinkedList<VBUnitAI> GetCombatants()
         {
             return combatants;
         }
@@ -54,33 +59,41 @@ namespace ProjectEntities
             instance = this;
         }
 
-        public static void StartCombat(VBCharacter starter)
+        public static void StartCombat(VBUnitAI starter)
         {
             if (CombatManager.Instance != null)
-                Log.Warning("Combat started incorrectly!");
+                return;
 
                 CombatManager i = (CombatManager)Entities.Instance.Create("CombatManager", Map.Instance);
                 i.PostCreate();
                 i.CreateCombatantList(starter);
         }
 
-        public void CreateCombatantList(VBCharacter ch)
+        public void CreateCombatantList(VBUnitAI ch)
         {
-            Map.Instance.GetObjects(new Sphere(ch.Position, ch.ViewRadius + 30), MapObjectSceneGraphGroups.UnitGroup, delegate(MapObject mapObject)
+
+            Map.Instance.GetObjects(new Sphere(ch.ControlledObject.Position, ch.ControlledObject.ViewRadius + 30), MapObjectSceneGraphGroups.UnitGroupMask, delegate(MapObject mapObject)
             {
-                combatants.AddLast((VBCharacter)mapObject);
+                VBCharacter c = mapObject as VBCharacter;
+                if (c!= null) combatants.AddLast( c.Intellect );
             });
 
+            //reset all tasks
+            foreach (VBUnitAI combatant in combatants)
+            {
+                combatant.DoTask(new RTSUnitAI.Task(RTSUnitAI.Task.Types.Stop), false);
+                combatant.ClearTaskList();
+            }
+
             starter = activeEnt = ch;
-            if (starter != null)
-                ch.StartTurn();
+            ch.InitiatetTurn();
 
             //TODO: ARRANGE LIST BY SEQUENCE
         }
 
-        VBCharacter GetNextPlayerActive(VBCharacter LastPlayer)
+        VBUnitAI GetNextPlayerActive(VBUnitAI LastPlayer)
         {
-            VBCharacter newUnit = LastPlayer;
+            VBUnitAI newUnit = LastPlayer;
             activeEnt = null;
 
              //Get the next player
@@ -103,13 +116,13 @@ namespace ProjectEntities
             {
                 activeEnt = GetNextPlayerActive(activeEnt);
                 //FIXME: set cam here
-                activeEnt.StartTurn();
+                activeEnt.InitiatetTurn();
             }
         }
 
-        public bool InCombat(VBCharacter u)
+        public bool InCombat(VBUnitAI u)
         {
-            foreach (VBCharacter unit in combatants)
+            foreach (VBUnitAI unit in combatants)
             {
                 if (unit != null && !unit.IsSetForDeletion)
                 {
@@ -121,16 +134,16 @@ namespace ProjectEntities
             return false;
         }
 
-        public void JoinCombat(VBCharacter u)
+        public void JoinCombat(VBUnitAI u)
         {
             combatants.AddLast(u);
         }
 
         bool FoesAlive()
         {
-            VBCharacter toCheck = null; 
+            VBUnitAI toCheck = null; 
 
-            foreach (VBCharacter u in combatants)
+            foreach (VBUnitAI u in combatants)
             {
                 if (u != null && !u.IsSetForDeletion)
                 {

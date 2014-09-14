@@ -538,17 +538,7 @@
         <member name="M:ProjectEntities.Tank.OnTick">
             <summary>Overridden from <see cref="M:Engine.EntitySystem.Entity.OnTick"/>.</summary>
         </member>
-        <member name="T:ProjectEntities.WeatherControlerType">
-            <summary>
-            Defines the <see cref="T:ProjectEntities.SpawnPoint"/> entity type.
-            </summary>
-        </member>
-        <member name="T:Engine.UISystem.ChatWindow">
-            <summary>
-            Defines a about us window.
-            </summary>
-        </member>
-        <member name="T:ProjectEntities.CompanionUnitAIType">
+        <member name="T:ProjectEntities.VBUnitAIType">
             <summary>
             Defines the <see cref="T:ProjectEntities.RTSUnitAI"/> entity type.
             </summary>
@@ -569,6 +559,21 @@
         </member>
         <member name="M:ProjectEntities.RTSUnitAI.OnTick">
             <summary>Overridden from <see cref="M:Engine.EntitySystem.Entity.OnTick"/>.</summary>
+        </member>
+        <member name="T:ProjectEntities.WeatherControlerType">
+            <summary>
+            Defines the <see cref="T:ProjectEntities.SpawnPoint"/> entity type.
+            </summary>
+        </member>
+        <member name="T:Engine.UISystem.ChatWindow">
+            <summary>
+            Defines a about us window.
+            </summary>
+        </member>
+        <member name="T:ProjectEntities.CompanionUnitAIType">
+            <summary>
+            Defines the <see cref="T:ProjectEntities.RTSUnitAI"/> entity type.
+            </summary>
         </member>
         <member name="T:ProjectCommon.ObjectInventoryWindow">
             <summary>

@@ -403,6 +403,12 @@ namespace ProjectEntities
 
 		DynamicType _type = null; public new DynamicType Type { get { return _type; } }
 
+        //VBCODE
+        public virtual float MaxHealth()
+        {
+            return Type.HealthMax;
+        }
+
 		[DefaultValue( 1.0f )]
 		[LogicSystemBrowsable( true )]
 		public float HealthFactorAtBeginning
@@ -425,8 +431,8 @@ namespace ProjectEntities
 
 				if( health < Type.HealthMin )
 					health = Type.HealthMin;
-				else if( health > Type.HealthMax )
-					health = Type.HealthMax;
+                else if (health > MaxHealth())
+                    health = MaxHealth();
 
 				if( EntitySystemWorld.Instance.IsServer() || EntitySystemWorld.Instance.IsSingle() )
 				{
@@ -454,10 +460,10 @@ namespace ProjectEntities
 		{
 			float realDamage = damage * ReceiveDamageCoefficient;
 
-			if( Type.HealthMax != 0 )
+            if (MaxHealth() != 0)
 			{
 				float newHealth = Health - realDamage;
-				MathFunctions.Clamp( ref newHealth, Type.HealthMin, Type.HealthMax );
+                MathFunctions.Clamp(ref newHealth, Type.HealthMin, MaxHealth());
 				Health = newHealth;
 
 				if( Health == 0 )
@@ -559,7 +565,7 @@ namespace ProjectEntities
 			if( EntitySystemWorld.Instance.SerializationMode == SerializationModes.Map ||
 				EntitySystemWorld.Instance.SerializationMode == SerializationModes.MapSceneFile )
 			{
-				Health = Type.HealthMax * HealthFactorAtBeginning;
+                Health = MaxHealth() * HealthFactorAtBeginning;
 			}
 
 			return true;
@@ -587,7 +593,7 @@ namespace ProjectEntities
 		{
 			base.OnCreate();
 
-			Health = Type.HealthMax;
+            Health = MaxHealth();
 		}
 
 		/// <summary>Overridden from <see cref="Engine.EntitySystem.Entity.OnPostCreate(Boolean)"/>.</summary>
@@ -988,8 +994,8 @@ namespace ProjectEntities
 				DynamicType.AutomaticInfluenceItem typeItem = Type.AutomaticInfluences[ n ];
 
 				bool need =
-					health >= typeItem.LifeCoefficientRange.Minimum * Type.HealthMax &&
-					health <= typeItem.LifeCoefficientRange.Maximum * Type.HealthMax;
+					health >= typeItem.LifeCoefficientRange.Minimum * MaxHealth() &&
+					health <= typeItem.LifeCoefficientRange.Maximum * MaxHealth();
 
 				if( need )
 				{
@@ -1047,7 +1053,7 @@ namespace ProjectEntities
 		{
 			base.Server_OnClientConnectedAfterPostCreate( remoteEntityWorld );
 
-			if( Health != Type.HealthMax )
+            if (Health != MaxHealth())
 				Server_SendHealthToClients( new RemoteEntityWorld[] { remoteEntityWorld } );
 		}
 

@@ -1,31 +1,30 @@
-Log started: 9/10/2014 12:51:11 PM
+Log started: 9/13/2014 7:39:56 PM
 Info: Powered by NeoAxis 3D Engine
-Info: Operating System: Microsoft Windows 6.1.7601.65536 (64-bit)
-Info: Runtime Framework: Net 4.0.30319.18444
+Info: Operating System: Microsoft Windows 6.2.9200.0 (64-bit)
+Info: Runtime Framework: Net 4.0.30319.34014
 Info: NeoAxis 3D Engine version: 2.2
 Info: Engine SDK: Free SDK
 Info: Engine 32-bit version
 Info: Application type: ResourceEditor
 Info: Physics system is initialized (Driver: NVIDIA PhysX 3.2.1)
-Info: OGRE: Added resource location 'D:\ARUngureanu\GoogleDrive\NeoAxis Engine Free SDK 2.0.5\Project\Bin\Data' of type 'VirtualFileSystem' to resource group 'General' with recursive option
+Info: OGRE: Added resource location 'D:\vb\Project\Bin\Data' of type 'VirtualFileSystem' to resource group 'General' with recursive option
 Info: OGRE: Loading library RenderSystem_Direct3D9.dll
 Info: OGRE: Installing plugin: D3D9 RenderSystem
 Info: OGRE: D3D9 : Direct3D9 Rendering Subsystem created.
 Info: OGRE: D3D9: Driver Detection Starts
-Info: OGRE: D3D9: Driver: \\.\DISPLAY1; ATI Radeon HD 4250      
-Info: OGRE: D3D9: Driver: \\.\DISPLAY2; ATI Radeon HD 4250      
+Info: OGRE: D3D9: Driver: \\.\DISPLAY1; AMD Radeon HD 6570
 Info: OGRE: D3D9: Driver Detection Ends
 Info: OGRE: Plugin successfully installed
 Info: OGRE: CPU Identifier & Features
 Info: OGRE: -------------------------
-Info: OGRE:  *   CPU ID: AuthenticAMD: AMD Phenom(tm) II X4 945 Processor
+Info: OGRE:  *   CPU ID: AuthenticAMD: AMD FX(tm)-4300 Quad-Core Processor
 Info: OGRE:  *      SSE: yes
 Info: OGRE:  *     SSE2: yes
 Info: OGRE:  *     SSE3: yes
 Info: OGRE:  *      MMX: yes
 Info: OGRE:  *   MMXEXT: yes
-Info: OGRE:  *    3DNOW: yes
-Info: OGRE:  * 3DNOWEXT: yes
+Info: OGRE:  *    3DNOW: no
+Info: OGRE:  * 3DNOWEXT: no
 Info: OGRE:  *     CMOV: yes
 Info: OGRE:  *      TSC: yes
 Info: OGRE:  *      FPU: yes
@@ -34,11 +33,11 @@ Info: OGRE:  *       HT: no
 Info: OGRE: -------------------------
 Info: OGRE: D3D9 : Subsystem Initialising
 Info: OGRE: Driver name: aticfx32.dll
-Info: OGRE: Driver description: ATI Radeon HD 4250
+Info: OGRE: Driver description: AMD Radeon HD 6570
 Info: OGRE: ***************************************
 Info: OGRE: *** D3D9 : Subsystem Initialised OK ***
 Info: OGRE: ***************************************
-Info: OGRE: D3D9RenderSystem::_createRenderWindow "MainWindow", 640x480 windowed  miscParams: colourDepth=32 externalWindowHandle=134018 vsync=true 
+Info: OGRE: D3D9RenderSystem::_createRenderWindow "MainWindow", 640x480 windowed  miscParams: colourDepth=32 externalWindowHandle=2557618 vsync=true 
 Info: OGRE: D3D9 : Created D3D9 Rendering Window 'MainWindow' : 10x10, 32bpp
 Info: OGRE: Registering ResourceManager for type Texture
 Info: OGRE: Registering ResourceManager for type GpuProgram
@@ -47,8 +46,8 @@ Info: OGRE: RenderSystem capabilities
 Info: OGRE: -------------------------
 Info: OGRE: RenderSystem Name: Direct3D9 Rendering Subsystem
 Info: OGRE: GPU Vendor: ati
-Info: OGRE: Device Name: ATI Radeon HD 4250
-Info: OGRE: Driver Version: 8.17.10.1077
+Info: OGRE: Device Name: AMD Radeon HD 6570
+Info: OGRE: Driver Version: 8.17.10.1280
 Info: OGRE:  * Fixed function pipeline: yes
 Info: OGRE:  * Hardware generation of mipmaps: yes
 Info: OGRE:  * Texture blending: yes
@@ -103,15 +102,15 @@ Info: OGRE:  * Render to Vertex Buffer: no
 Info: OGRE:  * Alpha to coverage: yes
 Info: OGRE:  * Fetch4: yes
 Info: OGRE:  * Hardware Instancing: yes
-Info: OGRE:  * Depth Buffer As Texture (INTZ): no
+Info: OGRE:  * Depth Buffer As Texture (INTZ): yes
 Info: OGRE:  * DirectX per stage constants: yes
-Info: OGRE:  * Max texture size: 8192
+Info: OGRE:  * Max texture size: 16384
 Info: OGRE: DefaultWorkQueue('Root') initialising on thread main.
 Info: OGRE: Particle Renderer Type 'billboard' registered
-Info: Renderer: GPU description: ATI Radeon HD 4250
-Info: Renderer: GPU codename: Radeon_R700
+Info: Renderer: GPU description: AMD Radeon HD 6570
+Info: Renderer: GPU codename: Radeon_Unknown
 Info: Renderer: Shader Model 3.0: yes
-Info: 2D texture render target pixel formats: ShortL ShortL R5G6B5 A4R4G4B4 A1R5G5B5 A8R8G8B8 A2R10G10B10 A2B10G10R10 Float16RGBA Float32RGBA X8R8G8B8 X8B8G8R8 Depth24 ShortRGBA Float16R Float32R ShortGR Float16GR Float32GR
+Info: 2D texture render target pixel formats: ByteL ByteL ShortL ShortL ByteA ByteA R5G6B5 A4R4G4B4 A1R5G5B5 A8R8G8B8 A2R10G10B10 A2B10G10R10 Float16RGBA Float32RGBA X8R8G8B8 X8B8G8R8 Depth24 ShortRGBA Float16R Float32R ShortGR Float16GR Float32GR
 Info: OGRE: Parsing scripts for resource group General
 Info: OGRE: Parsing script Base\Shaders\AmbientOneTexture.program
 Info: OGRE: Parsing script Base\Shaders\StdQuad_vp.program
@@ -733,7 +732,7 @@ Info: OGRE: 0 unmanaged textures
 Info: OGRE: D3D9HardwareBufferManager released:
 Info: OGRE: 0 unmanaged vertex buffers
 Info: OGRE: 0 unmanaged index buffers
-Info: OGRE: Reset device ok w:455 h:642
+Info: OGRE: Reset device ok w:456 h:875
 Info: OGRE: D3D9TextureManager recreated:
 Info: OGRE: 0 unmanaged textures
 Info: OGRE: D3D9HardwareBufferManager recreated:
@@ -754,27 +753,22 @@ Info: OGRE: Texture: Base\Tools\ResourceEditorSkyBox\Cubemap_lf.png: Loading 1 f
 Info: OGRE: Texture: Base\Tools\ResourceEditorSkyBox\Cubemap_rt.png: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
 Info: OGRE: Texture: Base\Tools\ResourceEditorSkyBox\Cubemap_up.png: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
 Info: OGRE: Texture: Base\Tools\ResourceEditorSkyBox\Cubemap_dn.png: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-Info: OGRE: Mesh: Loading Types\Units\Girl\FirstPersonArms\Arms.mesh.
-Info: OGRE: Skeleton: Loading Types\Units\Girl\FirstPersonArms\Arms.skeleton
-Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Types\Units\Girl\FirstPersonArms\Diffuse.dds' with 2147483647 mip map levels
-Info: OGRE: D3D9 : Loading 2D Texture, image name : 'Types\Units\Girl\FirstPersonArms\Specular.dds' with 2147483647 mip map levels
-Info: Initializing high level material: Types\Units\Girl\Girl.highMaterial
-Info: OGRE: Texture: Base\Types\Light\LightFlare.png: Loading 1 faces(PF_L8,256x256x1) with 8 generated mipmaps from Image. Internal format is PF_L8,256x256x1.
-Info: OGRE: Mesh: Loading Base\Tools\MaterialPreviewMeshes\RoundBox.mesh.
-Info: OGRE: Mesh: Loading Types\Units\Girl\Girl.mesh.
+Info: OGRE: Texture: Base\Shaders\White.jpg: Loading 1 faces(PF_R8G8B8,32x32x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,32x32x1.
 Info: OGRE: RenderTarget "MainWindow": destroyAdditionalMRTs
 Info: NativeMemoryManager: Leaks statistics begin
 Info: Leak - type: Renderer, size: 9712 x 1 = 9712 (file: NULL)
-Info: Leak - type: Renderer, size: 2264 x 1 = 2264 (file: NULL)
 Info: Leak - type: Renderer, size: 2052 x 1 = 2052 (file: NULL)
-Info: Leak - type: Renderer, size: 784 x 1 = 784 (file: NULL)
-Info: Leak - type: Renderer, size: 448 x 1 = 448 (file: NULL)
+Info: Leak - type: Renderer, size: 1132 x 1 = 1132 (file: NULL)
+Info: Leak - type: Renderer, size: 544 x 1 = 544 (file: NULL)
 Info: Leak - type: Renderer, size: 308 x 1 = 308 (file: NULL)
 Info: Leak - type: Renderer, size: 292 x 1 = 292 (file: NULL)
+Info: Leak - type: Renderer, size: 252 x 2 = 504 (file: NULL)
+Info: Leak - type: Renderer, size: 228 x 1 = 228 (file: NULL)
 Info: Leak - type: Renderer, size: 184 x 1 = 184 (file: NULL)
-Info: Leak - type: Renderer, size: 168 x 2 = 336 (file: NULL)
+Info: Leak - type: Renderer, size: 168 x 1 = 168 (file: NULL)
 Info: Leak - type: Renderer, size: 152 x 1 = 152 (file: NULL)
-Info: Leak - type: Renderer, size: 120 x 7 = 840 (file: NULL)
+Info: Leak - type: Renderer, size: 144 x 1 = 144 (file: NULL)
+Info: Leak - type: Renderer, size: 120 x 8 = 960 (file: NULL)
 Info: Leak - type: Renderer, size: 88 x 1 = 88 (file: OgreD3D9HardwareBufferManager.h:79)
 Info: Leak - type: Renderer, size: 88 x 1 = 88 (file: NULL)
 Info: Leak - type: Renderer, size: 76 x 1 = 76 (file: NULL)
@@ -785,18 +779,19 @@ Info: Leak - type: Renderer, size: 52 x 4 = 208 (file: NULL)
 Info: Leak - type: Renderer, size: 48 x 4 = 192 (file: NULL)
 Info: Leak - type: Renderer, size: 44 x 16 = 704 (file: NULL)
 Info: Leak - type: Renderer, size: 36 x 7 = 252 (file: NULL)
+Info: Leak - type: Renderer, size: 32 x 1 = 32 (file: NULL)
 Info: Leak - type: Renderer, size: 24 x 1312 = 31488 (file: NULL)
 Info: Leak - type: Renderer, size: 20 x 9 = 180 (file: NULL)
-Info: Leak - type: Renderer, size: 16 x 5 = 80 (file: NULL)
-Info: Leak - type: Renderer, size: 12 x 29 = 348 (file: NULL)
+Info: Leak - type: Renderer, size: 16 x 6 = 96 (file: NULL)
+Info: Leak - type: Renderer, size: 12 x 33 = 396 (file: NULL)
 Info: Leak - type: Renderer, size: 8 x 1 = 8 (file: NULL)
-Info: Leak - type: Renderer, size: 4 x 4 = 16 (file: NULL)
+Info: Leak - type: Renderer, size: 4 x 13 = 52 (file: NULL)
 Info: Leak - type: Physics, size: 2079 x 5 = 10395 (file: ExtSharedQueueEntryPool.h:86)
 Info: Leak - type: Physics, size: 132 x 1 = 132 (file: ExtDefaultCpuDispatcher.cpp:81)
 Info: Leak - type: Physics, size: 52 x 1 = 52 (file: ExtDefaultCpuDispatcher.cpp:46)
 Info: Leak - type: Physics, size: 44 x 4 = 176 (file: PsWindowsThread.cpp:92)
 Info: Leak - type: Physics, size: 28 x 10 = 280 (file: PsSList.h:92)
 Info: Leak - type: Physics, size: 24 x 1 = 24 (file: PsWindowsSync.cpp:48)
-Info: Total size: 62571
+Info: Total size: 61711
 Info: NativeMemoryManager: Leaks statistics end
 Program END

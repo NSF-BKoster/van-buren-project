@@ -14,7 +14,7 @@ namespace ProjectEntities
     /// <summary>
     /// Defines the <see cref="RTSUnitAI"/> entity type.
     /// </summary>
-    public class CompanionUnitAIType : RTSUnitAIType
+    public class CompanionUnitAIType : VBBaseNPCAIType
     {
         [FieldSerialize]
         float followRange;
@@ -26,7 +26,7 @@ namespace ProjectEntities
         }
     }
 
-    public class CompanionUnitAI : RTSUnitAI
+    public class CompanionUnitAI : VBBaseNPCAI
     {
         CompanionUnitAIType _type = null; public new CompanionUnitAIType Type { get { return _type; } }
 

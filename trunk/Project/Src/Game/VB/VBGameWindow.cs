@@ -196,7 +196,7 @@ namespace Game
 
             // zoom in/out
             Vec2 distanceRange = new Vec2(20, 100);
-            cameraDistance += delta * (distanceRange[1] - distanceRange[0]) / 1500.0f;
+            cameraDistance += -delta * (distanceRange[1] - distanceRange[0]) / 1500.0f;
             if (cameraDistance < distanceRange[0])
             {
                 cameraDistance = distanceRange[0];
@@ -586,11 +586,8 @@ namespace Game
             {
                 RTSUnitAI intellect = hudControl.selectedUnit.Intellect as RTSUnitAI;
 
-                if (intellect.CurrentTask.Type == RTSUnitAI.Task.Types.BreakableMove || intellect.CurrentTask.Type ==  RTSUnitAI.Task.Types.Move)
-                {
-                    hudControl.selectedUnit.IsRunning = true;
-                    return true;
-                }
+                hudControl.selectedUnit.IsRunning = true;
+                return true;
             }
 
 
