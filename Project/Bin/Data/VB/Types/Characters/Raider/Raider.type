@@ -6,7 +6,7 @@ type Raider
 	maxWeight = 25
 	apMax = 5
 	maxVelocity = 1.5
-	initialAI = DefaultVBUnitNPCAI
+	initialAI = DefaultVBUnitAI
 	viewRadius = 70
 	fpsCameraOffset = 0 0 0.52
 	healthMax = 20

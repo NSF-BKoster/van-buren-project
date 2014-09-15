@@ -22,3 +22,9 @@ D:\vb\Project\Bin\ProjectEntities.xml
 D:\vb\Project\Src\ProjectEntities\obj\Debug\ProjectEntities.csprojResolveAssemblyReference.cache
 D:\vb\Project\Src\ProjectEntities\obj\Debug\ProjectEntities.dll
 D:\vb\Project\Src\ProjectEntities\obj\Debug\ProjectEntities.pdb
+D:\ARUngureanu\vb\Project\Src\ProjectEntities\obj\Debug\ProjectEntities.csprojResolveAssemblyReference.cache
+D:\ARUngureanu\vb\Project\Src\ProjectEntities\obj\Debug\ProjectEntities.dll
+D:\ARUngureanu\vb\Project\Src\ProjectEntities\obj\Debug\ProjectEntities.pdb
+D:\ARUngureanu\vb\Project\Bin\ProjectEntities.dll
+D:\ARUngureanu\vb\Project\Bin\ProjectEntities.pdb
+D:\ARUngureanu\vb\Project\Bin\ProjectEntities.xml

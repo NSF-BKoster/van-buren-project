@@ -1,5 +1,0 @@
-type DefaultVBUnitNPCAI
-{
-	class = VBBaseNPCAI
-	creatableInMapEditor = False
-}

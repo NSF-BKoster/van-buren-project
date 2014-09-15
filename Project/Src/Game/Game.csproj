@@ -188,7 +188,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="RTSGameWindow.cs" />
     <Compile Include="EngineLogoWindow.cs" />
   </ItemGroup>
   <ItemGroup>

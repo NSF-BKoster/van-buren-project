@@ -30,3 +30,11 @@ D:\vb\Project\Src\Game\obj\Debug\Game.Properties.Resources.resources
 D:\vb\Project\Src\Game\obj\Debug\Game.csproj.GenerateResource.Cache
 D:\vb\Project\Src\Game\obj\Debug\Game.exe
 D:\vb\Project\Src\Game\obj\Debug\Game.pdb
+D:\ARUngureanu\vb\Project\Bin\Game.exe
+D:\ARUngureanu\vb\Project\Bin\Game.pdb
+D:\ARUngureanu\vb\Project\Bin\Game.xml
+D:\ARUngureanu\vb\Project\Src\Game\obj\Debug\Game.csprojResolveAssemblyReference.cache
+D:\ARUngureanu\vb\Project\Src\Game\obj\Debug\Game.Properties.Resources.resources
+D:\ARUngureanu\vb\Project\Src\Game\obj\Debug\Game.csproj.GenerateResource.Cache
+D:\ARUngureanu\vb\Project\Src\Game\obj\Debug\Game.exe
+D:\ARUngureanu\vb\Project\Src\Game\obj\Debug\Game.pdb

@@ -560,6 +560,9 @@
         <member name="M:ProjectEntities.RTSUnitAI.OnTick">
             <summary>Overridden from <see cref="M:Engine.EntitySystem.Entity.OnTick"/>.</summary>
         </member>
+        <member name="M:ProjectEntities.VBBasePlayerAI.OnTick">
+            <summary>Overridden from <see cref="M:Engine.EntitySystem.Entity.OnTick"/>.</summary>
+        </member>
         <member name="T:ProjectEntities.WeatherControlerType">
             <summary>
             Defines the <see cref="T:ProjectEntities.SpawnPoint"/> entity type.
@@ -938,11 +941,6 @@
         <member name="P:ProjectEntities.RTSFactionManager.Factions">
             <summary>
             Don't modify
-            </summary>
-        </member>
-        <member name="T:ProjectEntities.RTSBuildingAIType">
-            <summary>
-            Defines the <see cref="T:ProjectEntities.RTSBuildingAI"/> entity type.
             </summary>
         </member>
         <member name="T:ProjectEntities.RTSBuildingType">

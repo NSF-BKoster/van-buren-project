@@ -19,3 +19,8 @@ D:\vb\Project\Bin\ProjectCommon.xml
 D:\vb\Project\Src\ProjectCommon\obj\Debug\ProjectCommon.dll
 D:\vb\Project\Src\ProjectCommon\obj\Debug\ProjectCommon.pdb
 D:\vb\Project\Src\ProjectCommon\obj\Debug\ProjectCommon.csprojResolveAssemblyReference.cache
+D:\ARUngureanu\vb\Project\Bin\ProjectCommon.dll
+D:\ARUngureanu\vb\Project\Bin\ProjectCommon.pdb
+D:\ARUngureanu\vb\Project\Bin\ProjectCommon.xml
+D:\ARUngureanu\vb\Project\Src\ProjectCommon\obj\Debug\ProjectCommon.dll
+D:\ARUngureanu\vb\Project\Src\ProjectCommon\obj\Debug\ProjectCommon.pdb
