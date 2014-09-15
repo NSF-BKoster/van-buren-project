@@ -1235,9 +1235,6 @@ namespace Game
 			case GameMap.GameTypes.TPSArcade:
 				return new ActionGameWindow();
 
-			case GameMap.GameTypes.RTS:
-				return new RTSGameWindow();
-
 			case GameMap.GameTypes.TurretDemo:
 				return new TurretDemoGameWindow();
 

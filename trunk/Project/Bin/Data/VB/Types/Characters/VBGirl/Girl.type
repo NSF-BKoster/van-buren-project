@@ -4,7 +4,7 @@ type VBGirl
 	height = 2.8
 	radius = 0.3
 	maxVelocity = 2.5
-	initialAI = DefaultVBUnitAI
+	initialAI = DefaultVBBasePlayerAI
 	viewRadius = 70
 	fpsCameraOffset = 0 0 0.52
 	targetPriority = 1

@@ -1,0 +1,5 @@
+type DefaultVBBasePlayerAI
+{
+	class = VBBasePlayerAI
+	creatableInMapEditor = False
+}

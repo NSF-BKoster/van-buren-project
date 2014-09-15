@@ -24,6 +24,12 @@ namespace ProjectEntities
 		//optimization
 		List<Weapon> initialWeapons;
 
+        [Browsable(false)]
+        public List<Weapon> InitialWeapons
+        {
+            get { return initialWeapons; }
+        }
+
 		float inactiveFindTaskTimer;
 
 		[FieldSerialize]
@@ -61,9 +67,7 @@ namespace ProjectEntities
 				Attack,
 				Repair,
 				BreakableRepair,//for automatic repair
-				BuildBuilding,
-				ProductUnit,
-				SelfDestroy,//for cancel build building 
+                SelfDestroy,
 
                 //VB
                 PreUse,
@@ -327,7 +331,7 @@ namespace ProjectEntities
 			get { return (RTSUnit)base.ControlledObject; }
 		}
 
-		void UpdateInitialWeapons()
+		public void UpdateInitialWeapons()
 		{
 			RTSUnit controlledObj = ControlledObject;
 
@@ -609,82 +613,6 @@ namespace ProjectEntities
 
 				}
 				break;
-
-			//BuildBuilding
-			case Task.Types.BuildBuilding:
-				{
-					float needDistance = controlledObj.Type.OptimalAttackDistanceRange.Maximum;
-
-					Vec3 targetPos = currentTask.Position;
-
-					float distance = ( controlledObj.Position - targetPos ).Length();
-
-					if( distance < needDistance )
-					{
-						controlledObj.Stop();
-
-						//get to
-
-						//check free area for build
-						bool free;
-						{
-							Bounds bounds;
-							{
-								PhysicsModel physicsModel = PhysicsWorld.Instance.LoadPhysicsModel(
-									currentTask.EntityType.GetPhysicsModelFullPath() );
-								if( physicsModel == null )
-									Log.Fatal( string.Format( "No physics model for \"{0}\"",
-										currentTask.EntityType.ToString() ) );
-								bounds = physicsModel.GetGlobalBounds();
-
-								bounds += targetPos;
-							}
-
-							Rect rect = new Rect( bounds.Minimum.ToVec2(), bounds.Maximum.ToVec2() );
-							free = GridBasedNavigationSystem.Instances[ 0 ].IsFreeInMapMotion( rect );
-						}
-
-						if( !free )
-						{
-							//not free
-							DoNextTask();
-							break;
-						}
-
-						//check cost
-						RTSFactionManager.FactionItem factionItem = RTSFactionManager.Instance.GetFactionItemByType( Faction );
-						if( factionItem != null )
-						{
-							float cost = ( (RTSBuildingType)currentTask.EntityType ).BuildCost;
-
-							if( factionItem.Money - cost < 0 )
-							{
-								//No money
-								DoNextTask();
-								break;
-							}
-
-							factionItem.Money -= cost;
-						}
-
-
-						RTSBuilding building = (RTSBuilding)Entities.Instance.Create( currentTask.EntityType, Map.Instance );
-						building.Position = currentTask.Position;
-
-						building.InitialFaction = Faction;
-
-						building.PostCreate();
-						building.BuildedProgress = 0;
-						building.Health = 1;
-
-						//Repair
-						DoTaskInternal( new Task( Task.Types.Repair, building ) );
-					}
-					else
-						controlledObj.Move( targetPos );
-				}
-				break;
-
 			}
 		}
 
@@ -762,43 +690,5 @@ namespace ProjectEntities
 		{
 			get { return currentTask; }
 		}
-
-		public virtual List<UserControlPanelTask> GetControlPanelTasks()
-		{
-			List<UserControlPanelTask> list = new List<UserControlPanelTask>();
-
-			list.Add( new UserControlPanelTask( new Task( Task.Types.Stop ), currentTask.Type == Task.Types.Stop ) );
-			list.Add( new UserControlPanelTask( new Task( Task.Types.Move ),
-				currentTask.Type == Task.Types.Move || currentTask.Type == Task.Types.BreakableMove ) );
-
-			//RTSConstructor specific
-			if( ControlledObject.Type.Name == "RTSConstructor" )
-			{
-				list.Add( new UserControlPanelTask( new Task( Task.Types.Repair ),
-					currentTask.Type == Task.Types.Repair || currentTask.Type == Task.Types.BreakableRepair ) );
-
-				RTSBuildingType buildingType;
-
-				buildingType = (RTSBuildingType)EntityTypes.Instance.GetByName( "RTSHeadquaters" );
-				list.Add( new UserControlPanelTask( new Task( Task.Types.BuildBuilding, buildingType ),
-					CurrentTask.Type == Task.Types.BuildBuilding && CurrentTask.EntityType == buildingType ) );
-
-				buildingType = (RTSBuildingType)EntityTypes.Instance.GetByName( "RTSMine" );
-				list.Add( new UserControlPanelTask( new Task( Task.Types.BuildBuilding, buildingType ),
-					CurrentTask.Type == Task.Types.BuildBuilding && CurrentTask.EntityType == buildingType ) );
-
-				buildingType = (RTSBuildingType)EntityTypes.Instance.GetByName( "RTSFactory" );
-				list.Add( new UserControlPanelTask( new Task( Task.Types.BuildBuilding, buildingType ),
-					CurrentTask.Type == Task.Types.BuildBuilding && CurrentTask.EntityType == buildingType ) );
-			}
-			else
-			{
-				list.Add( new UserControlPanelTask( new Task( Task.Types.Attack ),
-					currentTask.Type == Task.Types.Attack || currentTask.Type == Task.Types.BreakableAttack ) );
-			}
-
-			return list;
-		}
-
 	}
 }

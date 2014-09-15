@@ -94,6 +94,16 @@ namespace ProjectEntities
         {
             if (!OutsideCombatOrActive())
                 return;
+
+
+            switch (CurrentTask.Type)
+            {
+                case Task.Types.Attack:
+                case Task.Types.BreakableAttack:
+                    //enter combat if i am attacking someone
+                    if (!CombatManager.IsEnabled) CombatManager.StartCombat(this);
+                    break;
+            }
             
             base.TickTasks();
         }
