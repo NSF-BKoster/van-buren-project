@@ -423,6 +423,28 @@ namespace ProjectEntities
             //TODO: SET NEW ARMOR FUNCTION - SHOULD THIS USE ATTACHMENTS OR NEW PLAYER MODEL??
         }
 
+        public override MapObjectCreateObjectCollection.CreateObjectsResultItem[] DieObjects_Create()
+        {
+            MapObjectCreateObjectCollection.CreateObjectsResultItem[] result = base.DieObjects_Create();
+
+            //populate the inventory
+            foreach (MapObjectCreateObjectCollection.CreateObjectsResultItem item in result)
+            {
+                MapObjectCreateMapObject createMapObject = item.Source as MapObjectCreateMapObject;
+                if (createMapObject != null)
+                {
+                    foreach (MapObject mapObject in item.CreatedObjects)
+                    {
+                        Corpse invObj = mapObject as Corpse;
+                        if (invObj != null && InitialFaction != null)
+                            invObj.Inventory = Inventory;
+                    }
+                }
+            }
+
+            return result;
+        }
+
         public virtual float GetNetDamage(Dynamic target)
         {
             float RD = (ActiveHeldItem as MultipleActionItem).GetDamage(); //= random damage value produced from weapons hit damage range

@@ -15,7 +15,7 @@ namespace ProjectEntities
 	/// <summary>
 	/// Defines the <see cref="Corpse"/> entity type.
 	/// </summary>
-	public class CorpseType : DynamicType
+    public class CorpseType : InventoryObjectType
 	{
 	}
 
@@ -24,7 +24,7 @@ namespace ProjectEntities
 	/// object that he changes the orientation depending on a surface. 
 	/// Also the class operates animations.
 	/// </summary>
-	public class Corpse : Dynamic
+    public class Corpse : InventoryObject
 	{
 		CorpseType _type = null; public new CorpseType Type { get { return _type; } }
 
