@@ -1,4 +1,4 @@
-Log started: 9/15/2014 2:06:23 AM
+Log started: 9/16/2014 12:06:16 AM
 Info: Powered by NeoAxis 3D Engine
 Info: Operating System: Microsoft Windows 6.2.9200.0 (64-bit)
 Info: Runtime Framework: Net 4.0.30319.34014
@@ -37,7 +37,7 @@ Info: OGRE: Driver description: AMD Radeon HD 6570
 Info: OGRE: ***************************************
 Info: OGRE: *** D3D9 : Subsystem Initialised OK ***
 Info: OGRE: ***************************************
-Info: OGRE: D3D9RenderSystem::_createRenderWindow "MainWindow", 640x480 windowed  miscParams: colourDepth=32 debugger=true externalWindowHandle=1114828 vsync=true 
+Info: OGRE: D3D9RenderSystem::_createRenderWindow "MainWindow", 640x480 windowed  miscParams: colourDepth=32 debugger=true externalWindowHandle=2753336 vsync=true 
 Info: OGRE: D3D9 : Created D3D9 Rendering Window 'MainWindow' : 1276x961, 32bpp
 Info: OGRE: Registering ResourceManager for type Texture
 Info: OGRE: Registering ResourceManager for type GpuProgram
@@ -250,18 +250,127 @@ Info: OGRE: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource prop
 Info: OGRE: Error loading texture props\oldwall2_nm.tga. Texture layer will be blank. Loading the texture failed with the following exception: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
 Info: OGRE: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
 Info: OGRE: Error loading texture props\oldwall2_nm.tga. Texture layer will be blank. Loading the texture failed with the following exception: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
-Info: You see RobotCompanion
-Info: You see Raider
+Info: OGRE: RenderTarget "MainWindow": destroyAdditionalMRTs
+Info: OGRE: !!! Direct3D Device Lost!
+Info: OGRE: Releasing D3D9 default pool texture: c10/rt_adaptedLuminance/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c10/rt_adaptedLuminance/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c7/rt_bloomBlur/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c7/rt_bloomBlur/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c8/rt_bloomHorizontal/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c8/rt_bloomHorizontal/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c0/rt_full/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c0/rt_full/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c5/rt_luminance4/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c5/rt_luminance4/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c13/rt1/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c13/rt1/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c6/rt_brightPass/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c6/rt_brightPass/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c11/rt_lastAdaptedLuminance/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c11/rt_lastAdaptedLuminance/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c3/rt_luminance2/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c3/rt_luminance2/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c4/rt_luminance3/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c4/rt_luminance3/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c12/rt0/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c12/rt0/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: MainWindow_AdditionalMRT
+Info: OGRE: Released D3D9 default pool texture: MainWindow_AdditionalMRT
+Info: OGRE: Releasing D3D9 default pool texture: c9/rt_bloomVertical/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c9/rt_bloomVertical/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c1/rt_luminance0/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c1/rt_luminance0/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c2/rt_luminance1/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c2/rt_luminance1/MainWindow
+Info: OGRE: D3D9TextureManager released:
+Info: OGRE: 15 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager released:
+Info: OGRE: 7 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: Releasing D3D9 default pool texture: c10/rt_adaptedLuminance/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c10/rt_adaptedLuminance/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c7/rt_bloomBlur/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c7/rt_bloomBlur/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c8/rt_bloomHorizontal/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c8/rt_bloomHorizontal/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c0/rt_full/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c0/rt_full/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c5/rt_luminance4/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c5/rt_luminance4/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c13/rt1/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c13/rt1/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c6/rt_brightPass/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c6/rt_brightPass/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c11/rt_lastAdaptedLuminance/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c11/rt_lastAdaptedLuminance/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c3/rt_luminance2/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c3/rt_luminance2/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c4/rt_luminance3/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c4/rt_luminance3/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c12/rt0/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c12/rt0/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: MainWindow_AdditionalMRT
+Info: OGRE: Released D3D9 default pool texture: MainWindow_AdditionalMRT
+Info: OGRE: Releasing D3D9 default pool texture: c9/rt_bloomVertical/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c9/rt_bloomVertical/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c1/rt_luminance0/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c1/rt_luminance0/MainWindow
+Info: OGRE: Releasing D3D9 default pool texture: c2/rt_luminance1/MainWindow
+Info: OGRE: Released D3D9 default pool texture: c2/rt_luminance1/MainWindow
+Info: OGRE: D3D9TextureManager released:
+Info: OGRE: 15 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager released:
+Info: OGRE: 7 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: Reset device ok w:1280 h:961
+Info: OGRE: Recreating D3D9 default pool texture: c10/rt_adaptedLuminance/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c10/rt_adaptedLuminance/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c7/rt_bloomBlur/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c7/rt_bloomBlur/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c8/rt_bloomHorizontal/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c8/rt_bloomHorizontal/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c0/rt_full/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c0/rt_full/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c5/rt_luminance4/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c5/rt_luminance4/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c13/rt1/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c13/rt1/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c6/rt_brightPass/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c6/rt_brightPass/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c11/rt_lastAdaptedLuminance/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c11/rt_lastAdaptedLuminance/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c3/rt_luminance2/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c3/rt_luminance2/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c4/rt_luminance3/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c4/rt_luminance3/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c12/rt0/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c12/rt0/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: MainWindow_AdditionalMRT
+Info: OGRE: Recreated D3D9 default pool texture: MainWindow_AdditionalMRT
+Info: OGRE: Recreating D3D9 default pool texture: c9/rt_bloomVertical/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c9/rt_bloomVertical/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c1/rt_luminance0/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c1/rt_luminance0/MainWindow
+Info: OGRE: Recreating D3D9 default pool texture: c2/rt_luminance1/MainWindow
+Info: OGRE: Recreated D3D9 default pool texture: c2/rt_luminance1/MainWindow
+Info: OGRE: D3D9TextureManager recreated:
+Info: OGRE: 15 unmanaged textures
+Info: OGRE: D3D9HardwareBufferManager recreated:
+Info: OGRE: 7 unmanaged vertex buffers
+Info: OGRE: 0 unmanaged index buffers
+Info: OGRE: !!! Direct3D Device successfully restored.
+Info: OGRE: RenderTarget "MainWindow": createAdditionalMRTs
+Info: Combat cannot end with nearby hostile creatures.
 Info: You see WoodLocker
+Info: Combat cannot end with nearby hostile creatures.
 Info: You see AM_9mmFMJ
 Info: You see AM_9mmFMJ
 Info: You see AM_9mmFMJ
 Info: You see AM_9mmFMJ
 Info: You see AM_9mmFMJ
-Info: You see AM_9mmFMJ
-Info: Not enough action points
+Info: Combat cannot end with nearby hostile creatures.
 Info: You see Raider
-Info: Get better description of VBGirl
+Info: You see RobotCompanion
 Info: OGRE: RenderTarget "MainWindow": destroyAdditionalMRTs
 Info: NativeMemoryManager: Leaks statistics begin
 Info: Leak - type: Renderer, size: 9712 x 1 = 9712 (file: NULL)
