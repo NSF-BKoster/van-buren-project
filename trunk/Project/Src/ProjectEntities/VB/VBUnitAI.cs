@@ -81,11 +81,10 @@ namespace ProjectEntities
 
         public void EndTurn()
         {
-            if (CombatManager.Instance == null)
+            if (!CombatManager.IsEnabled)
                 return;
 
-            ControlledObject.Stop();
-
+            DoTask(new RTSUnitAI.Task(RTSUnitAI.Task.Types.Stop), false);
             ControlledObject.ActionPts = 0;
             CombatManager.Instance.TurnEnded();
         }
