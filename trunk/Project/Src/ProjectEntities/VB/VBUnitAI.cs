@@ -75,7 +75,7 @@ namespace ProjectEntities
 
         public void InitiatetTurn()
         {
-            ControlledObject.Stop();
+            ClearTaskList();
             ControlledObject.ActionPts = ControlledObject.GetMaxActionPoints;
         }
 
@@ -95,7 +95,6 @@ namespace ProjectEntities
             if (!OutsideCombatOrActive())
                 return;
 
-
             switch (CurrentTask.Type)
             {
                 case Task.Types.Attack:
@@ -103,9 +102,35 @@ namespace ProjectEntities
                     //enter combat if i am attacking someone
                     if (!CombatManager.IsEnabled) CombatManager.StartCombat(this);
                     break;
+
+                case Task.Types.Heal:
+                    //apply the healing thing         
+                    DoNextTask();
+                    break;
             }
             
             base.TickTasks();
+        }
+
+        protected virtual bool InRange(float range)
+        {
+
+            return false;
+        }
+
+        protected override bool InactiveFindTask()
+        {
+            //if i am low oh health i should try to heal myself before i do anything else
+            if (ControlledObject.Health < 10 && CurrentTask.Type != Task.Types.Heal)
+            {
+                if (ControlledObject.Inventory.Exists(p => p.ItemType as VBHealthItemType != null))
+                {
+                    DoTask(new RTSUnitAI.Task(RTSUnitAI.Task.Types.Heal, ControlledObject), false);
+                    return true;
+                }
+            }
+
+            return base.InactiveFindTask();
         }
 
         public override void ClearTaskList()
