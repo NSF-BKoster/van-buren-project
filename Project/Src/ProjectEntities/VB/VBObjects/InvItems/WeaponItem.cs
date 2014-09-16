@@ -100,12 +100,17 @@ namespace ProjectEntities
             return base.GetDamage();
         }
 
+        public virtual bool CanReload()
+        {
+            return Juice < Type.MaxJuice;
+        }
+
         public virtual void TryReload()
         {
             if (Owner.Intellect.InCombatAndActive() && !Owner.Intellect.HasActionPoints(GetCurActionMode().ActionPoints) )
                 return;
 
-            if (Juice < Type.MaxJuice)
+            if (CanReload())
             {
                 foreach (InventoryObject.InventoryObjectItem itm in Owner.Inventory)
                 {

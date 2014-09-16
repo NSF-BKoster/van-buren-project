@@ -68,6 +68,7 @@ namespace ProjectEntities
 				Repair,
 				BreakableRepair,//for automatic repair
                 SelfDestroy,
+                Heal,
 
                 //VB
                 PreUse,
@@ -279,7 +280,7 @@ namespace ProjectEntities
 			return 0;
 		}
 
-		bool InactiveFindTask()
+		protected virtual bool InactiveFindTask()
 		{
 			/*if( initialWeapons.Count == 0 )
 				return false;*/
