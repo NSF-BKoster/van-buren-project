@@ -47,7 +47,7 @@ control ItemControl
 	}
 	itemSwitch "VB\\GUI\\Controls\\DefaultButtonHUD.gui"
 	{
-		position = Parent 1.022222 4.470348E-08
+		position = ScaleByResolution -40 0
 		size = ScaleByResolution 32.5 19.2
 		text = Mode
 	}
