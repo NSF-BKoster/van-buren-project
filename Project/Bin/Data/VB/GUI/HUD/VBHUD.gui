@@ -6,15 +6,13 @@ control MainVBHUD
 	{
 		position = ScaleByResolution 710 620
 		size = ScaleByResolution 290 140
-		backTexture = "VB\\GUI\\HUD\\interface_a.png"
 	}
 	combatPanel CombatPanel
 	{
 		enableSound = "VB\\Sounds\\CombatBoxOpen.ogg"
 		disableSound = "VB\\Sounds\\CombatBoxClose.ogg"
-		position = Parent 0.3515625 0.8854166
-		size = Parent 0.2285154 0.06249999
-		visible = False
+		position = Parent 0.7910156 0.78125
+		size = Parent 0.111328 0.04817703
 		actionPointsBar BarPanel
 		{
 			plusTexture = "VB\\\\GUI\\\\HUD\\\\greenplus.PNG"
@@ -23,23 +21,31 @@ control MainVBHUD
 			barSize = ScaleByResolution 8 5
 			barDist = 2
 			bars = 10
-			position = ScaleByResolution 0 0
+			position = ScaleByResolution 3.017761 0
 			horizontalAlign = Center
 			verticalAlign = Bottom
-			size = Parent 0.5 0.1
+			size = ScaleByResolution 110.0354 11.99992
 		}
-		endTurnButton "GUI\\Controls\\DefaultButton.gui"
+		endTurnButton "VB\\GUI\\Controls\\DefaultButtonHUD.gui"
 		{
-			position = ScaleByResolution 0 0
-			size = ScaleByResolution 89.99994 30
-			text = End Turn
+			position = ScaleByResolution 30 0
+			size = ScaleByResolution 30 19.99986
+			text = turn
 		}
-		endCombatButton "GUI\\Controls\\DefaultButton.gui"
+		endCombatButton "VB\\GUI\\Controls\\DefaultButtonHUD.gui"
 		{
-			position = ScaleByResolution 0 0
+			position = ScaleByResolution -6.998596 4.577637E-05
 			horizontalAlign = Right
-			size = ScaleByResolution 120 30
-			text = End Combat
+			size = ScaleByResolution 42.00128 20
+			text = combat
+		}
+		control TextBox
+		{
+			font = FalloutG 0.02
+			autoSize = True
+			position = ScaleByResolution 5 0
+			size = Screen 0.02205882 0.02
+			text = END
 		}
 	}
 	dataLog "VB\\GUI\\HUD\\GameLog.gui"
@@ -51,10 +57,22 @@ control MainVBHUD
 	healthBox PlayerPropertyDisplay
 	{
 		property = Health
-		font = FalloutG 0.035
-		position = ScaleByResolution 730 645
-		size = ScaleByResolution 44 28
+		textHorizontalAlign = Right
+		font = FalloutG 0.02
+		textOffset = ScaleByResolution -5 0
+		position = ScaleByResolution 720 660
+		size = ScaleByResolution 50 28
 		text = 100
+		backColor = 0 0 0 0.3921569
+		control TextBox
+		{
+			font = FalloutG 0.015
+			autoSize = True
+			position = ScaleByResolution 5 0
+			verticalAlign = Center
+			size = Screen 0.01211538 0.015
+			text = HP
+		}
 	}
 	itemControl "VB\\GUI\\HUD\\ItemControl.gui"
 	{
