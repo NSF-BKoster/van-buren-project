@@ -1,4 +1,4 @@
-Log started: 9/17/2014 11:21:06 PM
+Log started: 9/18/2014 1:56:40 AM
 Info: Powered by NeoAxis 3D Engine
 Info: Operating System: Microsoft Windows 6.2.9200.0 (64-bit)
 Info: Runtime Framework: Net 4.0.30319.34014
@@ -37,7 +37,7 @@ Info: OGRE: Driver description: AMD Radeon HD 6570
 Info: OGRE: ***************************************
 Info: OGRE: *** D3D9 : Subsystem Initialised OK ***
 Info: OGRE: ***************************************
-Info: OGRE: D3D9RenderSystem::_createRenderWindow "MainWindow", 640x480 windowed  miscParams: colourDepth=32 debugger=true externalWindowHandle=394602 vsync=true 
+Info: OGRE: D3D9RenderSystem::_createRenderWindow "MainWindow", 640x480 windowed  miscParams: colourDepth=32 debugger=true externalWindowHandle=1114842 vsync=true 
 Info: OGRE: D3D9 : Created D3D9 Rendering Window 'MainWindow' : 1280x961, 32bpp
 Info: OGRE: Registering ResourceManager for type Texture
 Info: OGRE: Registering ResourceManager for type GpuProgram
@@ -250,7 +250,6 @@ Info: OGRE: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource prop
 Info: OGRE: Error loading texture props\oldwall2_nm.tga. Texture layer will be blank. Loading the texture failed with the following exception: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
 Info: OGRE: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
 Info: OGRE: Error loading texture props\oldwall2_nm.tga. Texture layer will be blank. Loading the texture failed with the following exception: OGRE EXCEPTION(6:FileNotFoundException): Cannot locate resource props\oldwall2_nm.tga in resource group General. in ResourceGroupManager::openResource at ..\src\OgreResourceGroupManager.cpp (line 694)
-Info: You see WoodLocker
 Info: OGRE: RenderTarget "MainWindow": destroyAdditionalMRTs
 Info: NativeMemoryManager: Leaks statistics begin
 Info: Leak - type: Renderer, size: 9712 x 1 = 9712 (file: NULL)
@@ -270,7 +269,7 @@ Info: Leak - type: Renderer, size: 168 x 1 = 168 (file: NULL)
 Info: Leak - type: Renderer, size: 156 x 3 = 468 (file: NULL)
 Info: Leak - type: Renderer, size: 152 x 1 = 152 (file: NULL)
 Info: Leak - type: Renderer, size: 144 x 1 = 144 (file: NULL)
-Info: Leak - type: Renderer, size: 120 x 380 = 45600 (file: NULL)
+Info: Leak - type: Renderer, size: 120 x 379 = 45480 (file: NULL)
 Info: Leak - type: Renderer, size: 108 x 15 = 1620 (file: NULL)
 Info: Leak - type: Renderer, size: 96 x 2 = 192 (file: NULL)
 Info: Leak - type: Renderer, size: 88 x 1 = 88 (file: OgreD3D9HardwareBufferManager.h:79)
@@ -288,16 +287,16 @@ Info: Leak - type: Renderer, size: 44 x 16 = 704 (file: NULL)
 Info: Leak - type: Renderer, size: 36 x 23 = 828 (file: NULL)
 Info: Leak - type: Renderer, size: 24 x 1459 = 35016 (file: NULL)
 Info: Leak - type: Renderer, size: 20 x 9 = 180 (file: NULL)
-Info: Leak - type: Renderer, size: 16 x 100 = 1600 (file: NULL)
-Info: Leak - type: Renderer, size: 12 x 207 = 2484 (file: NULL)
+Info: Leak - type: Renderer, size: 16 x 99 = 1584 (file: NULL)
+Info: Leak - type: Renderer, size: 12 x 206 = 2472 (file: NULL)
 Info: Leak - type: Renderer, size: 8 x 2 = 16 (file: NULL)
-Info: Leak - type: Renderer, size: 4 x 763 = 3052 (file: NULL)
+Info: Leak - type: Renderer, size: 4 x 761 = 3044 (file: NULL)
 Info: Leak - type: Physics, size: 2079 x 5 = 10395 (file: ExtSharedQueueEntryPool.h:86)
 Info: Leak - type: Physics, size: 132 x 1 = 132 (file: ExtDefaultCpuDispatcher.cpp:81)
 Info: Leak - type: Physics, size: 52 x 1 = 52 (file: ExtDefaultCpuDispatcher.cpp:46)
 Info: Leak - type: Physics, size: 44 x 4 = 176 (file: PsWindowsThread.cpp:92)
 Info: Leak - type: Physics, size: 28 x 10 = 280 (file: PsSList.h:92)
 Info: Leak - type: Physics, size: 24 x 1 = 24 (file: PsWindowsSync.cpp:48)
-Info: Total size: 130543
+Info: Total size: 130387
 Info: NativeMemoryManager: Leaks statistics end
 Program END
