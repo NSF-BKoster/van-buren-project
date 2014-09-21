@@ -12,7 +12,7 @@ control ItemControl
 		autoSize = True
 		position = ScaleByResolution 10 -10
 		verticalAlign = Bottom
-		size = Screen 0.02205882 0.02
+		size = Screen 0.02 0.02
 		text = AP3
 	}
 	modeLabel TextBox
@@ -21,7 +21,7 @@ control ItemControl
 		autoSize = True
 		position = ScaleByResolution -15 10
 		horizontalAlign = Right
-		size = Screen 0.03441176 0.02
+		size = Screen 0.035 0.02
 		text = Punch
 	}
 	icon Control
@@ -47,7 +47,7 @@ control ItemControl
 	}
 	itemSwitch "VB\\GUI\\Controls\\DefaultButtonHUD.gui"
 	{
-		position = ScaleByResolution -40 0
+		position = ScaleByResolution 10 10
 		size = ScaleByResolution 32.5 19.2
 		text = Mode
 	}
