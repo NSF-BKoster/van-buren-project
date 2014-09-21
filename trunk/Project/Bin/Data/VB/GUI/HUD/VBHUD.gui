@@ -6,7 +6,7 @@ control MainVBHUD
 	{
 		enableSound = "VB\\Sounds\\CombatBoxOpen.ogg"
 		disableSound = "VB\\Sounds\\CombatBoxClose.ogg"
-		position = Parent 0.7714844 0.78125
+		position = Parent 0.8 0.78
 		size = Parent 0.1455077 0.04817703
 		backColor = 0 0 0 0.3921569
 		actionPointsBar BarPanel
@@ -40,7 +40,7 @@ control MainVBHUD
 			font = FalloutG 0.02
 			autoSize = True
 			position = ScaleByResolution 10 5
-			size = Screen 0.02205882 0.02
+			size = Screen 0.02375 0.02
 			text = END
 		}
 	}
@@ -56,8 +56,8 @@ control MainVBHUD
 		textHorizontalAlign = Right
 		font = FalloutG 0.02
 		textOffset = ScaleByResolution -5 0
-		position = ScaleByResolution 730 675
-		size = ScaleByResolution 55 23
+		position = ScaleByResolution 740 660
+		size = ScaleByResolution 45 23
 		text = 100
 		backColor = 0 0 0 0.3921569
 		control TextBox
@@ -66,15 +66,30 @@ control MainVBHUD
 			autoSize = True
 			position = ScaleByResolution 5 0
 			verticalAlign = Center
-			size = Screen 0.01211538 0.015
+			size = Screen 0.0125 0.015
 			text = HP
+		}
+		control "VB\\GUI\\Controls\\DefaultButton.gui"
+		{
+			position = ScaleByResolution -20 -35
+			text = INV
+		}
+		control "VB\\GUI\\Controls\\DefaultButton.gui"
+		{
+			position = ScaleByResolution 30 -35
+			text = PIP
+		}
+		control "VB\\GUI\\Controls\\DefaultButton.gui"
+		{
+			position = ScaleByResolution 30 25
+			text = SKL
 		}
 	}
 	itemControl "VB\\GUI\\HUD\\ItemControl.gui"
 	{
 		upTexture = "VB\\GUI\\HUD\\blacktexsture.jpg"
 		downTexture = "VB\\GUI\\HUD\\blacktexsture.jpg"
-		position = ScaleByResolution 790 650
+		position = Parent 0.8 0.84
 		size = ScaleByResolution 150 80
 		backColor = 1 1 1 0.5882353
 		backTexture = "VB\\GUI\\HUD\\blacktexsture.jpg"
