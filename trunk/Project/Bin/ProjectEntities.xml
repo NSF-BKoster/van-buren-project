@@ -538,6 +538,17 @@
         <member name="M:ProjectEntities.Tank.OnTick">
             <summary>Overridden from <see cref="M:Engine.EntitySystem.Entity.OnTick"/>.</summary>
         </member>
+        <member name="T:ProjectEntities.LayerVisibilityZoneType">
+            <summary>
+            Defines the <see cref="T:ProjectEntities.MapChangeRegion"/> entity type.
+            </summary>
+        </member>
+        <member name="T:ProjectEntities.LayerVisibilityZone">
+            <summary>
+            Gives an opportunity of moving of the player between maps. 
+            When the player gets in this region game loads a new map.
+            </summary>
+        </member>
         <member name="T:ProjectEntities.VBUnitAIType">
             <summary>
             Defines the <see cref="T:ProjectEntities.RTSUnitAI"/> entity type.

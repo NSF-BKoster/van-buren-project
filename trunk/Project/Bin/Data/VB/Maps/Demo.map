@@ -35,9 +35,11 @@ dataForEditor
 rootEditorLayer
 {
 	name = Root Layer
+	allowSelect = False
 	layer
 	{
 		name = StaticGeometry
+		allowSelect = False
 	}
 }
 entity
@@ -736,6 +738,7 @@ entity
 	readyTimeRemaining = 0
 	healthFactorAtBeginning = 1
 	position = -25.1393 48.38622 -2.797163
+	editorLayer = "Root Layer\\StaticGeometry"
 }
 entity
 {
@@ -766,4 +769,15 @@ entity
 	readyTimeRemaining = 0
 	healthFactorAtBeginning = 1
 	position = -22.03413 47.26494 -2.796118
+}
+entity
+{
+	type = LayerVisibilityZone
+	uin = 58
+	classPrompt = LayerVisibilityZone
+	enabled = True
+	shapeType = Box
+	filter = OnlyDynamicBodies
+	position = -7.962058 37.74792 -2.400412
+	checkType = Bounds
 }

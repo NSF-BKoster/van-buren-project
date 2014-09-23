@@ -4,3 +4,17 @@
 -Implement special and skills
 -Fix factions and make them remember who they hate via the save / load system (save info in GameWorld)
 -Fix inventory problem when dropping and switching to other weapon
+
+
+casting a ray:
+//hide any models which are in my way
+                    Ray ray = new Ray(cameraPosition, hudControl.selectedUnit.Position - cameraPosition);
+                    RayCastResult[] piercingResult = PhysicsWorld.Instance.RayCastPiercing(ray, (int)ContactGroup.CastOnlyContact);
+
+                    foreach (RayCastResult result in piercingResult)
+                    {
+                        MapObject obj = MapSystemWorld.GetMapObjectByBody(result.Shape.Body);
+
+                        if (obj != null)
+                            Log.Info(obj.Name + " is in the way!");
+                    }

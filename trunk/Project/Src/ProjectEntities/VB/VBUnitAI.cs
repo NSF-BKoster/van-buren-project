@@ -85,6 +85,7 @@ namespace ProjectEntities
                 return;
 
             DoTask(new RTSUnitAI.Task(RTSUnitAI.Task.Types.Stop), false);
+            ClearTaskList();
             ControlledObject.ActionPts = 0;
             CombatManager.Instance.TurnEnded();
         }

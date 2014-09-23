@@ -80,10 +80,7 @@ namespace ProjectEntities
 
             //reset all tasks
             foreach (VBUnitAI combatant in combatants)
-            {
-                combatant.DoTask(new RTSUnitAI.Task(RTSUnitAI.Task.Types.Stop), false);
-                combatant.ClearTaskList();
-            }
+                combatant.EndTurn();
 
             starter = activeEnt = ch;
             ch.InitiatetTurn();
