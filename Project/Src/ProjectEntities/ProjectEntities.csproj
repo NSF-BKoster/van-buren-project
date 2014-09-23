@@ -145,6 +145,7 @@
     <Compile Include="BooleanSwitch.cs" />
     <Compile Include="Action Specific\Tank.cs" />
     <Compile Include="ExampleEntityExtendedProperties.cs" />
+    <Compile Include="VB\LayerVisibilityZone.cs" />
     <Compile Include="VB\VBBasePlayerAI.cs" />
     <Compile Include="VB\VBUnitAI.cs" />
     <Compile Include="VB\WeatherControler.cs" />
