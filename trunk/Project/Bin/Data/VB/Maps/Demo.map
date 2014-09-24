@@ -9,7 +9,7 @@ resetYCoordinateForDynamicBodies = False
 destroyObjectsBelowHeight = -500
 ambientLight = 0.2627451 0.2313726 0.2862745
 editorCameraPosition = -2.996365 48.63493 7.454845
-editorCameraDirection = 4.284442 -0.5635518
+editorCameraDirection = 3.712153 -0.7171748
 shadowColor = 0.7176471 0.8235295 1 0.6
 shadowFarDistance = 90
 shadowPSSMSplitFactors = 0.1 0.4
@@ -773,11 +773,35 @@ entity
 entity
 {
 	type = LayerVisibilityZone
-	uin = 58
+	uin = 57
 	classPrompt = LayerVisibilityZone
-	enabled = True
+	enabled = False
 	shapeType = Box
 	filter = OnlyDynamicBodies
 	position = -7.962058 37.74792 -2.400412
 	checkType = Bounds
+}
+entity
+{
+	type = MapCompositorManager
+	uin = 59
+	classPrompt = MapCompositorManager
+	items
+	{
+		item
+		{
+			name = DepthOfField
+			FocalDistance = 30
+			AutoFocus = True
+			FocalSize = 20
+			BlurSpread = 0.3
+			BlurTextureResolution = 5
+			BackgroundTransitionLength = 40
+			BlurForeground = True
+			ForegroundTransitionLength = 40
+			AutoFocusRange = 1 70
+			AutoFocusTransitionSpeed = 100
+			Enabled = True
+		}
+	}
 }

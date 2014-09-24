@@ -24,14 +24,14 @@ namespace ProjectEntities
 	/// </summary>
     public class LayerVisibilityZone : Region
 	{
-        [FieldSerialize]
+        /*[FieldSerialize]
         List<string> managedObjects;
 
         public List<string> ManagedObjects
         {
             get { return managedObjects; }
             set { managedObjects = value; }
-        }
+        }*/
 		//
 
         LayerVisibilityZoneType _type = null; public new LayerVisibilityZoneType Type { get { return _type; } }
@@ -52,8 +52,12 @@ namespace ProjectEntities
 
         void ShowObjects(bool bShow)
         {
-            foreach (MapObject o in managedObjects)
-                o.Visible = bShow;
+            foreach (Entity e in Children)
+            {
+                MapObject obj = e as MapObject;
+			    if( obj != null )
+				    obj.Visible = bShow;
+            }
         }
 
         bool ShouldShow()
