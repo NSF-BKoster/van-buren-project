@@ -8,8 +8,8 @@ windSpeed = 1
 resetYCoordinateForDynamicBodies = False
 destroyObjectsBelowHeight = -500
 ambientLight = 0.2627451 0.2313726 0.2862745
-editorCameraPosition = -2.996365 48.63493 7.454845
-editorCameraDirection = 3.712153 -0.7171748
+editorCameraPosition = -6.450185 51.30534 6.832518
+editorCameraDirection = 4.827669 -0.8638933
 shadowColor = 0.7176471 0.8235295 1 0.6
 shadowFarDistance = 90
 shadowPSSMSplitFactors = 0.1 0.4
@@ -35,11 +35,9 @@ dataForEditor
 rootEditorLayer
 {
 	name = Root Layer
-	allowSelect = False
 	layer
 	{
 		name = StaticGeometry
-		allowSelect = False
 	}
 }
 entity
@@ -738,7 +736,6 @@ entity
 	readyTimeRemaining = 0
 	healthFactorAtBeginning = 1
 	position = -25.1393 48.38622 -2.797163
-	editorLayer = "Root Layer\\StaticGeometry"
 }
 entity
 {
@@ -772,36 +769,18 @@ entity
 }
 entity
 {
-	type = LayerVisibilityZone
-	uin = 57
-	classPrompt = LayerVisibilityZone
-	enabled = False
-	shapeType = Box
-	filter = OnlyDynamicBodies
-	position = -7.962058 37.74792 -2.400412
-	checkType = Bounds
-}
-entity
-{
-	type = MapCompositorManager
-	uin = 59
-	classPrompt = MapCompositorManager
+	type = GenericUnit
+	uin = 58
+	classPrompt = VBCharacter
+	apts = 0
+	primaryActive = False
+	activeItems = 0 0 0
+	intellectShouldDeleteAfterDetach = False
+	disabled = False
+	healthFactorAtBeginning = 1
+	position = -0.3211634 41.8602 -1.499256
+	name = PostOfficer
 	items
 	{
-		item
-		{
-			name = DepthOfField
-			FocalDistance = 30
-			AutoFocus = True
-			FocalSize = 20
-			BlurSpread = 0.3
-			BlurTextureResolution = 5
-			BackgroundTransitionLength = 40
-			BlurForeground = True
-			ForegroundTransitionLength = 40
-			AutoFocusRange = 1 70
-			AutoFocusTransitionSpeed = 100
-			Enabled = True
-		}
 	}
 }

@@ -1,0 +1,73 @@
+type GenericUnit
+{
+	class = VBCharacter
+	height = 2.8
+	radius = 0.3
+	maxWeight = 25
+	apMax = 5
+	maxVelocity = 1.5
+	initialAI = DefaultVBUnitAI
+	viewRadius = 70
+	fpsCameraOffset = 0 0 0.52
+	healthMax = 20
+	targetPriority = 1
+	substance = Flesh
+	networkType = Synchronized
+	attachedObjects
+	{
+		mesh
+		{
+			meshName = "Types\\Units\\Girl\\Girl.mesh"
+			castDynamicShadows = True
+			animationTree = "Types\\Units\\Girl\\Girl.animationTree"
+			position = 0 0 -1.15
+			rotation = 0 0 -0.7071068 -0.7071068
+			boneSlot gunHolderThirdPersonCamera
+			{
+				bone = GirlRebornRArmPalm
+				position = 0.13 0 -0.08
+				rotation = -0.9697794 -0.1276739 0.206133 0.02713788
+			}
+			boneSlot gunHolderThirdPersonCamera_Shotgun
+			{
+				bone = GirlRebornRArmPalm
+				position = 0.27 0.05 -0.09
+				rotation = -0.982963 -0.1294095 0.1294095 0.0170371
+			}
+		}
+	}
+	meleeAttacks
+	{
+		item
+		{
+			value = UN_PrimaryAttack
+		}
+		item
+		{
+			value = UN_SecondaryAttack
+		}
+	}
+	defaultInventory
+	{
+		item
+		{
+			value = WP_9mmAutoloader
+		}
+		item
+		{
+			value = StimPak
+		}
+		item
+		{
+			value = AM_9mmFMJ
+		}
+	}
+	dieObjects
+	{
+		mapObject
+		{
+			type = GirlDead
+			copyVelocitiesFromParent = True
+		}
+	}
+}
