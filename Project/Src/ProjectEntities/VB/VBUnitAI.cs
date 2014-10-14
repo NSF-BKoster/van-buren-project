@@ -79,14 +79,19 @@ namespace ProjectEntities
             ControlledObject.ActionPts = ControlledObject.GetMaxActionPoints;
         }
 
+        public void ResetForCombat()
+        {
+            DoTask(new RTSUnitAI.Task(RTSUnitAI.Task.Types.Stop), false);
+            ClearTaskList();
+            ControlledObject.ActionPts = 0;
+        }
+
         public void EndTurn()
         {
             if (!CombatManager.IsEnabled)
                 return;
 
-            DoTask(new RTSUnitAI.Task(RTSUnitAI.Task.Types.Stop), false);
-            ClearTaskList();
-            ControlledObject.ActionPts = 0;
+            ResetForCombat();
             CombatManager.Instance.TurnEnded();
         }
 
@@ -118,6 +123,15 @@ namespace ProjectEntities
             return false;
         }
 
+        protected virtual bool InactiveFindTaskAI()
+        {
+            //if i havent found any tasks for me just skip my turn
+            if (InCombatAndActive())
+                EndTurn();
+
+            return false;
+        }
+
         protected override bool InactiveFindTask()
         {
             //if i am low oh health i should try to heal myself before i do anything else
@@ -130,7 +144,10 @@ namespace ProjectEntities
                 }
             }
 
-            return base.InactiveFindTask();
+            if (base.InactiveFindTask() || InactiveFindTaskAI())
+                return true;
+
+            return false;
         }
 
         public override void ClearTaskList()
