@@ -26,6 +26,12 @@ namespace ProjectEntities
 
         }
 
+        protected override bool InactiveFindTaskAI()
+        {
+            //pure virtual function
+            return false;
+        }
+
         /// <summary>Overridden from <see cref="Engine.EntitySystem.Entity.OnTick()"/>.</summary>
         protected override void OnTick()
         {

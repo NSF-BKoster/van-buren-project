@@ -42,6 +42,9 @@ namespace ProjectEntities
         }
 
         [FieldSerialize]
+        int turnNumber;
+
+        [FieldSerialize]
         LinkedList<VBUnitAI> combatants = new LinkedList<VBUnitAI>();
 
         CombatManagerType _type = null; public new CombatManagerType Type { get { return _type; } }
@@ -57,6 +60,7 @@ namespace ProjectEntities
                 Log.Fatal("CombatManager: instance already created");
 
             instance = this;
+            turnNumber = 0;
         }
 
         public static void StartCombat(VBUnitAI starter)
@@ -80,7 +84,7 @@ namespace ProjectEntities
 
             //reset all tasks
             foreach (VBUnitAI combatant in combatants)
-                combatant.EndTurn();
+                combatant.ResetForCombat();
 
             starter = activeEnt = ch;
             ch.InitiatetTurn();
@@ -107,14 +111,11 @@ namespace ProjectEntities
 
         public void TurnEnded()
         {
-            if (!FoesAlive()) // should i end? - check for entities and if there are any enemies
-                End();
-            else
-            {
-                activeEnt = GetNextPlayerActive(activeEnt);
-                //FIXME: set cam here
-                activeEnt.InitiatetTurn();
-            }
+            //set next player
+            activeEnt = GetNextPlayerActive(activeEnt);
+            //FIXME: set cam here
+            activeEnt.InitiatetTurn();
+            turnNumber += 1;
         }
 
         public bool InCombat(VBUnitAI u)
@@ -170,6 +171,7 @@ namespace ProjectEntities
         protected void End()
         {
             SetForDeletion(false);
+            //TODO: update statistics for this combat
         }
 
         protected override void OnDestroy()
